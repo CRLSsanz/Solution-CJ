@@ -64,17 +64,19 @@ export default function Home() {
     <section className="w-full flex flex-col justify-center items-center ">
       <div className="w-full h-[800] bg-cover Xbg-fixed bg-[50%] bg-[url('https://ceicid.es/wp-content/uploads/2023/07/banner-curso-mantenimiento-23.jpg')]">
         <div className="w-full flex justify-center items-center h-full bg-black/50 ">
-          <div className="w-[1024]">
-            <div className="w-[500] font-bold -mt-36">
+          <div className="md:w-[1024] w-full">
+            <div className="md:w-[500] w-full px-5 md:px-0 font-bold -mt-36">
               <div className="flex justify-end">
                 <span className="px-4 h-10 border-t-8 border-r-8 border-amber-400"></span>
               </div>
-              <div className=" text-5xl mb-16 tracking-wider ">
+              <div className="text-3xl md:text-5xl mb-10 md:mb-16 tracking-wider ">
                 Reformas de <span className="text-amber-400">viviendas </span> y{" "}
                 <br />
                 locales
               </div>
-              <span className="bg-purple-700 text-sm py-1 px-2 uppercase tracking-wider">
+
+              
+              <span className="bg-purple-700 text-xs md:text-sm py-1 px-2 uppercase md:tracking-wider">
                 Asesoramiento profesional sin compromiso
               </span>
               <h1 className="my-3 text-5xl font-bold fam-number">
@@ -86,13 +88,14 @@ export default function Home() {
                   Contacto
                 </span>
               </div>
-              <span className="px-4 py-2 border-b-8 border-l-8 border-amber-400 -ml-10"></span>
+              <span className="px-4 py-2 border-b-8 border-l-8 border-amber-400 md:-ml-10"></span>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="w-[1024] -mt-20 grid grid-cols-3 bg-zinc-50 text-gray-500 mb-20">
+      <div className="w-full md:w-[1024] -mt-20 grid grid-cols-1 md:grid-cols-3 bg-zinc-50 text-gray-500 mb-20">
+        <div className="md:hidden py-5 font-semibold uppercase">Nuestros Servicios</div>
         {card1.map((item, index) => (
           <div key={index} className="flex flex-col">
             <div className="relative w-full bg-gray-200 h-80">
@@ -110,7 +113,7 @@ export default function Home() {
               />
             </div>
             <div
-              className={` flex flex-col justify-between h-80 p-10 ${item.id === "02" ? "bg-amber-400 text-gray-600" : "bg-gray-900 text-gray-200"}  `}
+              className={` flex flex-col justify-between md:h-80 p-5 md:p-10 ${item.id === "02" ? "bg-amber-400 text-gray-600" : "bg-gray-900 text-gray-200"}  `}
             >
               <div className="mb-5">
                 <h1 className="uppercase font-bold mb-5">{item.title}</h1>
@@ -129,19 +132,20 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="w-[1024] mb-20">
+      <div className="md:w-[1024] w-full px-5 mb-20">
         <div className="text-center mb-20">
-          <h1 className="text-purple-600 font-bold text-3xl mb-5">
+          <h1 className="text-purple-600 font-bold text-2xl md:text-3xl mb-5">
             ¿Por qué elegir{" "}
-            <span className="text-amber-400">Servicios Generales C&J</span>{" "}
-            <br /> para hacer la reforma de tu vivienda o local?
+            <span className="text-amber-400">Servicios Generales C&J </span>
+            para hacer la reforma de tu vivienda o local?
           </h1>
-          <h1 className="text-purple-600 font-semibold ">
+          <h1 className="text-purple-600 font-semibold text-xs md:text-base">
             Contamos con un equipo de profesionales de diferentes ramas de
             contrastada experiencia.
           </h1>
         </div>
-        <div className=" grid grid-cols-3 gap-5 bg-zinc-50 text-gray-700 text-center">
+
+        <div className=" grid grid-cols-1 md:grid-cols-3 gap-5 bg-zinc-50 text-gray-700 text-center">
           <div className="">
             <h1>
               <svg
@@ -265,7 +269,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-[1024] grid grid-cols-3 bg-zinc-50 text-gray-500 mb-20">
+      <div className="w-full md:w-[1024] grid grid-cols-1 md:grid-cols-3 bg-zinc-50 text-gray-500 mb-20">
         {card2.map((item, index) => (
           <div key={index} className="flex flex-col">
             <div className="relative w-full bg-gray-200 h-80">
@@ -283,14 +287,14 @@ export default function Home() {
               />
             </div>
             <div
-              className={` flex flex-col justify-between h-80 p-10 ${item.id === "02" ? "bg-amber-400 text-gray-600" : "bg-gray-900 text-gray-200"}  `}
+              className={` flex flex-col justify-between md:h-80 p-5 md:p-10 ${item.id === "02" ? "bg-amber-400 text-gray-600" : "bg-gray-900 text-gray-200"}  `}
             >
               <div className="mb-5">
                 <span className="p-2 bg-gray-200 uppercase text-gray-600 font-bold">
                   {item.title}
                 </span>
-                <h1 className="font-bold my-5">{item.subtitle}</h1>
-                <h1>{item.text}</h1>
+                <h1 className="hidden md:block font-bold my-5">{item.subtitle}</h1>
+                <h1 className="pt-5 md:pt-0">{item.text}</h1>
               </div>
 
               <Link
