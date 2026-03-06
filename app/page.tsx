@@ -125,7 +125,7 @@ export default function Home() {
         </div>
         <div className=" grid grid-cols-3 bg-zinc-50 text-gray-500 text-center">
           <div className="text-center ">
-            <img src="" alt="" />
+            <h1>IMAGEN</h1>
             <h1 className="font-bold uppercase mb-3">Viviendas</h1>
             <h1>
               reformas integrales para pisos, viviendas unifamiliares, chalets o
@@ -133,7 +133,7 @@ export default function Home() {
             </h1>
           </div>
           <div className="">
-            <img src="" alt="" />
+            <h1>IMAGEN</h1>
             <h1 className="font-bold uppercase mb-3">Locales comerciales</h1>
             <h1>
               Especialistas en transformacion y reforma de locales para uso
@@ -141,7 +141,7 @@ export default function Home() {
             </h1>
           </div>
           <div className="">
-            <img src="" alt="" />
+            <h1>IMAGEN</h1>
             <h1 className="font-bold uppercase mb-3">Comunidades</h1>
             <h1>
               Reforma, reparacion y mantenimiento de zonas comunes, escaleras,
