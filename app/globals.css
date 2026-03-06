@@ -1,0 +1,50 @@
+@import "tailwindcss";
+/*
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+*/
+
+:root {
+  --background: #1e2128;
+  --foreground: #171717;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: #fff;
+  color: var(--foreground);   
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fam-anta {
+  font-family: "Anta", sans-serif;
+}
+
+.fam-raleway {
+  font-family: "Raleway", sans-serif;
+}
+
+.fam-number {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.fam-logo {
+  font-family: "Bruno Ace SC", sans-serif;
+}
+
+.fam-home {
+  font-family: "Bebas Neue", sans-serif;
+}
