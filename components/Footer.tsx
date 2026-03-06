@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 function Footer() {
@@ -10,7 +11,7 @@ function Footer() {
   }, 1000);
 
   return (
-    <div className="px-5 sm:px-20 md:px-5 lg:px-20 xl:px-32 2xl:px-56">
+    <div className="px-5 sm:px-20 md:px-5 lg:px-20 xl:px-32 2xl:px-56 pb-20">
       <div className="hidden Mmd:flex md:justify-center px-14 mb-10">
         <div className="md:w-[700px] flex flex-col md:flex-row justify-evenly text-center bg-gradient-to-br from-teal-500 to-blue-500/80 rounded-tl-[80px] rounded-br-[80px] rounded-bl-2xl rounded-tr-[40px] py-10 -mt-44 shadow-md">
           <div className="mb-10">
@@ -18,7 +19,7 @@ function Footer() {
             <h4 className="italic">Projects Delivere!</h4>
           </div>
           <div className="mb-10">
-            <h1 className="text-5xl fam-number font-thin">3</h1>
+            <h1 className="text-5xl fam-number font-thin">5</h1>
             <h4 className="italic">Years Experience</h4>
           </div>
           <div className="mb-10">
@@ -46,18 +47,19 @@ function Footer() {
       <div className="text-gray-400 flex flex-col md:flex-row justify-between">
         <div className="md:w-1/3 mb-5">
           <h1 className="text-gray-100 fam-logo font-bold tracking-wider text-2xl mb-5">
-            CRL<span className="text-cyan-500">S</span> CODE
+            REFORMAS C<span className="text-cyan-500">&</span>J
           </h1>
           <p className="md:leading-loose">
-            Loosely designed in
-            <span className="font-semibold"> Figma </span> and coded in
-            <span className="font-semibold"> Visual Studio Code </span>
-            by yours truly. Built with
-            <span className="font-semibold"> Next.js </span> and
-            <span className="font-semibold"> Tailwind CSS</span>, deployed with
-            <span className="font-semibold"> Vercel</span>. All text is set in
-            the
-            <span className="font-semibold"> Inter </span> typeface.
+            Detras de Servicios Generales
+            <span className="font-semibold"> C&J </span> hay un equipo de
+            <span className="font-semibold"> profesionales </span>
+            con años de experiencia con trabajo
+            <span className="font-semibold"> honesto </span> y de
+            <span className="font-semibold"> calidad</span>. Tenemos todo lo que
+            tu
+            <span className="font-semibold"> proyecto</span> necesita.
+            <br /> Todo
+            <span className="font-semibold"> Lima Norte </span>.
           </p>
           <p className="hidden Mmd:leading-loose">
             Soy un desarrollador creativo independiente. Realizo diseños de
@@ -71,7 +73,33 @@ function Footer() {
         <div className="mb-5">
           <h2 className="text-gray-200 text-2xl mb-5">Navegate</h2>
           <h4 className="leading-loose">
-            Home <br /> About <br /> Skills <br /> Work <br /> Contact
+            <Link
+              href={`/`}
+              className="py-5 bg-teal-500X hover:font-bold hover:-ml-1"
+            >
+              Home
+            </Link>
+            <br />
+            <Link
+              href={`/mayolica`}
+              className="py-5 bg-teal-500X hover:font-bold hover:-ml-1"
+            >
+              Mayolicas
+            </Link>
+            <br />
+            <Link
+              href={`/metales`}
+              className="py-5 bg-teal-500X hover:font-bold hover:-ml-1"
+            >
+              Metales
+            </Link>
+            <br />
+            <Link
+              href={`/racktv`}
+              className="py-5 bg-teal-500X hover:font-bold hover:-ml-1"
+            >
+              Rack TV
+            </Link>
           </h4>
         </div>
 
@@ -92,7 +120,7 @@ function Footer() {
                 d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
               />
             </svg>
-            <span className=" ml-3">carlossandev@gmail.com</span>
+            <span className=" ml-3">reformacyj@gmail.com</span>
             <br />
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -108,8 +136,7 @@ function Footer() {
                 d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
               />
             </svg>
-            <span className="fam-number ml-3">+39 380 183 6002</span> <br />            
-            
+            <span className="fam-number ml-3">01 939 065 454</span> <br />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -124,7 +151,7 @@ function Footer() {
                 d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z"
               />
             </svg>
-            <span className="fam-number ml-3">+51 990 441 430</span>
+            <span className="fam-number ml-3">+51 939 065 454</span>
           </div>
         </div>
 
@@ -202,9 +229,8 @@ function Footer() {
           </div>
         </div>
       </div>
-      <p className="hidden text-xs mb-5">
-        All Rights Reserved <span className="fam-number">© 2023 </span>
-      </p>
+
+      {/** COPYRIGHT */}
     </div>
   );
 }

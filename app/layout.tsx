@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Montserrat_Alternates, Raleway } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Montserrat_Alternates,
+  Raleway,
+} from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -11,7 +16,7 @@ const geistSans = Geist({
 
 const montseAlter = Montserrat_Alternates({
   weight: ["400"],
-  style:"normal",
+  style: "normal",
   variable: "--font-Montserrat",
   subsets: ["latin"],
 });
@@ -40,7 +45,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={` ${geistRaleway.className} antialiased`}>
-        <div className="w-full flex justify-center bg-cover bg-fixed bg-[50%] Xbg-[url('https://img.freepik.com/vector-gratis/fondo-abstracto-borroso_1107-166.jpg')] min-h-screen">
+        <div
+          id="sectionHome"
+          className="w-full flex justify-center bg-cover bg-fixed bg-[50%] Xbg-[url('https://img.freepik.com/vector-gratis/fondo-abstracto-borroso_1107-166.jpg')] min-h-screen"
+        >
           {children}
         </div>
         <section
@@ -58,6 +66,15 @@ export default function RootLayout({
             <Footer />
           </div>
         </section>
+
+        {/** FOOTER */}
+        <div className="BBbg-[#050505] bg-gray-50 text-gray-500 text-center text-sm py-4 ">
+          <h4 className="px-12 tracking-wider">
+            © <span className="fam-number font-extralight">2020-2026 </span>{" "}
+            Reformas C&J™ | All Rights Reserved.
+            <span className="hidden">Designed by CRLSCODE</span>
+          </h4>
+        </div>
       </body>
     </html>
   );
