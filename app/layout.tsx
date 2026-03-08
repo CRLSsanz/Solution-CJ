@@ -51,6 +51,7 @@ export default function RootLayout({
         >
           {children}
         </div>
+
         <section
           id="section6"
           className="bg-[#259ca0] flex"
@@ -67,7 +68,7 @@ export default function RootLayout({
           </div>
         </section>
 
-        {/** FOOTER */}
+        {/** COPYRIGHT */}
         <div className="BBbg-[#050505] bg-gray-50 text-gray-500 text-center text-sm py-4 ">
           <h4 className="px-12 tracking-wider">
             © <span className="fam-number font-extralight">2020-2026 </span>{" "}

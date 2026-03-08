@@ -4,18 +4,17 @@ function Header() {
   return (
     <section className="w-full">
       <div className="flex flex-col">
-        <div className="bg-gray-900 p-6">
-          <ul className="flex flex-row gap-x-4">
+        <div className="w-full bg-gray-900 p-5">
+          <ul className="flex flex-row gap-x-4 text-xs md:text-base">
             <li>HOME</li>
             <li>SERVICIOS</li>
             <li>ACERCA DE</li>
             <li>CONTACTO</li>
-            <li>REDES SOCIALES</li>
           </ul>
         </div>
 
-        <div className="bg-amber-400 p-16 flex flex-row justify-between ">
-          <div className="flex flex-row gap-3">
+        <div className="w-full bg-amber-400 p-5 md:p-16 flex flex-col md:flex-row justify-between">
+          <div className="flex flex-row gap-3 mb-5 md:mb-0">
             <div className="flex bg-gray-200 text-amber-600 rounded-full w-16 h-16">
               <svg
                 className="m-auto"
@@ -57,7 +56,7 @@ function Header() {
               <span className="text-2xl font-extralight fam-number">
                 939 065 454
               </span>
-              <span className="bg-gray-800 px-10 py-3 text-amber-200">
+              <span className="hidden md:block bg-gray-800 px-10 py-3 text-amber-200">
                 {" "}
                 WhatsApp
               </span>
