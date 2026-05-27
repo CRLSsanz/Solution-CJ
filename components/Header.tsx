@@ -8,6 +8,7 @@ function Header() {
           <ul className="flex flex-row gap-x-4 text-xs md:text-base">
             <li>HOME</li>
             <li>SERVICIOS</li>
+            <li>PRODUCTOS</li>
             <li>ACERCA DE</li>
             <li>CONTACTO</li>
           </ul>

@@ -1,3 +1,4 @@
+import { Navbar } from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 //bg-cover bg-fixed bg-[0%] bg-[url('/images/piggy-mobile.jpg')] min-h-screen
@@ -60,6 +61,14 @@ export default function Home() {
     },
   ];
 
+  const fondoPanal =
+    "https://raw.githubusercontent.com/CRLSsanz/trade/main/panal1.jpg";
+  const fondoDomotica =
+  "https://d1a9qnv764bsoo.cloudfront.net/stores/002/398/112/rte/Gemini_Generated_Image_3rmdxt3rmdxt3rmd.png";
+  const fondoCamaras =
+  "https://ibintel.es/videovigilancia.png"
+  const fondoMelamina =
+"https://milanicocinas.com/wp-content/uploads/2024/03/tipos-de-melamina-para-cocina.jpg"
   return (
     <section className="w-full flex flex-col justify-center items-center ">
       <div className="w-full h-[800] bg-cover Xbg-fixed bg-[50%] bg-[url('https://ceicid.es/wp-content/uploads/2023/07/banner-curso-mantenimiento-23.jpg')]">
@@ -75,7 +84,6 @@ export default function Home() {
                 locales
               </div>
 
-              
               <span className="bg-purple-700 text-xs md:text-sm py-1 px-2 uppercase md:tracking-wider">
                 Asesoramiento profesional sin compromiso
               </span>
@@ -95,7 +103,9 @@ export default function Home() {
       </div>
 
       <div className="w-full md:w-[1024] -mt-20 grid grid-cols-1 md:grid-cols-3 bg-zinc-50 text-gray-500 mb-20">
-        <div className="md:hidden py-5 font-semibold uppercase">Nuestros Servicios</div>
+        <div className="md:hidden py-5 font-semibold uppercase">
+          Nuestros Servicios
+        </div>
         {card1.map((item, index) => (
           <div key={index} className="flex flex-col">
             <div className="relative w-full bg-gray-200 h-80">
@@ -293,7 +303,9 @@ export default function Home() {
                 <span className="p-2 bg-gray-200 uppercase text-gray-600 font-bold">
                   {item.title}
                 </span>
-                <h1 className="hidden md:block font-bold my-5">{item.subtitle}</h1>
+                <h1 className="hidden md:block font-bold my-5">
+                  {item.subtitle}
+                </h1>
                 <h1 className="pt-5 md:pt-0">{item.text}</h1>
               </div>
 
@@ -308,6 +320,50 @@ export default function Home() {
           </div>
         ))}
       </div>
+
+      <div className="w-full fixed z-50 top-0">
+        <Navbar />
+      </div>
+
+      <section id="domotica"  className="w-full">
+        <div
+          className="min-h-screen bg-[#141414] text-gray-300"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${fondoDomotica})`,
+            backgroundSize: "cover",
+            //backgroundAttachment: "fixed",
+            backgroundPosition: "50%",
+          }}
+        >
+          <div className="">domotica</div>
+        </div>
+      </section>
+      <section id="melamina" className="w-full">
+        <div
+          className="min-h-screen bg-[#141414] text-gray-300  w-4/6"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${fondoMelamina})`,
+            backgroundSize: "cover",
+            //backgroundAttachment: "fixed",
+            backgroundPosition: "50%",
+          }}
+        >
+          <div className="w-4/5">melamina</div>
+        </div>
+      </section>
+      <section id="camaras" className="w-full">
+        <div
+          className="min-h-screen bg-[#141414] text-gray-300 w-full"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${fondoCamaras})`,
+            backgroundSize: "cover",
+            backgroundAttachment: "fixed",
+            backgroundPosition: "50%",
+          }}
+        >
+          <div className="XXw-80">camaras</div>
+        </div>
+      </section>
     </section>
   );
 }
