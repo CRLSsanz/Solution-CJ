@@ -69,6 +69,8 @@ export default function Home() {
   "https://ibintel.es/videovigilancia.png"
   const fondoMelamina =
 "https://milanicocinas.com/wp-content/uploads/2024/03/tipos-de-melamina-para-cocina.jpg"
+  const fondoCerrajeria = "https://www.cerrajerosdoshermanas.es/hero-locksmith.jpg"
+
   return (
     <section className="w-full flex flex-col justify-center items-center ">
       <div className="w-full h-[800] bg-cover Xbg-fixed bg-[50%] bg-[url('https://ceicid.es/wp-content/uploads/2023/07/banner-curso-mantenimiento-23.jpg')]">
@@ -340,7 +342,7 @@ export default function Home() {
       </section>
       <section id="melamina" className="w-full">
         <div
-          className="min-h-screen bg-[#141414] text-gray-300  w-4/6"
+          className="min-h-screen bg-[#141414] text-gray-300 lg:w-4/6"
           style={{
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${fondoMelamina})`,
             backgroundSize: "cover",
@@ -358,6 +360,19 @@ export default function Home() {
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${fondoCamaras})`,
             backgroundSize: "cover",
             backgroundAttachment: "fixed",
+            backgroundPosition: "50%",
+          }}
+        >
+          <div className="XXw-80">camaras</div>
+        </div>
+      </section>
+       <section id="cerajeria" className="w-full">
+        <div
+          className="min-h-screen bg-[#141414] text-gray-300 w-full"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${fondoPanal})`,
+            backgroundSize: "cover",
+            //backgroundAttachment: "fixed",
             backgroundPosition: "50%",
           }}
         >

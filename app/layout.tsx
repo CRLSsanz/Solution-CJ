@@ -6,7 +6,6 @@ import {
   Raleway,
 } from "next/font/google";
 import "./globals.css";
-import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const geistSans = Geist({
