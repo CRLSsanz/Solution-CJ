@@ -64,12 +64,12 @@ export default function Home() {
   const fondoPanal =
     "https://raw.githubusercontent.com/CRLSsanz/trade/main/panal1.jpg";
   const fondoDomotica =
-  "https://d1a9qnv764bsoo.cloudfront.net/stores/002/398/112/rte/Gemini_Generated_Image_3rmdxt3rmdxt3rmd.png";
-  const fondoCamaras =
-  "https://ibintel.es/videovigilancia.png"
+    "https://d1a9qnv764bsoo.cloudfront.net/stores/002/398/112/rte/Gemini_Generated_Image_3rmdxt3rmdxt3rmd.png";
+  const fondoCamaras = "https://ibintel.es/videovigilancia.png";
   const fondoMelamina =
-"https://milanicocinas.com/wp-content/uploads/2024/03/tipos-de-melamina-para-cocina.jpg"
-  const fondoCerrajeria = "https://www.cerrajerosdoshermanas.es/hero-locksmith.jpg"
+    "https://milanicocinas.com/wp-content/uploads/2024/03/tipos-de-melamina-para-cocina.jpg";
+  const fondoCerrajeria =
+    "https://www.cerrajerosdoshermanas.es/hero-locksmith.jpg";
 
   return (
     <section className="w-full flex flex-col justify-center items-center ">
@@ -103,7 +103,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <div className="w-full md:w-[1024] -mt-20 grid grid-cols-1 md:grid-cols-3 bg-zinc-50 text-gray-500 mb-20">
         <div className="md:hidden py-5 font-semibold uppercase">
           Nuestros Servicios
@@ -143,7 +142,6 @@ export default function Home() {
           </div>
         ))}
       </div>
-
       <div className="md:w-[1024] w-full px-5 mb-20">
         <div className="text-center mb-20">
           <h1 className="text-purple-600 font-bold text-2xl md:text-3xl mb-5">
@@ -280,7 +278,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <div className="w-full md:w-[1024] grid grid-cols-1 md:grid-cols-3 bg-zinc-50 text-gray-500 mb-20">
         {card2.map((item, index) => (
           <div key={index} className="flex flex-col">
@@ -322,12 +319,10 @@ export default function Home() {
           </div>
         ))}
       </div>
-
       <div className="w-full fixed z-50 top-0">
         <Navbar />
       </div>
-
-      <section id="domotica"  className="w-full">
+      <section id="domotica" className="w-full">
         <div
           className="min-h-screen bg-[#141414] text-gray-300"
           style={{
@@ -340,7 +335,7 @@ export default function Home() {
           <div className="">domotica</div>
         </div>
       </section>
-      <section id="melamina" className="w-full">
+      <section id="melaminaaa" className="w-full">
         <div
           className="min-h-screen bg-[#141414] text-gray-300 lg:w-4/6"
           style={{
@@ -366,7 +361,112 @@ export default function Home() {
           <div className="XXw-80">camaras</div>
         </div>
       </section>
-       <section id="cerajeria" className="w-full">
+      <section id="melamina" className="w-full">
+        <div
+          className="lg:min-h-screen bg-[#141414] text-gray-300 w-full"
+          style={{
+            //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${fondoPanal})`,
+            backgroundSize: "cover",
+            //backgroundAttachment: "fixed",
+            backgroundPosition: "50%",
+          }}
+        >
+          <div className="w-full lg:h-svh py-20 lg:py-0 flex flex-col items-center justify-center">
+            <div className="w-full lg:w-[1440] text-3xl text-center mb-5">
+              MELAMINA
+            </div>
+            <div className="w-full lg:w-[700] text-center mb-5">
+              Diseño y fabricación de muebles en melamina. Mantenimiento y
+              remodelacion para sus espacios u oficina, armado de closet y mas.
+            </div>
+
+            <div className="w-full lg:w-[1440] flex flex-col lg:flex-row gap-x-2">
+              <div className="relative w-full lg:w-1/3 h-[600]">
+                <Image
+                  src={`/images/melami1.jpg`} //"/images/electricidad.jpg"
+                  alt="Amigurumi"
+                  fill
+                  sizes=""
+                  //width={250}
+                  //height={200}
+                  style={{
+                    objectFit: "cover", // cover, contain, none
+                    objectPosition: "50% 50%",
+                    opacity: "50%",
+                  }}
+                />
+                <div className="absolute w-full bottom-0 bg-gray-900/60 p-7">
+                  <h1 className="uppercase mb-5 text-xl font-bold">Diseños</h1>
+                  <p className="mr-20">
+                    Nuestros diseños le ayudan a mejorar sus espacios con
+                    nuestros diferentes modelos en melamina para una ducra un
+                    closet o una habitacion
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-row lg:w-2/3 gap-x-2">
+                <div className="relative w-1/3 h-48 lg:h-[600]">
+                  <Image
+                    src={`/images/melami2.jpg`} //"/images/electricidad.jpg"
+                    alt="Amigurumi"
+                    fill
+                    sizes=""
+                    //width={250}
+                    //height={200}
+                    style={{
+                      objectFit: "cover", // cover, contain, none
+                      objectPosition: "50% 50%",
+                    }}
+                  />
+                  <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
+                    Albañilleria
+                  </h1>
+                </div>
+                <div className="relative w-1/3 h-48 lg:h-[600]">
+                  <Image
+                    src={`/images/melami3.jpg`} //"/images/electricidad.jpg"
+                    alt="Amigurumi"
+                    fill
+                    sizes=""
+                    //width={250}
+                    //height={200}
+                    style={{
+                      objectFit: "cover", // cover, contain, none
+                      objectPosition: "50% 50%",
+                      opacity: "50%",
+                    }}
+                  />
+                  <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
+                    Albañilleria
+                  </h1>
+                </div>
+                <div className="relative w-1/3 h-48 lg:h-[600]">
+                  <Image
+                    src={`/images/melami4.jpg`} //"/images/electricidad.jpg"
+                    alt="Amigurumi"
+                    fill
+                    sizes=""
+                    //width={250}
+                    //height={200}
+                    style={{
+                      objectFit: "cover", // cover, contain, none
+                      objectPosition: "50% 50%",
+                    }}
+                  />
+                  <div className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
+                    <h1>Diseños</h1>
+                    <p>
+                      mejora tus espacios con nuestros diferentes modelos en
+                      melamina para una ducra un closet o una habitacion
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>{" "}
+      <section id="cerajeria" className="w-full">
         <div
           className="min-h-screen bg-[#141414] text-gray-300 w-full"
           style={{

@@ -1,5 +1,6 @@
 "use client";
 import { Montserrat_Alternates, Oswald } from "next/font/google";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -131,26 +132,48 @@ export const Navbar = () => {
   return (
     <section className={` ${oswald.className} antialiased `}>
       <div className="w-full">
-        <nav className="fixed right-0 z-30 h-14 p-2 m-auto lg:h-full flex justify-between items-center Xbg-transparent bg-[#ccd0cf77] rounded-bl-md ">
+        <nav className="fixed right-0 z-30 h-14 p-2 text-gray-700 lg:h-full flex flex-col justify-center items-center Xbg-transparent bg-[#ccd0cf77] rounded-bl-md ">
           <button
             onClick={() => setNavbar(!navbar)}
-            className="z-50XX w-12 lg:w-14 h-14 text-gray-700 rounded-full active:bg-none active:bg-transparent active:animate-ping focus:outline-none flex justify-center items-center"
+            className="z-50XX w-12 lg:w-14 h-14 rounded-full active:bg-none active:bg-transparent active:animate-ping focus:outline-none flex justify-center items-center"
           >
             <div className="flex flex-col items-center">
               <svg
+                className="hidden"
                 width="30px"
+                height="30px"
+                fill="currentColor"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 290 290"
+              >
+                <g>
+                  <rect y="220" width="70" height="70" />
+                  <rect y="110" width="0" height="0" />
+                  <rect width="70" height="70" />
+                  <rect x="110" y="220" width="70" height="70" />
+                  <rect x="110" y="110" width="70" height="70" />
+                  <rect x="110" width="70" height="70" />
+                  <rect x="220" y="220" width="0" height="0" />
+                  <rect x="220" y="110" width="70" height="70" />
+                  <rect x="220" width="70" height="70" />
+                </g>
+              </svg>
+              <svg
+                width="35px"
+                height="35px"
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
-                transform="matrix(1, 0, 0, 1, 0, 0)"
               >
-                <path d="M2 5.99519C2 5.44556 2.44556 5 2.99519 5H11.0048C11.5544 5 12 5.44556 12 5.99519C12 6.54482 11.5544 6.99039 11.0048 6.99039H2.99519C2.44556 6.99039 2 6.54482 2 5.99519Z" />
-                <path d="M2 11.9998C2 11.4501 2.44556 11.0046 2.99519 11.0046H21.0048C21.5544 11.0046 22 11.4501 22 11.9998C22 12.5494 21.5544 12.9949 21.0048 12.9949H2.99519C2.44556 12.9949 2 12.5494 2 11.9998Z" />
-                <path d="M2.99519 17.0096C2.44556 17.0096 2 17.4552 2 18.0048C2 18.5544 2.44556 19 2.99519 19H15.0048C15.5544 19 16 18.5544 16 18.0048C16 17.4552 15.5544 17.0096 15.0048 17.0096H2.99519Z" />
+                <g>
+                  <path fill="none" d="M0 0H24V24H0z" />
+                  <path d="M11.189 13.157L12.57 21 4 21c-.552 0-1-.448-1-1v-5.398l8.189-1.445zM20 3c.552 0 1 .448 1 1v16c0 .552-.448 1-1 1h-5.398L11.428 3H20zM9.397 3l1.444 8.188L3 12.57 3 4c0-.552.448-1 1-1h5.397z" />
+                </g>
               </svg>
-              <h1 className="hidden lg:block">MENU</h1>
             </div>
           </button>
+          <h1 className="hidden lg:block mt-2">MENU</h1>
           <Link
             hidden
             href="/formulario"
@@ -172,109 +195,151 @@ export const Navbar = () => {
         </div>
         {/** MENU  */}
         <ul
-          className={`fixed z-50 text-white bg-[#222222ee] h-full w-6/6 min-hHH-[400px] transform transition-all duration-1000 flex flex-col rounded-b-md text-center
+          className={`fixed z-50 text-white bg-[#222222ee] h-full w-6/6 min-hHH-[400px] Xtransform Xtransition-all Xduration-200 flex flex-col rounded-b-md text-center
         ${
           navbar
-            ? " opacity-100 pointer-events-auto right-0"
-            : "opacity-0 pointer-events-none -right-5/6"
+            ? " opacity-100 pointer-events-auto right-0 duration-1000"
+            : "opacity-100 pointer-events-none -right-6/6 duration-initial"
         }`}
         >
-          {/** TITLE-1 */}
-          <div className="flex flex-row justify-between p-2">
-            <li></li>
-            <li className="flex flex-col items-center justify-center text-center">
-              <img hidden src="logo" width="50px" />
-              <span className="py-4 text-green-100 tracking-[5px] text-sm lg:text-base font-bold uppercase">
-                Nuestros <span className="text-yellow-300/60 ">servicios</span>
-              </span>
-            </li>
+          <div className="flex flex-row">
+            <div className="lg:w-20"></div>
+            <div className="w-full -mr-20 lg:mr-0">
+              {/** TITLE-1 */}
+              <div className="p-4">
+                <span className="py-4 text-green-100 tracking-[5px] text-sm lg:text-base font-bold uppercase">
+                  Nuestros{" "}
+                  <span className="text-yellow-300/60 ">servicios</span>
+                </span>
+              </div>
+              {/** LIST-1 */}
+              <div className="Xlg:w-[1800px] lg:w-full lg:m-auto text-gray-100 p-0 lg:py-16 grid grid-cols-4 lg:grid-cols-8 lg:gap-1">
+                {list.map((item, index) => (
+                  <li
+                    key={index}
+                    className="w-full h-50 lg:h-70 p-3 Xbg-gradient-to-r from-green-500/20 to-transparent hover:font-bold"
+                    style={{
+                      backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0.2)), url(/images/${item.ima})`,
+                      backgroundSize: "cover",
+                      //backgroundAttachment: "fixed",
+                      backgroundPosition: "50%",
+                    }}
+                  >
+                    {" "}
+                    <Link
+                      href={`#${item.link2}`}
+                      className="flex flex-row items-center text-2xl"
+                      onClick={() => setNavbar(!navbar)}
+                    >
+                      <h1 className="text-[10px] lg:text-base text-left uppercase tracking-widest">
+                        {item.title}
+                      </h1>
+                    </Link>
+                  </li>
+                ))}
+              </div>
+
+              {/** TITLE-2 */}
+              <li className="flex flex-col items-center justify-center border-b py-5 border-gray-700 text-center">
+                <img hidden src="logo" width="50px" />
+                <span className="pt-1 text-green-100 tracking-[5px] text-sm lg:text-base font-bold uppercase">
+                  our <span className="text-yellow-300/60 ">projects</span>
+                </span>
+              </li>
+              {/** LIST-2 */}
+              <div className="Xlg:w-[1800px] lg:w-full lg:m-auto text-gray-100 p-0 lg:py-16 grid grid-cols-4 lg:grid-cols-5 lg:gap-4">
+                {list2.map((item, index) => (
+                  <li
+                    key={index}
+                    className="w-full h-50 p-3 Xbg-gradient-to-r from-green-500/20 to-transparent hover:font-bold"
+                    style={{
+                      backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0.2)), url(/images/${item.ima})`,
+                      backgroundSize: "cover",
+                      //backgroundAttachment: "fixed",
+                      backgroundPosition: "50%",
+                    }}
+                  >
+                    {" "}
+                    <Link
+                      href={`#${item.link2}`}
+                      className="flex flex-row items-center text-2xl"
+                      onClick={() => setNavbar(!navbar)}
+                    >
+                      <h1 className="text-xs lg:text-base uppercase tracking-widest">
+                        {item.title}
+                      </h1>
+                    </Link>
+                  </li>
+                ))}
+              </div>
+
+              {/** LINEA */}
+              <p className="w-8 border-t-2 animate__animated animate__bounceInRight animate__slower animate__infinite"></p>
+            </div>
+
             {/** BOTON CERRAR */}
-            <li className="flex justify-center">
+            <li className="w-14 ml-5 lg:ml-0 lg:w-20 h-16 lg:h-svh flex flex-col justify-center items-center">
               <button
                 onClick={() => setNavbar(!navbar)}
-                className="w-10 h-10 text-gray-200 active:bg-none hover:rotate-90 hover:scale-75 transition-transform duration-500 active:animate-ping focus:outline-none flex justify-center items-center"
+                className="w-10 h-10 lg:m-2 text-gray-200 active:bg-none lg:hover:rotate-90 lg:hover:scale-75 transition-transform duration-500 active:rotate-90 active:scale-75 lg:active:animate-ping focus:outline-none flex justify-center items-center"
               >
                 {navbar ? (
                   <svg
-                    width="30px"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -0.5 21 21"
+                    version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
                   >
-                    <path d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z" />
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <g id="SVGRepo_iconCarrier">
+                      {" "}
+                      <title>close [#1511]</title>{" "}
+                      <desc>Created with Sketch.</desc> <defs> </defs>{" "}
+                      <g
+                        id="Page-1"
+                        stroke="none"
+                        strokeWidth="1"
+                        fill="none"
+                        fillRule="evenodd"
+                      >
+                        {" "}
+                        <g
+                          id="Dribbble-Light-Preview"
+                          transform="translate(-419.000000, -240.000000)"
+                          fill="currentColor"
+                        >
+                          {" "}
+                          <g
+                            id="icons"
+                            transform="translate(56.000000, 160.000000)"
+                          >
+                            {" "}
+                            <polygon
+                              id="close-[#1511]"
+                              points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446"
+                            >
+                              {" "}
+                            </polygon>{" "}
+                          </g>{" "}
+                        </g>{" "}
+                      </g>{" "}
+                    </g>
                   </svg>
                 ) : (
                   <span className="text-xl"></span>
                 )}
               </button>
+              <span className="text-sm uppercase hidden lg:block">close</span>
             </li>
           </div>
-
-          {/** LIST-1 */}
-          <div className="Xlg:w-[1800px] lg:w-full lg:m-auto text-gray-100 p-0 lg:py-16 grid grid-cols-4 lg:grid-cols-5 lg:gap-4">
-            {list.map((item, index) => (
-              <li
-                key={index}
-                className="w-full h-50 p-3 Xbg-gradient-to-r from-green-500/20 to-transparent hover:font-bold"
-                style={{
-                  backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0.2)), url(/images/${item.ima})`,
-                  backgroundSize: "cover",
-                  //backgroundAttachment: "fixed",
-                  backgroundPosition: "50%",
-                }}
-              >
-                {" "}
-                <Link
-                  href={`#${item.link2}`}
-                  className="flex flex-row items-center text-2xl"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  <h1 className="text-[10px] lg:text-base text-left uppercase tracking-widest">
-                    {item.title}
-                  </h1>
-                </Link>
-              </li>
-            ))}
-          </div>
-          {/** TITLE-2 */}
-          <li className="flex flex-col items-center justify-center border-b py-5 border-gray-700 text-center">
-            <img hidden src="logo" width="50px" />
-            <span className="pt-1 text-green-100 tracking-[5px] text-sm lg:text-base font-bold uppercase">
-              our <span className="text-yellow-300/60 ">projects</span>
-            </span>
-          </li>
-          {/** LIST-2 */}
-          <div className="Xlg:w-[1800px] lg:w-full lg:m-auto text-gray-100 p-0 lg:py-16 grid grid-cols-4 lg:grid-cols-5 lg:gap-4">
-            {list2.map((item, index) => (
-              <li
-                key={index}
-                className="w-full h-50 p-3 Xbg-gradient-to-r from-green-500/20 to-transparent hover:font-bold"
-                style={{
-                  backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0.2)), url(/images/${item.ima})`,
-                  backgroundSize: "cover",
-                  //backgroundAttachment: "fixed",
-                  backgroundPosition: "50%",
-                }}
-              >
-                {" "}
-                <Link
-                  href={`#${item.link2}`}
-                  className="flex flex-row items-center text-2xl"
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  <h1 className="text-xs lg:text-base uppercase tracking-widest">
-                    {item.title}
-                  </h1>
-                </Link>
-              </li>
-            ))}
-          </div>
-          {/** LINEA */}
-          <p className="w-8 border-t-2 animate__animated animate__bounceInRight animate__slower animate__infinite"></p>
-          <li className="py-9 text-gray-200 text-xs border-t border-gray-700 text-center">
-            Copyright <span className="font-numero font-light">@ 2023</span>{" "}
-            Inc. All rights reserved.{" "}
-          </li>
+          <div></div>
         </ul>
       </div>
     </section>
