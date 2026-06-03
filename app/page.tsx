@@ -61,6 +61,9 @@ export default function Home() {
     },
   ];
 
+  const fondoHome =
+    "https://decorexpro.com/images/article/orig/2017/12/odnokomnatnaya-kvartira-v-stile-loft-primery-oformleniya-1.jpg";
+  //home2 "https://joseph.cl/assets/img/heroes/hero-remodelaciones-desktop-1920.jpg";
   const fondoPanal =
     "https://raw.githubusercontent.com/CRLSsanz/trade/main/panal1.jpg";
   const fondoDomotica =
@@ -73,7 +76,7 @@ export default function Home() {
 
   return (
     <section className="w-full flex flex-col justify-center items-center ">
-      <div className="w-full h-[800] bg-cover Xbg-fixed bg-[50%] bg-[url('https://ceicid.es/wp-content/uploads/2023/07/banner-curso-mantenimiento-23.jpg')]">
+      <div className="hidden w-full h-[800] bg-cover Xbg-fixed bg-[50%] bg-[url('https://ceicid.es/wp-content/uploads/2023/07/banner-curso-mantenimiento-23.jpg')]">
         <div className="w-full flex justify-center items-center h-full bg-black/50 ">
           <div className="md:w-[1024] w-full">
             <div className="md:w-[500] w-full px-5 md:px-0 font-bold -mt-36">
@@ -103,7 +106,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full md:w-[1024] -mt-20 grid grid-cols-1 md:grid-cols-3 bg-zinc-50 text-gray-500 mb-20">
+      <div className="hidden w-full md:w-[1024] -mt-20 Xgrid grid-cols-1 md:grid-cols-3 bg-zinc-50 text-gray-500 mb-20">
         <div className="md:hidden py-5 font-semibold uppercase">
           Nuestros Servicios
         </div>
@@ -142,7 +145,7 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <div className="md:w-[1024] w-full px-5 mb-20">
+      <div className="hidden md:w-[1024] w-full px-5 mb-20">
         <div className="text-center mb-20">
           <h1 className="text-purple-600 font-bold text-2xl md:text-3xl mb-5">
             ¿Por qué elegir{" "}
@@ -278,7 +281,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full md:w-[1024] grid grid-cols-1 md:grid-cols-3 bg-zinc-50 text-gray-500 mb-20">
+      <div className="hidden w-full md:w-[1024] Xgrid grid-cols-1 md:grid-cols-3 bg-zinc-50 text-gray-500 mb-20">
         {card2.map((item, index) => (
           <div key={index} className="flex flex-col">
             <div className="relative w-full bg-gray-200 h-80">
@@ -322,6 +325,92 @@ export default function Home() {
       <div className="w-full fixed z-50 top-0">
         <Navbar />
       </div>
+      <section id="home" className="w-full">
+        <div
+          className="min-h-screen bg-[#141414] text-gray-300"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0)), url(${fondoHome})`,
+            backgroundSize: "cover",
+            //backgroundAttachment: "fixed",
+            backgroundPosition: "35%",
+          }}
+        >
+          <div className="w-full h-screen flex flex-col items-center justify-between font-bold p-5 lg:p-0 lg:py-5">
+            <div className="w-full lg:w-[1440] flex flex-row justify-between">
+              <div className="hidden lg:flex flex-row gap-4 uppercase text-sm">
+                <div>servicios</div>
+                <div>nosotros</div>
+                <div>proyectos</div>
+                <div>contacto</div>
+              </div>
+              <div className="">999 888 777</div>
+            </div>
+
+            <div className="w-full lg:w-[1440] ">
+              <div className="lg:w-[600] text-3xl lg:text-6xl mb-5 lg:mb-20 uppercase text-cyan-500">
+                Reformas y remodelacion
+              </div>
+              <div className="lg:w-[600] text-1xl lg:text-3xl">
+                Reformas que transforman tu hogar o negocio
+              </div>
+            </div>
+            <div className="w-full lg:w-[1440] ">
+              <div className="lg:w-[600] text-3xl lg:text-6xl bg-gray-600/80 py-20 p-5 mb-5">
+                23
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="electricidad" className="w-full">
+        <div
+          className="min-h-screen bg-[#141414] text-gray-300"
+          style={
+            {
+              //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/electricidad1.jpg)`,
+              //backgroundSize: "cover",
+              //backgroundAttachment: "fixed",
+              //backgroundPosition: "50%",
+            }
+          }
+        >
+          <div className="w-full flex lg:flex-row flex-col">
+            <div className="w-1/2 flex flex-col px-5 py-10 lg:py-20">
+              <div className="text-4xl mb-10 lg:mb-20 lg:ml-20">
+                Electricidad
+              </div>
+              <div className="lg:w-[400]">
+                Brindamos servicios de electricidad desde instalaciones
+                domiciliarias hasta proyectos comerciales. Incorporamos la
+                tecnología en tu residencia mediante la domótica.
+              </div>
+              <div className="relative w-96 bg-yellow-400 h-96">
+                <Image
+                  src="/images/electri4.jpg" //"/images/electricidad.jpg"
+                  alt="electricidad"
+                  fill
+                  sizes=""
+                  //width={450}
+                  //height={400}
+                  style={{
+                    objectFit: "cover", // cover, contain, none
+                    objectPosition: "50% 50%",
+                  }}
+                />
+              </div>
+            </div>
+            <div
+              className="w-full lg:w-1/2 h-80 lg:min-h-screen bg-[#141414] text-gray-300"
+              style={{
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(/images/electricidad1.jpg)`,
+                backgroundSize: "cover",
+                //backgroundAttachment: "fixed",
+                backgroundPosition: "50%",
+              }}
+            ></div>
+          </div>
+        </div>
+      </section>
       <section id="domotica" className="w-full">
         <div
           className="min-h-screen bg-[#141414] text-gray-300"
