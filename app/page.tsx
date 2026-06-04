@@ -1,7 +1,15 @@
 import { Navbar } from "@/components/Navbar";
+import { Oswald } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 //bg-cover bg-fixed bg-[0%] bg-[url('/images/piggy-mobile.jpg')] min-h-screen
+
+const oswald = Oswald({
+  weight: ["400"],
+  style: "normal",
+  variable: "--font-Oswald",
+  subsets: ["latin"],
+});
 
 export default function Home() {
   const card1 = [
@@ -343,7 +351,7 @@ export default function Home() {
                 <div>proyectos</div>
                 <div>contacto</div>
               </div>
-              <div className="">999 888 777</div>
+              <div className="w-full flex justify-end pr-10" style={{ font:"--font-Oswald" }}>904 150 352</div>
             </div>
 
             <div className="w-full lg:w-[1440] ">
@@ -362,7 +370,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="electricidad" className="w-full">
+
+      <section id="electricidad" className={` ${oswald.className} antialiased w-full`}>
         <div
           className="min-h-screen bg-[#141414] text-gray-300"
           style={
@@ -375,16 +384,16 @@ export default function Home() {
           }
         >
           <div className="w-full flex lg:flex-row flex-col">
-            <div className="w-1/2 flex flex-col px-5 py-10 lg:py-20">
-              <div className="text-4xl mb-10 lg:mb-20 lg:ml-20">
+            <div className="w-full lg:w-1/2 flex flex-col Xitems-center px-5 py-10 lg:py-20">
+              <div className="text-4xl mb-10 lg:mb-20 lg:ml-20 tracking-widest">
                 Electricidad
               </div>
-              <div className="lg:w-[400]">
+              <div className="lg:w-[400] mb-10 tracking-wider">
                 Brindamos servicios de electricidad desde instalaciones
                 domiciliarias hasta proyectos comerciales. Incorporamos la
                 tecnología en tu residencia mediante la domótica.
               </div>
-              <div className="relative w-96 bg-yellow-400 h-96">
+              <div className="relative w-full lg:w-96 px-5 h-80 lg:h-96">
                 <Image
                   src="/images/electri4.jpg" //"/images/electricidad.jpg"
                   alt="electricidad"
@@ -400,7 +409,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="w-full lg:w-1/2 h-80 lg:min-h-screen bg-[#141414] text-gray-300"
+              className="w-full lg:w-1/2 h-[600] lg:min-h-screen bg-[#141414] text-gray-300 -mt-20 lg:mt-0"
               style={{
                 backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(/images/electricidad1.jpg)`,
                 backgroundSize: "cover",
