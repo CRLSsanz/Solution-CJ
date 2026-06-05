@@ -74,9 +74,6 @@ export default function Home() {
   //home2 "https://joseph.cl/assets/img/heroes/hero-remodelaciones-desktop-1920.jpg";
   const fondoPanal =
     "https://raw.githubusercontent.com/CRLSsanz/trade/main/panal1.jpg";
-  const fondoDomotica =
-    "https://d1a9qnv764bsoo.cloudfront.net/stores/002/398/112/rte/Gemini_Generated_Image_3rmdxt3rmdxt3rmd.png";
-  const fondoCamaras = "https://ibintel.es/videovigilancia.png";
   const fondoMelamina =
     "https://milanicocinas.com/wp-content/uploads/2024/03/tipos-de-melamina-para-cocina.jpg";
   const fondoCerrajeria =
@@ -351,7 +348,12 @@ export default function Home() {
                 <div>proyectos</div>
                 <div>contacto</div>
               </div>
-              <div className="w-full flex justify-end pr-10" style={{ font:"--font-Oswald" }}>904 150 352</div>
+              <div
+                className="w-full flex justify-end pr-10"
+                style={{ font: "--font-Oswald" }}
+              >
+                904 150 352
+              </div>
             </div>
 
             <div className="w-full lg:w-[1440] ">
@@ -370,8 +372,65 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section id="camaras" className="w-full">
+        <div
+          className="min-h-screen bg-[#141414] text-gray-300 w-full"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/camaras/fondo.jpg')`,
+            backgroundSize: "cover",
+            //backgroundAttachment: "fixed",
+            backgroundPosition: "50%",
+          }}
+        >
+          <div className="XXw-80">camaras</div>
+        </div>
+      </section>
 
-      <section id="electricidad" className={` ${oswald.className} antialiased w-full`}>
+      <section id="cerrajeria" className="w-full">
+        <div
+          className="min-h-screen bg-[#141414] text-gray-300 w-full"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/cerrajeria/fondo.jpg')`,
+            backgroundSize: "cover",
+            //backgroundAttachment: "fixed",
+            backgroundPosition: "50%",
+          }}
+        >
+          <div className="XXw-80">camaras</div>
+        </div>
+      </section>
+
+      <section id="domotica" className="w-full">
+        <div
+          className="min-h-screen bg-[#141414] text-gray-300"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/domotica/fondo.jpg')`,
+            backgroundSize: "cover",
+            //backgroundAttachment: "fixed",
+            backgroundPosition: "50%",
+          }}
+        >
+          <div className="">domotica</div>
+        </div>
+      </section>
+      <section id="drywall" className="w-full">
+        <div
+          className="min-h-screen bg-[#141414] text-gray-300"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/drywall/fondo.jpg')`,
+            backgroundSize: "cover",
+            //backgroundAttachment: "fixed",
+            backgroundPosition: "50%",
+          }}
+        >
+          <div className="">Drywall</div>
+        </div>
+      </section>
+
+      <section
+        id="electricidad"
+        className={` ${oswald.className} antialiased w-full`}
+      >
         <div
           className="min-h-screen bg-[#141414] text-gray-300"
           style={
@@ -411,7 +470,7 @@ export default function Home() {
             <div
               className="w-full lg:w-1/2 h-[600] lg:min-h-screen bg-[#141414] text-gray-300 -mt-20 lg:mt-0"
               style={{
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(/images/electricidad1.jpg)`,
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(/images/electricidad/fondo.jpg)`,
                 backgroundSize: "cover",
                 //backgroundAttachment: "fixed",
                 backgroundPosition: "50%",
@@ -420,45 +479,21 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="domotica" className="w-full">
-        <div
-          className="min-h-screen bg-[#141414] text-gray-300"
-          style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${fondoDomotica})`,
-            backgroundSize: "cover",
-            //backgroundAttachment: "fixed",
-            backgroundPosition: "50%",
-          }}
-        >
-          <div className="">domotica</div>
-        </div>
-      </section>
-      <section id="melaminaaa" className="w-full">
-        <div
-          className="min-h-screen bg-[#141414] text-gray-300 lg:w-4/6"
-          style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${fondoMelamina})`,
-            backgroundSize: "cover",
-            //backgroundAttachment: "fixed",
-            backgroundPosition: "50%",
-          }}
-        >
-          <div className="w-4/5">melamina</div>
-        </div>
-      </section>
-      <section id="camaras" className="w-full">
+
+      <section id="gasfiteria" className="w-full">
         <div
           className="min-h-screen bg-[#141414] text-gray-300 w-full"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${fondoCamaras})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/gasfiteria/fondo.jpg')`,
             backgroundSize: "cover",
-            backgroundAttachment: "fixed",
+            //backgroundAttachment: "fixed",
             backgroundPosition: "50%",
           }}
         >
-          <div className="XXw-80">camaras</div>
+          <div className="XXw-80">Gasfiteria</div>
         </div>
       </section>
+
       <section id="melamina" className="w-full">
         <div
           className="lg:min-h-screen bg-[#141414] text-gray-300 w-full"
@@ -481,8 +516,8 @@ export default function Home() {
             <div className="w-full lg:w-[1440] flex flex-col lg:flex-row gap-x-2">
               <div className="relative w-full lg:w-1/3 h-[600]">
                 <Image
-                  src={`/images/melami1.jpg`} //"/images/electricidad.jpg"
-                  alt="Amigurumi"
+                  src={`/images/melamina/fondo.jpg`} //"/images/electricidad.jpg"
+                  alt="01"
                   fill
                   sizes=""
                   //width={250}
@@ -505,8 +540,8 @@ export default function Home() {
               <div className="flex flex-row lg:w-2/3 gap-x-2">
                 <div className="relative w-1/3 h-48 lg:h-[600]">
                   <Image
-                    src={`/images/melami2.jpg`} //"/images/electricidad.jpg"
-                    alt="Amigurumi"
+                    src={`/images/melamina/02.jpg`} //"/images/electricidad.jpg"
+                    alt="02"
                     fill
                     sizes=""
                     //width={250}
@@ -522,8 +557,8 @@ export default function Home() {
                 </div>
                 <div className="relative w-1/3 h-48 lg:h-[600]">
                   <Image
-                    src={`/images/melami3.jpg`} //"/images/electricidad.jpg"
-                    alt="Amigurumi"
+                    src={`/images/melamina/03.jpg`} //"/images/electricidad.jpg"
+                    alt="03"
                     fill
                     sizes=""
                     //width={250}
@@ -540,8 +575,8 @@ export default function Home() {
                 </div>
                 <div className="relative w-1/3 h-48 lg:h-[600]">
                   <Image
-                    src={`/images/melami4.jpg`} //"/images/electricidad.jpg"
-                    alt="Amigurumi"
+                    src={`/images/melamina/04.jpg`} //"/images/electricidad.jpg"
+                    alt="04"
                     fill
                     sizes=""
                     //width={250}
@@ -563,18 +598,60 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>{" "}
-      <section id="cerajeria" className="w-full">
+      </section>
+
+      <section id="pintura" className="w-full">
         <div
-          className="min-h-screen bg-[#141414] text-gray-300 w-full"
+          className="min-h-screen bg-[#141414] text-gray-300 lg:w-6/6"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${fondoPanal})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/pintura/fondo.jpg)`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
             backgroundPosition: "50%",
           }}
         >
-          <div className="XXw-80">camaras</div>
+          <div className="w-4/5">Pintura</div>
+        </div>
+      </section>
+            <section id="mayolica" className="w-full">
+        <div
+          className="min-h-screen bg-[#141414] text-gray-300 lg:w-4/6"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/mayolica/fondo.jpg)`,
+            backgroundSize: "cover",
+            //backgroundAttachment: "fixed",
+            backgroundPosition: "50%",
+          }}
+        >
+          <div className="w-4/5">Mayolica</div>
+        </div>
+      </section>
+
+      <section id="metalica" className="w-full">
+        <div
+          className="min-h-screen bg-[#272727] text-gray-300 lg:w-6/6"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/metales/fondo.jpg)`,
+            backgroundSize: "cover",
+            //backgroundAttachment: "fixed",
+            backgroundPosition: "50%",
+          }}
+        >
+          <div className="w-4/5">Metalica</div>
+        </div>
+      </section>
+
+      <section id="general" className="w-full">
+        <div
+          className="min-h-screen bg-[#141414] text-gray-300 lg:w-6/6"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/rack/fondo.jpg)`,
+            backgroundSize: "cover",
+            //backgroundAttachment: "fixed",
+            backgroundPosition: "50%",
+          }}
+        >
+          <div className="w-4/5">Rack para tv</div>
         </div>
       </section>
     </section>

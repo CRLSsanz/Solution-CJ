@@ -27,106 +27,62 @@ export const Navbar = () => {
   const list = [
     {
       id: "01",
-      title: "Electricidad",
-      text: "Brindamos servicios de electricidad desde instalaciones domiciliarias hasta proyectos comerciales. Incorporamos la tecnología en tu residencia mediante la domótica.",
-      link: "+ info servicio electrico",
-      link2: "electricidad",
-      ima: "electricidad.jpg",
+      title: "Camaras de vigilancia",
+      link: "camaras",
     },
     {
       id: "02",
-      title: "camara de vigilancia",
-      text: "Transforma tus espacios, ampliacion y remodelacion de oficinas, casas, departamentos. Tendencia actual en decoracion de interiores.",
-      link: "+ info servicio drywall",
-      link2: "drywall",
-      ima: "drywall.jpg",
+      title: "Cerrajeria",
+      link: "cerrajeria",
     },
     {
       id: "03",
-      title: "Melamina",
-      text: "Diseño y fabricación de muebles en melamina. Mantenimiento y remodelacion para sus espacios u oficina, armado de closet y mas.",
-      link: "+ info servicio melamina",
-      link2: "melamina",
-      ima: "melamina.jpg",
+      title: "Domotica",
+      link: "domotica",
     },
     {
       id: "04",
-      title: "Pintura",
-      subtitle: "Interior y Exterior",
-      text: "Ofrecemos soluciones personalizadas para cualquier necesidad de pintura para mejorar la apariencia de tu vivienda o darle un nuevo look a tu oficina.",
-      link: "+ info servicio pintura",
-      link2: "pintura",
-      ima: "pintura.jpg",
+      title: "Drywall",
+      link: "drywall",
     },
     {
       id: "05",
-      title: "instalacion de ract tv ",
-      subtitle: "Instalacion de Tanques",
-      text: "Servicio de gasfiteria en general ofrecemos inspección, reparación e instalación de sanitarios y tuberias en cualquier ambiente de su vivienda o negocio.",
-      link: "+ info servicio gasfiteria",
-      link2: "gasfiteria",
-      ima: "gasfiteria.jpg",
+      title: "Electricidad",
+      link: "electricidad",
     },
     {
       id: "06",
-      title: "Vigilancia",
-      subtitle: "Camaras de Seguridad",
-      text: "Cuida lo que mas quieres desde cualquier lugar remoto con un sistema profesional de video vigilancia de alta calidad para tu hogar o negocio.",
-      link: "+ info servicio vigilancia",
-      link2: "camara",
-      ima: "camara.jpg",
+      title: "Gasfiteria",
+      link: "gasfiteria",
     },
     {
       id: "07",
-      title: "Electricidad",
-      text: "Brindamos servicios de electricidad desde instalaciones domiciliarias hasta proyectos comerciales. Incorporamos la tecnología en tu residencia mediante la domótica.",
-      link: "+ info servicio electrico",
-      link2: "electricidad",
-      ima: "electricidad.jpg",
+      title: "Melamina",
+      link: "melamina",
     },
     {
       id: "08",
-      title: "Drywall",
-      text: "Transforma tus espacios, ampliacion y remodelacion de oficinas, casas, departamentos. Tendencia actual en decoracion de interiores.",
-      link: "+ info servicio drywall",
-      link2: "drywall",
-      ima: "drywall.jpg",
+      title: "Pintura",
+      link: "pintura",
     },
   ];
   const list2 = [
     {
       id: "01",
-      title: "Electricidad",
-      text: "Brindamos servicios de electricidad desde instalaciones domiciliarias hasta proyectos comerciales. Incorporamos la tecnología en tu residencia mediante la domótica.",
-      link: "+ info servicio electrico",
-      link2: "electricidad",
-      ima: "electricidad.jpg",
+      title: "Enchapado mayolica",
+      link: "mayolica",
     },
     {
       id: "02",
-      title: "Drywall",
-      text: "Transforma tus espacios, ampliacion y remodelacion de oficinas, casas, departamentos. Tendencia actual en decoracion de interiores.",
-      link: "+ info servicio drywall",
-      link2: "drywall",
-      ima: "drywall.jpg",
+      title: "Metalica",
+      link: "metalica",
     },
     {
       id: "03",
-      title: "Melamina",
-      text: "Diseño y fabricación de muebles en melamina. Mantenimiento y remodelacion para sus espacios u oficina, armado de closet y mas.",
-      link: "+ info servicio melamina",
-      link2: "melamina",
-      ima: "melamina.jpg",
+      title: "Instalacion de Rack, Alarmas, Muebles, Cuadros",
+      link: "general",
     },
-    {
-      id: "04",
-      title: "camara de vigilancia",
-      subtitle: "Interior y Exterior",
-      text: "Ofrecemos soluciones personalizadas para cualquier necesidad de pintura para mejorar la apariencia de tu vivienda o darle un nuevo look a tu oficina.",
-      link: "+ info servicio pintura",
-      link2: "camaras",
-      ima: "Xpintura.jpg",
-    },
+    
   ];
 
   return (
@@ -219,7 +175,7 @@ export const Navbar = () => {
                     key={index}
                     className="w-full h-50 lg:h-70 p-3 Xbg-gradient-to-r from-green-500/20 to-transparent hover:font-bold"
                     style={{
-                      backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0.2)), url(/images/${item.ima})`,
+                      backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0.2)), url(/images/${item.link}/bar.jpg)`,
                       backgroundSize: "cover",
                       //backgroundAttachment: "fixed",
                       backgroundPosition: "50%",
@@ -227,7 +183,7 @@ export const Navbar = () => {
                   >
                     {" "}
                     <Link
-                      href={`#${item.link2}`}
+                      href={`#${item.link}`}
                       className="flex flex-row items-center text-2xl"
                       onClick={() => setNavbar(!navbar)}
                     >
@@ -253,7 +209,7 @@ export const Navbar = () => {
                     key={index}
                     className="w-full h-50 p-3 Xbg-gradient-to-r from-green-500/20 to-transparent hover:font-bold"
                     style={{
-                      backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0.2)), url(/images/${item.ima})`,
+                      backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0.2)), url(/images/${item.link}/bar.jpg)`,
                       backgroundSize: "cover",
                       //backgroundAttachment: "fixed",
                       backgroundPosition: "50%",
@@ -261,7 +217,7 @@ export const Navbar = () => {
                   >
                     {" "}
                     <Link
-                      href={`#${item.link2}`}
+                      href={`#${item.link}`}
                       className="flex flex-row items-center text-2xl"
                       onClick={() => setNavbar(!navbar)}
                     >
