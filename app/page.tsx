@@ -330,9 +330,10 @@ export default function Home() {
       <div className="w-full fixed z-50 top-0">
         <Navbar />
       </div>
+
       <section id="home" className="w-full">
         <div
-          className="min-h-screen bg-[#141414] text-gray-300"
+          className="h-screen bg-[#141414] text-gray-300"
           style={{
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0)), url(${fondoHome})`,
             backgroundSize: "cover",
@@ -349,8 +350,7 @@ export default function Home() {
                 <div>contacto</div>
               </div>
               <div
-                className="w-full flex justify-end pr-10"
-                style={{ font: "--font-Oswald" }}
+                className={` ${oswald.className} antialiased w-full flex justify-end pr-10`}
               >
                 904 150 352
               </div>
@@ -360,13 +360,41 @@ export default function Home() {
               <div className="lg:w-[600] text-3xl lg:text-6xl mb-5 lg:mb-20 uppercase text-cyan-500">
                 Reformas y remodelacion
               </div>
-              <div className="lg:w-[600] text-1xl lg:text-3xl">
-                Reformas que transforman tu hogar o negocio
+              <div className="lg:w-[600] text-2xl lg:text-3xl">
+                <span className="font-bold">Adaptacion de viviendas</span>{" "}
+                <br />
+                Remorelaciones internas, <br />
+                cocinas, baños, muros y red <br />
+                electrica.
               </div>
             </div>
+
             <div className="w-full lg:w-[1440] ">
-              <div className="lg:w-[600] text-3xl lg:text-6xl bg-gray-600/80 py-20 p-5 mb-5">
-                23
+              <Link
+                href="/"
+                className="px-10 py-3 border-2 border-gray-200 bg-gray-800/50 text-xl uppercase tracking-widest"
+              >
+                {" "}
+                Contactanos{" "}
+              </Link>
+            </div>
+
+            <div className="w-full lg:w-[1440] text-teal-500">
+              <div className="lg:w-[600]  text-sm lg:text-xl bg-gray-800 py-14 p-10 mb-5 flex lg:flex-row flex-col gap-7">
+                <div className="">
+                  <span>Experiencia</span> <br />
+                  <span className="text-5xl">23</span>
+                </div>
+
+                <div className="">
+                  <span>Clientes</span> <br />
+                  <span className="text-5xl">23</span>
+                </div>
+
+                <div className="">
+                  <span>Proyectos</span> <br />
+                  <span className="text-5xl">13</span>
+                </div>
               </div>
             </div>
           </div>
@@ -613,7 +641,7 @@ export default function Home() {
           <div className="w-4/5">Pintura</div>
         </div>
       </section>
-            <section id="mayolica" className="w-full">
+      <section id="mayolica" className="w-full">
         <div
           className="min-h-screen bg-[#141414] text-gray-300 lg:w-4/6"
           style={{

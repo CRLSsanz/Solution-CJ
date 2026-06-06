@@ -140,7 +140,7 @@ export const Navbar = () => {
         </nav>
 
         {/** FONDO NEGRO */}
-        <div
+        <div hidden
           className={`fixed z-40 top-0 w-full h-screen bg-gray-500/50 ${
             navbar
               ? " opacity-100 pointer-events-auto"
@@ -151,10 +151,10 @@ export const Navbar = () => {
         </div>
         {/** MENU  */}
         <ul
-          className={`fixed z-50 text-white bg-[#222222ee] h-full w-6/6 min-hHH-[400px] Xtransform Xtransition-all Xduration-200 flex flex-col rounded-b-md text-center
+          className={`fixed z-50 text-white bg-[#222222fe] h-full w-6/6 min-hHH-[400px] Xtransform Xtransition-all Xduration-200 flex flex-col rounded-b-md text-center
         ${
           navbar
-            ? " opacity-100 pointer-events-auto right-0 duration-1000"
+            ? " opacity-100 pointer-events-auto right-0 duration-500"
             : "opacity-100 pointer-events-none -right-6/6 duration-initial"
         }`}
         >
