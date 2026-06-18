@@ -52,3 +52,17 @@ body {
 .fam-home {
   font-family: "Bebas Neue", sans-serif;
 }
+
+h1{
+color: aqua;
+
+}
+
+h2{
+color: teal;
+font-weight: 700;
+font-size: 20px;
+font-family: "Oswald", sans-serif;
+letter-spacing: 0.1em;
+
+}
