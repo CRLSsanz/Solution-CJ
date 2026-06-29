@@ -82,13 +82,12 @@ export const Navbar = () => {
       title: "Instalacion de Rack, Alarmas, Muebles, Cuadros",
       link: "general",
     },
-    
   ];
 
   return (
     <section className={` ${oswald.className} antialiased `}>
       <div className="w-full">
-        <nav className="fixed right-0 z-30 h-14 p-2 text-gray-700 lg:h-full flex flex-col justify-center items-center Xbg-transparent bg-[#ccd0cf77] rounded-bl-md ">
+        <nav className="fixed right-0 z-30 h-14 p-2 text-gray-300 lg:h-full flex flex-col justify-center items-center Xbg-transparent lg:bg-[#ccd0cf77] bg-[#11111177] rounded-bl-md ">
           <button
             onClick={() => setNavbar(!navbar)}
             className="z-50XX w-12 lg:w-14 h-14 rounded-full active:bg-none active:bg-transparent active:animate-ping focus:outline-none flex justify-center items-center"
@@ -127,9 +126,9 @@ export const Navbar = () => {
                   <path d="M11.189 13.157L12.57 21 4 21c-.552 0-1-.448-1-1v-5.398l8.189-1.445zM20 3c.552 0 1 .448 1 1v16c0 .552-.448 1-1 1h-5.398L11.428 3H20zM9.397 3l1.444 8.188L3 12.57 3 4c0-.552.448-1 1-1h5.397z" />
                 </g>
               </svg>
+              <h1 className="hidden lg:block mt-2">MENU</h1>
             </div>
           </button>
-          <h1 className="hidden lg:block mt-2">MENU</h1>
           <Link
             hidden
             href="/formulario"
@@ -140,7 +139,8 @@ export const Navbar = () => {
         </nav>
 
         {/** FONDO NEGRO */}
-        <div hidden
+        <div
+          hidden
           className={`fixed z-40 top-0 w-full h-screen bg-gray-500/50 ${
             navbar
               ? " opacity-100 pointer-events-auto"
