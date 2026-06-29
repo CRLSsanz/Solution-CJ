@@ -162,8 +162,8 @@ export const Navbar = () => {
             <div className="lg:w-20"></div>
             <div className="w-full -mr-20 lg:mr-0">
               {/** TITLE-1 */}
-              <div className="p-4">
-                <span className="py-4 text-green-100 tracking-[5px] text-sm lg:text-base font-bold uppercase">
+              <div className="p-5">
+                <span className="py-5 text-green-100 tracking-[5px] text-sm lg:text-base font-bold uppercase">
                   Nuestros{" "}
                   <span className="text-yellow-300/60 ">servicios</span>
                 </span>

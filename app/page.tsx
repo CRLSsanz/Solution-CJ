@@ -350,6 +350,21 @@ export default function Home() {
                 <div>proyectos</div>
                 <div>contacto</div>
               </div>
+
+              <div className="relative w-10 h-10 p-2 lg:h-[600]">
+                <Image
+                  src={`/images/logo.png`} //"/images/electricidad.jpg"
+                  alt="02"
+                  fill
+                  sizes=""
+                  //width={250}
+                  //height={200}
+                  style={{
+                    objectFit: "cover", // cover, contain, none
+                    objectPosition: "50% 50%",
+                  }}
+                />
+              </div>
               <div
                 className={` ${oswald.className} antialiased w-full flex justify-center font-extrabold tracking-widest`}
               >
@@ -358,7 +373,7 @@ export default function Home() {
             </div>
 
             <div className="w-full lg:w-[1440] ">
-              <div className="lg:w-[600] text-3xl lg:text-6xl mb-5 lg:mb-20 uppercase text-yellow-600">
+              <div className="lg:w-[600] text-3xl lg:text-6xl mb-5 lg:mb-20 uppercase Xtext-teal-500">
                 Soluciones Generales
               </div>
               <div className="lg:w-[600] text-base lg:text-3xl pr-10">
@@ -433,7 +448,9 @@ export default function Home() {
                       </g>
                     </svg>
                   </div>
-                  <span className="w-20 text-center text-5xl fam-number">127</span>
+                  <span className="w-20 text-center text-5xl fam-number">
+                    127
+                  </span>
                   <span>Clientes</span> <br />
                 </div>
 
@@ -484,200 +501,259 @@ export default function Home() {
                       </g>
                     </svg>
                   </div>
-                  <span className="w-16 text-center text-5xl fam-number">12</span>
-                  <span>Años <br />Experiencia</span> 
+                  <span className="w-16 text-center text-5xl fam-number">
+                    12
+                  </span>
+                  <span>
+                    Años <br />
+                    Experiencia
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section id="camaras" className="w-full">
         <div
           className="min-h-screen bg-[#141414] text-gray-300 w-full"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/camaras/fondo.jpg')`,
+            //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/camaras/fondo.jpg')`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
             backgroundPosition: "50%",
           }}
         >
           <div className="p-5">
-            <div>
-              <h2 className="uppercase mb-5">
-                Instalacion de camaras de vigilancia
-              </h2>
-              <ul>
-                <li className="flex flex-row gap-x-2">
-                  <svg
-                    className="w-8 mt-1.5"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      {" "}
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
-                        fill="currentColor"
-                      ></path>{" "}
-                    </g>
-                  </svg>
-                  <span>DVR (Equipo de gravacion, incluye disco duro)</span>
-                </li>
-                <li className="flex flex-row justify-items-start gap-x-2">
-                  <svg
-                    className="w-8 mt-1.5"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      {" "}
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
-                        fill="currentColor"
-                      ></path>{" "}
-                    </g>
-                  </svg>
-                  <span className="w-full">
-                    2 a 8 Cámaras de interior y exterior con visión nocturna,
-                    resistente al agua.
-                  </span>
-                </li>
-                <li className="flex flex-row gap-x-2">
-                  <svg
-                    className="w-8 mt-1.5"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      {" "}
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
-                        fill="currentColor"
-                      ></path>{" "}
-                    </g>
-                  </svg>
-                  <span className="w-full">Instalación</span>
-                </li>
-                <li className="flex flex-row gap-x-2">
-                  <svg
-                    className="w-8 mt-1.5"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      {" "}
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
-                        fill="currentColor"
-                      ></path>{" "}
-                    </g>
-                  </svg>
-                  <span className="w-full">
-                    Configuración de App móvil para ver su casa o negocio en
-                    tiempo real.
-                  </span>
-                </li>
-                <li className="flex flex-row gap-x-2">
-                  <svg
-                    className="w-8 mt-1.5"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      {" "}
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
-                        fill="currentColor"
-                      ></path>{" "}
-                    </g>
-                  </svg>
+            <h2 className="uppercase mb-5 pt-10">
+              Instalacion de camaras de vigilancia
+            </h2>
+            <ul className="mb-10">
+              <li className="flex flex-row gap-x-2">
+                <svg
+                  className="w-8 mt-1"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    {" "}
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
+                      fill="currentColor"
+                    ></path>{" "}
+                  </g>
+                </svg>
+                <span>DVR (Equipo de gravacion, incluye disco duro)</span>
+              </li>
+              <li className="flex flex-row justify-items-start gap-x-2">
+                <svg
+                  className="w-8 mt-1"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    {" "}
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
+                      fill="currentColor"
+                    ></path>{" "}
+                  </g>
+                </svg>
+                <span className="w-full">
+                  2 a 8 Cámaras de interior y exterior con visión nocturna,
+                  resistente al agua.
+                </span>
+              </li>
+              <li className="flex flex-row gap-x-2">
+                <svg
+                  className="w-8 mt-1"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    {" "}
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
+                      fill="currentColor"
+                    ></path>{" "}
+                  </g>
+                </svg>
+                <span className="w-full">Instalación</span>
+              </li>
+              <li className="flex flex-row gap-x-2">
+                <svg
+                  className="w-8 mt-1"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    {" "}
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
+                      fill="currentColor"
+                    ></path>{" "}
+                  </g>
+                </svg>
+                <span className="w-full">
+                  Configuración de App móvil para ver su casa o negocio en
+                  tiempo real.
+                </span>
+              </li>
+              <li className="flex flex-row gap-x-2">
+                <svg
+                  className="w-8 mt-1"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    {" "}
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
+                      fill="currentColor"
+                    ></path>{" "}
+                  </g>
+                </svg>
 
-                  <span className="w-full">Soporte Post-Venta</span>
-                </li>
-                <li className="flex flex-row gap-x-2">
-                  <svg
-                    className="w-8 mt-1.5"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      {" "}
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
-                        fill="currentColor"
-                      ></path>{" "}
-                    </g>
-                  </svg>
-                  <span className="w-full">Garantía y confiabilidad.</span>
-                </li>
-              </ul>
+                <span className="w-full">Soporte Post-Venta</span>
+              </li>
+              <li className="flex flex-row gap-x-2">
+                <svg
+                  className="w-8 mt-1"
+                  width="16px"
+                  height="16px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    {" "}
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
+                      fill="currentColor"
+                    ></path>{" "}
+                  </g>
+                </svg>
+                <span className="w-full">Garantía y confiabilidad.</span>
+              </li>
+            </ul>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="relative w-full h-48 lg:h-[600]">
+                <Image
+                  src={`/images/camaras/01.jpg`} //"/images/electricidad.jpg"
+                  alt="01"
+                  fill
+                  sizes=""
+                  //width={250}
+                  //height={200}
+                  style={{
+                    objectFit: "cover", // cover, contain, none
+                    objectPosition: "50% 50%",
+                  }}
+                />
+                <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
+                  Camara
+                </h1>
+              </div>
+
+              <div className="relative w-full h-48 lg:h-[600]">
+                <Image
+                  src={`/images/camaras/03.jpg`} //"/images/electricidad.jpg"
+                  alt="02"
+                  fill
+                  sizes=""
+                  //width={250}
+                  //height={200}
+                  style={{
+                    objectFit: "cover", // cover, contain, none
+                    objectPosition: "50% 50%",
+                  }}
+                />
+                <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
+                  Camara
+                </h1>
+              </div>
+
+              <div className="relative w-full col-span-2 h-48 lg:h-[600]">
+                <Image
+                  src={`/images/camaras/02.jpg`} //"/images/electricidad.jpg"
+                  alt="03"
+                  fill
+                  sizes=""
+                  //width={250}
+                  //height={200}
+                  style={{
+                    objectFit: "cover", // cover, contain, none
+                    objectPosition: "50% 50%",
+                  }}
+                />
+                <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
+                  Camara
+                </h1>
+              </div>
             </div>
           </div>
         </div>
@@ -687,13 +763,74 @@ export default function Home() {
         <div
           className="min-h-screen bg-[#141414] text-gray-300 w-full"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/cerrajeria/fondo.jpg')`,
+            //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/cerrajeria/fondo.jpg')`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
             backgroundPosition: "50%",
           }}
         >
-          <div className="XXw-80">camaras</div>
+          <div className="w-full py-10">
+            <h3 className="px-5 uppercase mb-5">Cerrajeria</h3>
+            <div className="relative w-full h-48 lg:h-[600] mb-10">
+              <Image
+                src={`/images/cerrajeria/01.jpg`} //"/images/electricidad.jpg"
+                alt="01"
+                fill
+                sizes=""
+                //width={250}
+                //height={200}
+                style={{
+                  objectFit: "cover", // cover, contain, none
+                  objectPosition: "50% 50%",
+                }}
+              />
+            </div>
+            <div>
+              <h1 className="px-5 uppercase font-bold mb-5">
+                Nuestros Servicios
+              </h1>
+              <p className="px-5 mb-10">
+                Instalación de cerraduras, extraccion de llaves partidas.
+                Ajustes y nivelacion de puertas templex, instalacion de
+                cilindros de gaveta y mucho mas.
+              </p>
+            </div>
+
+            <div className="relative w-full h-60 lg:h-[600]">
+              <Image
+                src={`/images/cerrajeria/03.jpg`} //"/images/electricidad.jpg"
+                alt="01"
+                fill
+                sizes=""
+                //width={250}
+                //height={200}
+                style={{
+                  objectFit: "cover", // cover, contain, none
+                  objectPosition: "50% 50%",
+                }}
+              />
+              <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
+                Camara
+              </h1>
+            </div>
+
+            <div className="w-full flex justify-center">
+              <div className="relative w-72 h-60 lg:h-[600] -mt-12">
+                <Image
+                  src={`/images/cerrajeria/02.jpg`} //"/images/electricidad.jpg"
+                  alt="01"
+                  fill
+                  sizes=""
+                  //width={250}
+                  //height={200}
+                  style={{
+                    objectFit: "cover", // cover, contain, none
+                    objectPosition: "50% 50%",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -701,15 +838,51 @@ export default function Home() {
         <div
           className="min-h-screen bg-[#141414] text-gray-300"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/domotica/fondo.jpg')`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.4)), url('/images/domotica/fondo.jpg')`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
-            backgroundPosition: "50%",
+            backgroundPosition: "60%",
           }}
         >
-          <div className="">domotica</div>
+          <div className="p-5 py-10">
+            <h2 className="uppercase mb-5">Domótica</h2>
+            <p className="mb-10 space-y-3">
+              Hogar inteligente sin complicaciones. <br />
+              Instalación y recomendaciones. <br />
+              Ahorro Energetico. <br />
+            </p>
+            <div className="relative w-full col-span-2 h-48 lg:h-[600] mb-10">
+              <Image
+                src={`/images/domotica/01.jpg`} //"/images/electricidad.jpg"
+                alt="03"
+                fill
+                sizes=""
+                //width={250}
+                //height={200}
+                style={{
+                  objectFit: "cover", // cover, contain, none
+                  objectPosition: "50% 50%",
+                }}
+              />
+            </div>
+
+            <p className="space-y-3 mb-40">
+              Automatiza tu hogar para mayor confort. <br />
+              Seguridad y eficiencia energética. <br />
+            </p>
+
+            <div className="w-full lg:w-[1440]">
+              <Link
+                href="/"
+                className="px-10 py-3 border-b border border-gray-200 bg-gray-800/50 uppercase text-xs tracking-widest"
+              >
+                Solicitar presupuesto
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
+
       <section id="drywall" className="w-full">
         <div
           className="min-h-screen bg-[#141414] text-gray-300"
