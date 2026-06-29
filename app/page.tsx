@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/Navbar";
-import { Oswald } from "next/font/google";
+import { Oswald, Raleway } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 //bg-cover bg-fixed bg-[0%] bg-[url('/images/piggy-mobile.jpg')] min-h-screen
@@ -70,7 +70,8 @@ export default function Home() {
   ];
 
   const fondoHome =
-    "https://decorexpro.com/images/article/orig/2017/12/odnokomnatnaya-kvartira-v-stile-loft-primery-oformleniya-1.jpg";
+    "https://corpbps.com/wp-content/uploads/2022/12/Servicios-Generales.jpg";
+  //"https://decorexpro.com/images/article/orig/2017/12/odnokomnatnaya-kvartira-v-stile-loft-primery-oformleniya-1.jpg";
   //home2 "https://joseph.cl/assets/img/heroes/hero-remodelaciones-desktop-1920.jpg";
   const fondoPanal =
     "https://raw.githubusercontent.com/CRLSsanz/trade/main/panal1.jpg";
@@ -335,10 +336,10 @@ export default function Home() {
         <div
           className="h-screen bg-[#141414] text-gray-300"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.0)), url(${fondoHome})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url(${fondoHome})`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
-            backgroundPosition: "35%",
+            backgroundPosition: "70%",
           }}
         >
           <div className="w-full h-screen flex flex-col items-center justify-between font-bold p-5 lg:p-0 lg:py-5">
@@ -350,48 +351,68 @@ export default function Home() {
                 <div>contacto</div>
               </div>
               <div
-                className={` ${oswald.className} antialiased w-full flex justify-end pr-10`}
+                className={` ${oswald.className} antialiased w-full flex justify-center font-extrabold tracking-widest`}
               >
-                904 150 352
+                JOTA
               </div>
             </div>
 
             <div className="w-full lg:w-[1440] ">
-              <div className="lg:w-[600] text-3xl lg:text-6xl mb-5 lg:mb-20 uppercase text-cyan-500">
-                Reformas y remodelacion
+              <div className="lg:w-[600] text-3xl lg:text-6xl mb-5 lg:mb-20 uppercase text-yellow-600">
+                Soluciones Generales
               </div>
-              <div className="lg:w-[600] text-2xl lg:text-3xl">
-                <span className="font-bold">Adaptacion de viviendas</span>{" "}
-                <br />
-                Remorelaciones internas, <br />
-                cocinas, baños, muros y red <br />
-                electrica.
+              <div className="lg:w-[600] text-base lg:text-3xl pr-10">
+                <span className="">Nos dedicamos a ofrecer</span> <br />
+                soluciones internas para su negocio o vivienda,
+                <span className="font-bold text-teal-300">
+                  {" "}
+                  nuestro equipo de profesionales
+                </span>{" "}
+                esta capacitado para brindar servicios de alta calidad.
               </div>
             </div>
 
             <div className="w-full lg:w-[1440] ">
               <Link
                 href="/"
-                className="px-10 py-3 border-2 border-gray-200 bg-gray-800/50 text-xl uppercase tracking-widest"
+                className="px-10 py-3 border-b border border-gray-200 bg-gray-800/50 uppercase text-xs tracking-widest"
               >
-                {" "}
-                Contactanos{" "}
+                Contactanos
               </Link>
             </div>
 
-            <div className="w-full lg:w-[1440] text-teal-500">
-              <div className="lg:w-[600]  text-sm lg:text-xl bg-gray-800 py-14 p-10 mb-5 flex lg:flex-row flex-col gap-7">
-                <div className="">
+            <div className="w-full lg:w-[1440] text-yellow-500">
+              <div className="lg:w-[600]  text-sm lg:text-xl bg-gray-800/50 p-10 mb-5 flex lg:flex-row flex-col">
+                <div className="hidden ">
                   <span>Experiencia</span> <br />
                   <span className="text-5xl">23</span>
                 </div>
 
-                <div className="">
+                <div className="w-full flex flex-row gap-x-5 justify-between items-center ">
+                  <div>
+                    <svg
+                      viewBox="0 0 16 16"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="#000000"
+                      className="bi bi-person"
+                    >
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        {" "}
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path>{" "}
+                      </g>
+                    </svg>
+                  </div>
+                  <span className="text-5xl fam-number">23</span>
                   <span>Clientes</span> <br />
-                  <span className="text-5xl">23</span>
                 </div>
 
-                <div className="">
+                <div className="hidden ">
                   <span>Proyectos</span> <br />
                   <span className="text-5xl">13</span>
                 </div>

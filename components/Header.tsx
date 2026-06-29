@@ -57,10 +57,12 @@ function Header() {
               <span className="text-2xl font-extralight fam-number">
                 939 065 454
               </span>
-              <span className="hidden md:block bg-gray-800 px-10 py-3 text-amber-200">
+              <span className="md:block bg-gray-800 px-10 py-3 text-amber-200">
                 {" "}
                 WhatsApp
               </span>
+
+             
             </div>
           </div>
         </div>
