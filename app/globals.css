@@ -53,8 +53,16 @@ body {
   font-family: "Bebas Neue", sans-serif;
 }
 
-h6{
-color: cyan;
+.fam-title {
+  font-family: "Orbitron", sans-serif;
+}
+
+h1{
+color: teal;
+font-weight: 700;
+font-size: 40px;
+font-family: "Oswald", sans-serif;
+letter-spacing: 0.1em;
 }
 
 h2{

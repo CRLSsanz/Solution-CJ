@@ -1,10 +1,24 @@
 import { Navbar } from "@/components/Navbar";
-import { Oswald, Raleway } from "next/font/google";
+import {
+  Audiowide,
+  Megrim,
+  Orbitron,
+  Oswald,
+  Raleway,
+  Wallpoet,
+} from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 //bg-cover bg-fixed bg-[0%] bg-[url('/images/piggy-mobile.jpg')] min-h-screen
 
 const oswald = Oswald({
+  weight: ["400"],
+  style: "normal",
+  variable: "--font-Oswald",
+  subsets: ["latin"],
+});
+
+const title = Audiowide({
   weight: ["400"],
   style: "normal",
   variable: "--font-Oswald",
@@ -328,6 +342,7 @@ export default function Home() {
           </div>
         ))}
       </div>
+
       <div className="w-full fixed z-50 top-0">
         <Navbar />
       </div>
@@ -342,41 +357,15 @@ export default function Home() {
             backgroundPosition: "70%",
           }}
         >
-          <div className="w-full h-screen flex flex-col items-center justify-between font-bold p-5 lg:p-0 lg:py-5">
-            <div className="w-full lg:w-[1440] flex flex-row justify-between">
-              <div className="hidden lg:flex flex-row gap-4 uppercase text-sm">
-                <div>servicios</div>
-                <div>nosotros</div>
-                <div>proyectos</div>
-                <div>contacto</div>
-              </div>
-
-              <div className="relative w-10 h-10 p-2 lg:h-[600]">
-                <Image
-                  src={`/images/logo.png`} //"/images/electricidad.jpg"
-                  alt="02"
-                  fill
-                  sizes=""
-                  //width={250}
-                  //height={200}
-                  style={{
-                    objectFit: "cover", // cover, contain, none
-                    objectPosition: "50% 50%",
-                  }}
-                />
-              </div>
+          <div className=" w-full h-screen flex flex-col items-center justify-evenly font-bold p-5 lg:p-0 lg:py-5">
+            <div></div>
+            <div className="w-full lg:w-[1200] ">
               <div
-                className={` ${oswald.className} antialiased w-full flex justify-center font-extrabold tracking-widest`}
+                className={` ${title.className} antialiased w-full lg:w-[600] text-3xl lg:text-8xl mb-5 lg:mb-20 uppercase `}
               >
-                JOTA
-              </div>
-            </div>
-
-            <div className="w-full lg:w-[1440] ">
-              <div className="lg:w-[600] text-3xl lg:text-6xl mb-5 lg:mb-20 uppercase Xtext-teal-500">
                 Soluciones Generales
               </div>
-              <div className="lg:w-[600] text-base lg:text-3xl pr-10">
+              <div className="lg:w-[600] text-base lg:text-xl pr-10">
                 <span className="">Nos dedicamos a ofrecer</span> <br />
                 soluciones internas para su negocio o vivienda,
                 <span className="font-bold text-teal-300">
@@ -387,23 +376,25 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-full lg:w-[1440] ">
+            <div className="w-full lg:w-[1200] ">
               <Link
-                href="/"
-                className="px-10 py-3 border-b border border-gray-200 bg-gray-800/50 uppercase text-xs tracking-widest"
+                href="#camaras"
+                className="px-12 py-4 border-b border border-gray-200 bg-teal-400/50 Xtext-teal-500  uppercase text-sm tracking-widest"
               >
-                Contactanos
+                Nuestros Servicios
               </Link>
             </div>
 
-            <div className="w-full lg:w-[1440] text-gray-500">
-              <div className="lg:w-[600] w-full text-sm lg:text-xl bg-gray-800/90 p-10 flex lg:flex-row flex-col">
+            <div></div>
+
+            <div className="w-full lg:w-[1200] text-gray-400/80">
+              <div className="lg:w-[800] w-full text-sm lg:text-xl bg-gray-800/60 p-10 flex lg:flex-row flex-col items-center">
                 <div className="hidden ">
                   <span>Experiencia</span> <br />
                   <span className="text-5xl">23</span>
                 </div>
 
-                <div className="w-full flex flex-row gap-2 items-center justify-center mb-5">
+                <div className="w-full flex flex-row gap-2 items-center justify-center lg:mb-0 mb-5">
                   <div>
                     <svg
                       width="25px"
@@ -504,10 +495,7 @@ export default function Home() {
                   <span className="w-16 text-center text-5xl fam-number">
                     12
                   </span>
-                  <span>
-                    Años <br />
-                    Experiencia
-                  </span>
+                  <span className="lg:min-w-48 w-20">Años Experiencia</span>
                 </div>
               </div>
             </div>
@@ -838,7 +826,7 @@ export default function Home() {
         <div
           className="min-h-screen bg-[#141414] text-gray-300"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.4)), url('/images/domotica/fondo.jpg')`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url('/images/domotica/fondo.jpg')`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
             backgroundPosition: "60%",
@@ -885,7 +873,7 @@ export default function Home() {
 
       <section id="drywall" className="w-full">
         <div
-          className="min-h-screen bg-[#141414] text-gray-300"
+          className="hidden lg:block min-h-[800] bg-[#141414] text-gray-300"
           style={{
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/drywall/fondo.jpg')`,
             backgroundSize: "cover",
@@ -893,14 +881,132 @@ export default function Home() {
             backgroundPosition: "50%",
           }}
         >
-          <div className="">Drywall</div>
+          <div className=""> </div>
+        </div>
+        <div className="flex justify-center bg-gray-900">
+          <div className="w-full lg:w-[1440] h-[800] -mt-24 bg-gray-200 text-gray-600 flex lg:flex-row flex-col">
+            <div className="w-full lg:w-1/2 flex lg:flex-row flex-col">
+              <div className="w-full lg:w-1/2">
+                <div className="py-24 pl-24">
+                  <h1 className="uppercase font-extrabold mb-10 fam-title">
+                    Drywall en General
+                  </h1>
+                  <h4>Remodelaciones</h4>
+                  <h4>Ampliaciones</h4>
+                  <h4>Diviciones Interiores</h4>
+                  <h4>Fachadas</h4>
+                  <h4>Cielo Raso</h4>
+                  <h4>Muros</h4>
+                  <h4>Deparmamentos</h4>
+                  <h4>Revestimiento</h4>
+                  <h4>Centro de entretenimiento</h4>
+                  <h4>Azotea Terrazas</h4>
+                </div>
+              </div>
+              <div
+                className="hidden lg:block lg:w-1/2"
+                style={{
+                  backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('/images/drywall/04.jpg')`,
+                  backgroundSize: "cover",
+                  //backgroundAttachment: "fixed",
+                  backgroundPosition: "50%",
+                }}
+              >
+                2
+              </div>
+            </div>
+
+            <div className="w-full lg:w-1/2 bg-gray-200 flex lg:flex-row flex-col">
+              <div className="w-full lg:w-1/2">
+                <div className="h-1/3 mt-1">
+                  <div className="relative w-full h-[260] mb-10">
+                    <Image
+                      src={`/images/drywall/01.jpg`} //"/images/electricidad.jpg"
+                      alt="01"
+                      fill
+                      sizes=""
+                      //width={250}
+                      //height={200}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                      }}
+                    />
+                  </div>
+                </div>
+                <div className="h-1/3">
+                  <div className="relative w-full h-[260] mb-10">
+                    <Image
+                      src={`/images/drywall/02.jpg`} //"/images/electricidad.jpg"
+                      alt="01"
+                      fill
+                      sizes=""
+                      //width={250}
+                      //height={200}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                      }}
+                    />
+                  </div>
+                </div>
+                <div className="h-1/3">
+                  <div className="relative w-full h-[260] mb-10">
+                    <Image
+                      src={`/images/drywall/03.jpg`} //"/images/electricidad.jpg"
+                      alt="01"
+                      fill
+                      sizes=""
+                      //width={250}
+                      //height={200}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="w-full lg:w-1/2 bg-gray-200 text-lg">
+                <div className="px-10 py-20">
+                  <p className="mb-10 text-xl">
+                    No esperes mas para transformar tus espacios. Descubre el
+                    potencial del Drywall con SGJ Soluciones Generales
+                  </p>
+
+                  <p className="uppercase mb-5">Contactenos</p>
+                  <p className="fam-number font-extrabold mb-20">
+                    +51 904 150 352
+                  </p>
+
+                  <p className="uppercase mb-5">Otros Servicios</p>
+                  <h4>Electricidad</h4>
+                  <h4>Pintura</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="hidden xflex justify-center bg-gray-900">
+          <div className="w-[1440] h-[800] -mt-40 bg-gray-800 flex flex-row">
+            <div className="w-1/2 flex flex-row">
+              <div className="w-1/2">1</div>
+              <div className="w-1/2">2</div>
+            </div>
+            <div className="w-1/2 bg-teal-800 flex flex-row">
+              <div className="w-1/2">
+                <h1 className="h-1/3">1</h1>
+                <h1 className="h-1/3">2</h1>
+                <h1 className="h-1/3">3</h1>
+              </div>
+              <div className="w-1/2 bg-amber-800">hi</div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section
-        id="electricidad"
-        className={` ${oswald.className} antialiased w-full`}
-      >
+      <section id="electricidad" className={` antialiased w-full`}>
         <div
           className="min-h-screen bg-[#141414] text-gray-300"
           style={
@@ -914,9 +1020,9 @@ export default function Home() {
         >
           <div className="w-full flex lg:flex-row flex-col">
             <div className="w-full lg:w-1/2 flex flex-col Xitems-center px-5 py-10 lg:py-20">
-              <div className="text-4xl mb-10 lg:mb-20 lg:ml-20 tracking-widest">
+              <h2 className="mb-10 lg:mb-20 lg:ml-20 tracking-widest">
                 Electricidad
-              </div>
+              </h2>
               <div className="lg:w-[400] mb-10 tracking-wider">
                 Brindamos servicios de electricidad desde instalaciones
                 domiciliarias hasta proyectos comerciales. Incorporamos la

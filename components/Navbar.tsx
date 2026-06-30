@@ -1,5 +1,5 @@
 "use client";
-import { Montserrat_Alternates, Oswald } from "next/font/google";
+import { Montserrat_Alternates, Oswald, Wallpoet } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -20,6 +20,14 @@ const oswald = Oswald({
   variable: "--font-Montserrat",
   subsets: ["latin"],
 });
+
+const logotipe = Wallpoet({
+  weight: ["400"],
+  style: "normal",
+  variable: "--font-Oswald",
+  subsets: ["latin"],
+});
+
 
 export const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -87,55 +95,95 @@ export const Navbar = () => {
   return (
     <section className={` ${oswald.className} antialiased `}>
       <div className="w-full">
-        <nav className="fixed right-0 z-30 h-14 p-2 text-gray-300 lg:h-full flex flex-col justify-center items-center Xbg-transparent lg:bg-[#ccd0cf77] bg-[#11111177] rounded-bl-md ">
-          <button
-            onClick={() => setNavbar(!navbar)}
-            className="z-50XX w-12 lg:w-14 h-14 rounded-full active:bg-none active:bg-transparent active:animate-ping focus:outline-none flex justify-center items-center"
-          >
-            <div className="flex flex-col items-center">
-              <svg
-                className="hidden"
-                width="30px"
-                height="30px"
-                fill="currentColor"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 290 290"
+        <nav className="w-full z-30 h-16 p-2 text-gray-300 flex justify-center items-center bg-black/40 backdrop-blur-2xl">
+          <div className="w-[1440] flex flex-row justify-between items-center">
+            <div className=" flex flex-row justify-between items-center">
+              <div className="relative w-14 h-10 m-1">
+                <Image
+                  src={`/images/logo.png`} //"/images/electricidad.jpg"
+                  alt="02"
+                  fill
+                  sizes=""
+                  //width={250}
+                  //height={200}
+                  style={{
+                    objectFit: "cover", // cover, contain, none
+                    objectPosition: "50% 50%",
+                  }}
+                />
+              </div>
+              <div
+                className={` ${logotipe.className} antialiased w-full flex justify-center font-extrabold text-2xl Xtracking-widest`}
               >
-                <g>
-                  <rect y="220" width="70" height="70" />
-                  <rect y="110" width="0" height="0" />
-                  <rect width="70" height="70" />
-                  <rect x="110" y="220" width="70" height="70" />
-                  <rect x="110" y="110" width="70" height="70" />
-                  <rect x="110" width="70" height="70" />
-                  <rect x="220" y="220" width="0" height="0" />
-                  <rect x="220" y="110" width="70" height="70" />
-                  <rect x="220" width="70" height="70" />
-                </g>
-              </svg>
-              <svg
-                width="35px"
-                height="35px"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <path fill="none" d="M0 0H24V24H0z" />
-                  <path d="M11.189 13.157L12.57 21 4 21c-.552 0-1-.448-1-1v-5.398l8.189-1.445zM20 3c.552 0 1 .448 1 1v16c0 .552-.448 1-1 1h-5.398L11.428 3H20zM9.397 3l1.444 8.188L3 12.57 3 4c0-.552.448-1 1-1h5.397z" />
-                </g>
-              </svg>
-              <h1 className="hidden lg:block mt-2">MENU</h1>
+                JOTA
+              </div>
             </div>
-          </button>
-          <Link
-            hidden
-            href="/formulario"
-            className="w-16 h-16 text-purple-700 bg-gray-50 text-2xl rounded-full uppercase font-medium flex shadow-lg shadow-purple-300"
-          >
-            <span className="active:animate-ping m-auto">$</span>
-          </Link>
+
+            <div className="hidden lg:flex flex-row gap-5 uppercase text-sm tracking-widest whitespace-nowrap">
+              <div>Home</div>
+              <div>Quienes Somos</div>
+              <div onClick={() => setNavbar(!navbar)}>Servicios Profesionales</div>
+              <div>Contactenos</div>
+              <div></div>
+              <div className="w-full">
+                <Link
+                  href="/"
+                  className="px-10 py-2 border-b border border-gray-200 bg-gray-800/50 uppercase"
+                >
+                  Cotizar Projecto
+                </Link>
+              </div>
+            </div>
+
+            <button
+              onClick={() => setNavbar(!navbar)}
+              className="lg:hidden Xlg:block z-50X w-12 lg:w-14 h-14 rounded-full active:bg-none active:bg-transparent active:animate-ping focus:outline-none flex justify-center items-center"
+            >
+              <div className="flex flex-col items-center">
+                <svg
+                  className="hidden"
+                  width="30px"
+                  height="30px"
+                  fill="currentColor"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 290 290"
+                >
+                  <g>
+                    <rect y="220" width="70" height="70" />
+                    <rect y="110" width="0" height="0" />
+                    <rect width="70" height="70" />
+                    <rect x="110" y="220" width="70" height="70" />
+                    <rect x="110" y="110" width="70" height="70" />
+                    <rect x="110" width="70" height="70" />
+                    <rect x="220" y="220" width="0" height="0" />
+                    <rect x="220" y="110" width="70" height="70" />
+                    <rect x="220" width="70" height="70" />
+                  </g>
+                </svg>
+                <svg
+                  width="35px"
+                  height="35px"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path fill="none" d="M0 0H24V24H0z" />
+                    <path d="M11.189 13.157L12.57 21 4 21c-.552 0-1-.448-1-1v-5.398l8.189-1.445zM20 3c.552 0 1 .448 1 1v16c0 .552-.448 1-1 1h-5.398L11.428 3H20zM9.397 3l1.444 8.188L3 12.57 3 4c0-.552.448-1 1-1h5.397z" />
+                  </g>
+                </svg>
+                <h1 className="hidden Xlg:block mt-2">MENU</h1>
+              </div>
+            </button>
+            <Link
+              hidden
+              href="/formulario"
+              className="w-16 h-16 text-purple-700 bg-gray-50 text-2xl rounded-full uppercase font-medium flex shadow-lg shadow-purple-300"
+            >
+              <span className="active:animate-ping m-auto">$</span>
+            </Link>
+          </div>
         </nav>
 
         {/** FONDO NEGRO */}
@@ -151,7 +199,7 @@ export const Navbar = () => {
         </div>
         {/** MENU  */}
         <ul
-          className={`fixed z-50 text-white bg-[#222222fe] h-full w-6/6 min-hHH-[400px] Xtransform Xtransition-all Xduration-200 flex flex-col rounded-b-md text-center
+          className={`fixed top-0 z-50 text-white bg-[#222222fe] h-full w-6/6 Xtransform Xtransition-all Xduration-200 flex flex-col rounded-b-md text-center
         ${
           navbar
             ? " opacity-100 pointer-events-auto right-0 duration-500"
@@ -187,9 +235,9 @@ export const Navbar = () => {
                       className="flex flex-row items-center text-2xl"
                       onClick={() => setNavbar(!navbar)}
                     >
-                      <h1 className="text-[10px] lg:text-base text-left uppercase tracking-widest">
+                      <h6 className="text-[10px] lg:text-base text-left uppercase tracking-widest">
                         {item.title}
-                      </h1>
+                      </h6>
                     </Link>
                   </li>
                 ))}
@@ -221,9 +269,9 @@ export const Navbar = () => {
                       className="flex flex-row items-center text-2xl"
                       onClick={() => setNavbar(!navbar)}
                     >
-                      <h1 className="text-xs lg:text-base uppercase tracking-widest">
+                      <h6 className="text-xs lg:text-base uppercase tracking-widest">
                         {item.title}
-                      </h1>
+                      </h6>
                     </Link>
                   </li>
                 ))}
@@ -295,7 +343,6 @@ export const Navbar = () => {
               <span className="text-sm uppercase hidden lg:block">close</span>
             </li>
           </div>
-          <div></div>
         </ul>
       </div>
     </section>
