@@ -118,7 +118,7 @@ export const Navbar = () => {
               </div>
             </div>
 
-            <div className="hidden lg:flex flex-row gap-5 uppercase text-sm tracking-widest whitespace-nowrap">
+            <div className="hidden lg:flex flex-row gap-8 uppercase text-sm tracking-widest whitespace-nowrap">
               <div><Link href="/">Home</Link></div>
               <div><Link href="/about">Quienes Somos</Link></div>
               <div onClick={() => setNavbar(!navbar)}>

@@ -130,15 +130,15 @@ const page = () => {
             </div>
             <div className="w-full mb-5 uppercase font-semibold">Teléfono</div>
             <div className="w-36 mb-10 fam-number border-b">
-              (+51) 939 065 454
+              <a href="tel:+51939065454">(+51) 939 065 454</a>
             </div>
             <div className="w-full mb-5 uppercase font-semibold">Horarios</div>
             <div className="w-full mb-2">
-              Lunes a viernes de{" "}
+              Lunes a Viernes de{" "}
               <span className="fam-number"> 9 am. a 7 pm.</span>{" "}
             </div>
             <div className="w-full">
-              Domingos de{" "}
+              Sabados y Domingos de{" "}
               <span className="fam-number"> 10 am. a 6 pm.</span>{" "}
             </div>
           </div>

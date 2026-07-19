@@ -55,7 +55,7 @@ export default function RootLayout({
           id="section6"
           className="bg-[#259ca0] flex"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,9), rgba(0,0,0,0.85)), url(${bag3})`,
+            backgroundImage: `linear-gradient(rgba(0,0,1), rgba(0,0,0,1)), url(${bag3})`,
             backgroundPosition: "50% 20%",
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",

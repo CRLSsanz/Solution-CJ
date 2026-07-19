@@ -46,12 +46,12 @@ function Footer() {
 
       <div className="text-gray-400 flex flex-col md:flex-row justify-between">
         <div className="md:w-1/3 mb-5">
-          <h1 className="text-gray-100 fam-logo font-bold tracking-wider text-2xl mb-5">
-            REFORMAS C<span className="text-cyan-500">&</span>J
-          </h1>
+          <h4 className="text-gray-100 fam-logo font-bold tracking-wider text-2xl mb-5">
+            Soluciones Generales J<span className="text-cyan-500">O</span>TA
+          </h4>
           <p className="md:leading-loose">
-            Detras de Servicios Generales
-            <span className="font-semibold"> C&J </span> hay un equipo de
+            Detras de
+            <span className="font-semibold"> SGJ </span> hay un equipo de
             <span className="font-semibold"> profesionales </span>
             con años de experiencia con trabajo
             <span className="font-semibold"> honesto </span> y de
@@ -59,7 +59,7 @@ function Footer() {
             tu
             <span className="font-semibold"> proyecto</span> necesita.
             <br /> Todo
-            <span className="font-semibold"> Lima Norte </span>.
+            <span className="font-semibold"> Lima Metropolitana </span>.
           </p>
           <p className="hidden Mmd:leading-loose">
             Soy un desarrollador creativo independiente. Realizo diseños de
@@ -71,7 +71,7 @@ function Footer() {
         </div>
 
         <div className="mb-5">
-          <h2 className="text-gray-200 text-2xl mb-5">Navegate</h2>
+          <h4 className="text-gray-200 text-2xl mb-5">Navegate</h4>
           <h4 className="leading-loose">
             <Link
               href={`/`}
@@ -104,7 +104,7 @@ function Footer() {
         </div>
 
         <div className="mb-5">
-          <h2 className="text-gray-200 text-2xl mb-5">Contact</h2>
+          <h4 className="text-gray-200 text-2xl mb-5">Contact</h4>
           <div className="mb-5 leading-loose">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +156,7 @@ function Footer() {
         </div>
 
         <div className="mb-10">
-          <h2 className="text-gray-200 text-2xl mb-5">Follow</h2>
+          <h4 className="text-gray-200 text-2xl mb-5">Follow</h4>
 
           {/** SVG SOCIAL */}
           <div className="flex flex-wrap md:flex-col lg:flex-row JJjustify-center mb-10">

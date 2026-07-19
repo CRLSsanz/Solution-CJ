@@ -349,7 +349,7 @@ export default function Home() {
 
       <section id="home" className="w-full">
         <div
-          className="h-screen bg-[#141414] text-gray-300"
+          className="h-[800] bg-[#141414] text-gray-300"
           style={{
             backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url(${fondoHome})`,
             backgroundSize: "cover",
@@ -357,26 +357,45 @@ export default function Home() {
             backgroundPosition: "70%",
           }}
         >
-          <div className=" w-full h-screen flex flex-col items-center justify-evenly font-bold p-5 lg:p-0 lg:py-5">
+          <div className=" w-full h-[800] flex flex-col items-center justify-evenly font-bold p-5 lg:p-0 lg:py-5">
             <div></div>
             <div className="w-full lg:w-[1200] ">
               <div
-                className={` ${title.className} antialiased w-full lg:w-[600] text-3xl lg:text-8xl mb-5 lg:mb-20 uppercase `}
+                className={` ${title.className} antialiased w-full lg:w-[800] text-3xl lg:text-6xl mb-5 lg:mb-20 uppercase `}
               >
-                Soluciones Generales
+                Soluciones Generales en lima
               </div>
-              <div className="lg:w-[600] text-base lg:text-xl pr-10">
-                <span className="">Nos dedicamos a ofrecer</span> <br />
+              <div className="lg:w-[550] text-base lg:text-xl pr-10">
+                <span className="">Nos dedicamos a ofrecer </span>
                 soluciones internas para su negocio o vivienda,
                 <span className="font-bold text-teal-300">
-                  {" "}
-                  nuestro equipo de profesionales
-                </span>{" "}
-                esta capacitado para brindar servicios de alta calidad.
+                  {" "}nuestro equipo de profesionales
+                </span>
+                {" "}esta capacitado para brindar servicios de alta calidad.
               </div>
             </div>
 
-            <div className="w-full lg:w-[1200] ">
+            <div className="w-[1200] flex flex-row text-white">
+              <div className="mr-3">
+                <Link
+                  href="#camaras"
+                  className="px-12 py-4 bg-teal-400/50 hover:bg-gray-100 hover:text-teal-500 Xtracking-widest"
+                >
+                  Llámenos: <span className="fam-number">939 065 454</span>
+                </Link>
+              </div>
+
+              <div className="">
+                <Link
+                  href="#camaras"
+                  className="px-12 py-4 bg-teal-400/50 hover:bg-gray-100 hover:text-teal-500"
+                >
+                  Escribir por Whatsapp
+                </Link>
+              </div>
+            </div>
+
+            <div className="hidden w-full lg:w-[1200] ">
               <Link
                 href="#camaras"
                 className="px-12 py-4 border-b border border-gray-200 bg-teal-400/50 Xtext-teal-500  uppercase text-sm tracking-widest"
@@ -385,9 +404,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <div></div>
-
-            <div className="w-full lg:w-[1200] text-gray-400/80">
+            <div className="hidden w-full lg:w-[1200] text-gray-400/80">
               <div className="lg:w-[800] w-full text-sm lg:text-xl bg-gray-800/60 p-10 flex lg:flex-row flex-col items-center">
                 <div className="hidden ">
                   <span>Experiencia</span> <br />
