@@ -28,7 +28,6 @@ const logotipe = Wallpoet({
   subsets: ["latin"],
 });
 
-
 export const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
@@ -120,10 +119,14 @@ export const Navbar = () => {
             </div>
 
             <div className="hidden lg:flex flex-row gap-5 uppercase text-sm tracking-widest whitespace-nowrap">
-              <div>Home</div>
-              <div>Quienes Somos</div>
-              <div onClick={() => setNavbar(!navbar)}>Servicios Profesionales</div>
-              <div>Contactenos</div>
+              <div><Link href="/">Home</Link></div>
+              <div><Link href="/about">Quienes Somos</Link></div>
+              <div onClick={() => setNavbar(!navbar)}>
+                Servicios Profesionales
+              </div>
+              <div>
+                <Link href="/contact">Contactenos</Link>
+              </div>
               <div></div>
               <div className="w-full">
                 <Link
@@ -231,7 +234,7 @@ export const Navbar = () => {
                   >
                     {" "}
                     <Link
-                      href={`#${item.link}`}
+                      href={`../#${item.link}`}
                       className="flex flex-row items-center text-2xl"
                       onClick={() => setNavbar(!navbar)}
                     >
@@ -265,7 +268,7 @@ export const Navbar = () => {
                   >
                     {" "}
                     <Link
-                      href={`#${item.link}`}
+                      href={`../#${item.link}`}
                       className="flex flex-row items-center text-2xl"
                       onClick={() => setNavbar(!navbar)}
                     >
