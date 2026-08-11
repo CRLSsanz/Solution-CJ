@@ -40,7 +40,7 @@ const page = () => {
           <div className=""> </div>
         </div>
         <div className="w-1/2 text-gray-600 p-20">
-          <h1>Por que elegirnos</h1>
+          <h1 className="lg:text-lg md:text-3xl text-amber-300">Por que elegirnos</h1>
           <p className=" w-[500] my-5 text-justify">
             FABRISERVICIOS EIRL. Es una empresa dedicada a brindar soluciones en
             el rubro de construcción, Electricidad, Pintura, Gasfiteria,

@@ -3,23 +3,25 @@ import {
   Geist,
   Geist_Mono,
   Montserrat_Alternates,
+  Oswald,
   Raleway,
 } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
+//para los titulos en mayusculas
+const oswald = Oswald({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
+//para los numeros
 const montseAlter = Montserrat_Alternates({
   weight: ["400"],
   style: "normal",
   variable: "--font-Montserrat",
   subsets: ["latin"],
 });
-
+//texto en general
 const geistRaleway = Raleway({
   subsets: ["latin"],
 });

@@ -92,12 +92,12 @@ export const Navbar = () => {
   ];
 
   return (
-    <section className={` ${oswald.className} antialiased `}>
+    <section className={`  antialiased `}>
       <div className="w-full">
         <nav className="w-full z-30 h-16 p-2 text-gray-300 flex justify-center items-center bg-black/40 backdrop-blur-2xl">
           <div className="w-[1440] flex flex-row justify-between items-center">
             <div className=" flex flex-row justify-between items-center">
-              <div className="relative w-14 h-10 m-1">
+              <div className="relative w-10 h-10 m-1 mr-3">
                 <Image
                   src={`/images/logo.png`} //"/images/electricidad.jpg"
                   alt="02"
@@ -111,17 +111,27 @@ export const Navbar = () => {
                   }}
                 />
               </div>
-              <div
-                className={` ${logotipe.className} antialiased w-full flex justify-center font-extrabold text-2xl Xtracking-widest`}
-              >
-                JOTA
+              <div>
+                <div
+                  className={` fam-title w-full flex justify-center font-extrabold text-2xl tracking-widest`}
+                >
+                  Grupo SGJ
+                </div>
+                <div className="fam-title uppercase -mt-1 text-xs">soluciones generales</div>
               </div>
             </div>
 
             <div className="hidden lg:flex flex-row gap-8 uppercase text-sm tracking-widest whitespace-nowrap">
-              <div><Link href="/">Home</Link></div>
-              <div><Link href="/about">Quienes Somos</Link></div>
-              <div onClick={() => setNavbar(!navbar)}>
+              <div>
+                <Link href="/">Home</Link>
+              </div>
+              <div>
+                <Link href="/about">Quienes Somos</Link>
+              </div>
+              <div
+                onClick={() => setNavbar(!navbar)}
+                className="cursor-pointer"
+              >
                 Servicios Profesionales
               </div>
               <div>

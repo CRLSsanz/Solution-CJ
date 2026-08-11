@@ -138,7 +138,7 @@ const page = () => {
               <span className="fam-number"> 9 am. a 7 pm.</span>{" "}
             </div>
             <div className="w-full">
-              Sabados y Domingos de{" "}
+              Sabado y Domingo de{" "}
               <span className="fam-number"> 10 am. a 6 pm.</span>{" "}
             </div>
           </div>

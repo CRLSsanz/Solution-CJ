@@ -1,4 +1,7 @@
+"use client";
+
 import { Navbar } from "@/components/Navbar";
+import { Whatsapp } from "@/components/Whatsapp";
 import {
   Audiowide,
   Megrim,
@@ -347,6 +350,10 @@ export default function Home() {
         <Navbar />
       </div>
 
+      <div className="z-50">
+        <Whatsapp />
+      </div>
+
       <section id="home" className="w-full">
         <div
           className="h-[800] bg-[#141414] text-gray-300"
@@ -369,9 +376,10 @@ export default function Home() {
                 <span className="">Nos dedicamos a ofrecer </span>
                 soluciones internas para su negocio o vivienda,
                 <span className="font-bold text-teal-300">
-                  {" "}nuestro equipo de profesionales
-                </span>
-                {" "}esta capacitado para brindar servicios de alta calidad.
+                  {" "}
+                  nuestro equipo de profesionales
+                </span>{" "}
+                esta capacitado para brindar servicios de alta calidad.
               </div>
             </div>
 
