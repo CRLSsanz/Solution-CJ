@@ -45,38 +45,34 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
-.fam-logo {
+.fam-bruno {
   font-family: "Bruno Ace SC", sans-serif;
 }
 
-.fam-home {
+.fam-bebas {
   font-family: "Bebas Neue", sans-serif;
 }
 
-.fam-title {
+.fam-orbitron {
   font-family: "Orbitron", sans-serif;
 }
 
-h1{
-  color: teal;
+.fam-aw {
+  font-family: "Audiowide", sans-serif;
+}
+
+.title{
+  color: #00c8c8;
   font-weight: 700;
 /*font-size: 40px;/*
 font-family: "Oswald", sans-serif;
 letter-spacing: 0.1em; */
 }
 
-h2{
-color: cyan;
+.subtitle{
+color: whitesmoke;
 font-weight: 700;
 font-size: 20px;
 /*font-family: "Oswald", sans-serif;
-letter-spacing: 0.1em;*/
-}
-
-h3{
-color: yellow;
-font-weight: 700;
-font-size: 20px;/*
-font-family: "Oswald", sans-serif;
 letter-spacing: 0.1em;*/
 }

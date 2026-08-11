@@ -92,14 +92,14 @@ export const Navbar = () => {
   ];
 
   return (
-    <section className={`  antialiased `}>
+    <section className={` `}>
       <div className="w-full">
         <nav className="w-full z-30 h-16 p-2 text-gray-300 flex justify-center items-center bg-black/40 backdrop-blur-2xl">
           <div className="w-[1440] flex flex-row justify-between items-center">
             <div className=" flex flex-row justify-between items-center">
               <div className="relative w-10 h-10 m-1 mr-3">
                 <Image
-                  src={`/images/logo.png`} //"/images/electricidad.jpg"
+                  src={`/images/sgj.png`} //"/images/electricidad.jpg"
                   alt="02"
                   fill
                   sizes=""
@@ -115,33 +115,37 @@ export const Navbar = () => {
                 <div
                   className={` fam-title w-full flex justify-center font-extrabold text-2xl tracking-widest`}
                 >
-                  Grupo SGJ
+                  GRUPO SGJ
                 </div>
-                <div className="fam-title uppercase -mt-1 text-xs">soluciones generales</div>
+                <div className="fam-title uppercase -mt-1 text-xs font-semibold tracking-wide">
+                  soluciones generales
+                </div>
               </div>
             </div>
 
-            <div className="hidden lg:flex flex-row gap-8 uppercase text-sm tracking-widest whitespace-nowrap">
+            <div className="hidden lg:flex flex-row gap-4 uppercase text-sm font-semibold tracking-widest whitespace-nowrap">
               <div>
-                <Link href="/">Home</Link>
+                <Link href="/" className="p-2 hover:border-b border-teal-500">Home</Link>
               </div>
               <div>
-                <Link href="/about">Quienes Somos</Link>
+                <Link href="/about" className="p-2 hover:border-b border-teal-500">Quienes Somos</Link>
               </div>
               <div
                 onClick={() => setNavbar(!navbar)}
                 className="cursor-pointer"
               >
-                Servicios Profesionales
+                <span className="p-2 hover:border-b border-teal-500">
+                  Servicios Profesionales
+                  </span>
               </div>
               <div>
-                <Link href="/contact">Contactenos</Link>
-              </div>
+                <Link href="/contact" className="p-2 hover:border-b border-teal-500">Contactenos</Link>
+              </div> 
               <div></div>
               <div className="w-full">
                 <Link
                   href="/"
-                  className="px-10 py-2 border-b border border-gray-200 bg-gray-800/50 uppercase"
+                  className="px-10 py-2 border-b border border-gray-400/50 bg-gray-800/50 uppercase hover:border-teal-500"
                 >
                   Cotizar Projecto
                 </Link>
@@ -223,10 +227,12 @@ export const Navbar = () => {
             <div className="lg:w-20"></div>
             <div className="w-full -mr-20 lg:mr-0">
               {/** TITLE-1 */}
-              <div className="p-5">
-                <span className="py-5 text-green-100 tracking-[5px] text-sm lg:text-base font-bold uppercase">
+              <div className="pt-10">
+                <span className=" text-green-100 tracking-[3px] text-sm lg:text-base font-bold uppercase">
                   Nuestros{" "}
-                  <span className="text-yellow-300/60 ">servicios</span>
+                  <span className="text-teal-500 Xtext-yellow-300/60 ">
+                    servicios
+                  </span>
                 </span>
               </div>
               {/** LIST-1 */}
@@ -234,9 +240,9 @@ export const Navbar = () => {
                 {list.map((item, index) => (
                   <li
                     key={index}
-                    className="w-full h-50 lg:h-70 p-3 Xbg-gradient-to-r from-green-500/20 to-transparent hover:font-bold"
+                    className="w-full h-50 lg:h-70 Xbg-gradient-to-r"
                     style={{
-                      backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0.2)), url(/images/${item.link}/bar.jpg)`,
+                      backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(255,255,255,0.0)), url(/images/${item.link}/bar.jpg)`,
                       backgroundSize: "cover",
                       //backgroundAttachment: "fixed",
                       backgroundPosition: "50%",
@@ -244,11 +250,11 @@ export const Navbar = () => {
                   >
                     {" "}
                     <Link
-                      href={`../#${item.link}`}
+                      href={`../#${item.link}`} 
                       className="flex flex-row items-center text-2xl"
                       onClick={() => setNavbar(!navbar)}
                     >
-                      <h6 className="text-[10px] lg:text-base text-left uppercase tracking-widest">
+                      <h6 className="w-full bg-black/60 hover:bg-black/90 hover:font-semibold p-3 text-[10px] lg:text-base text-left uppercase -tracking-wide font-semibold">
                         {item.title}
                       </h6>
                     </Link>
@@ -257,18 +263,18 @@ export const Navbar = () => {
               </div>
 
               {/** TITLE-2 */}
-              <li className="flex flex-col items-center justify-center border-b py-5 border-gray-700 text-center">
+              <li className="flex flex-col items-center justify-center border-t pt-10 mb-5 border-gray-700 text-center">
                 <img hidden src="logo" width="50px" />
-                <span className="pt-1 text-green-100 tracking-[5px] text-sm lg:text-base font-bold uppercase">
-                  our <span className="text-yellow-300/60 ">projects</span>
+                <span className=" text-green-100 tracking-[3px] text-sm lg:text-base font-bold uppercase">
+                  Reformas <span className="text-teal-500 "> Mantenimiento </span>  Decoración
                 </span>
               </li>
               {/** LIST-2 */}
-              <div className="Xlg:w-[1800px] lg:w-full lg:m-auto text-gray-100 p-0 lg:py-16 grid grid-cols-4 lg:grid-cols-5 lg:gap-4">
+              <div className="Xlg:w-[1800px] lg:w-full lg:m-auto text-gray-100 p-0 lg:py-5 grid grid-cols-4 lg:grid-cols-5 lg:gap-4">
                 {list2.map((item, index) => (
                   <li
                     key={index}
-                    className="w-full h-50 p-3 Xbg-gradient-to-r from-green-500/20 to-transparent hover:font-bold"
+                    className="w-full h-50 Xbg-gradient-to-r from-green-500/50 to-transparent hover:font-bold"
                     style={{
                       backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0.2)), url(/images/${item.link}/bar.jpg)`,
                       backgroundSize: "cover",
@@ -282,7 +288,7 @@ export const Navbar = () => {
                       className="flex flex-row items-center text-2xl"
                       onClick={() => setNavbar(!navbar)}
                     >
-                      <h6 className="text-xs lg:text-base uppercase tracking-widest">
+                      <h6 className="w-full bg-black/60 hover:bg-black/90 hover:font-semibold p-3 text-[10px] lg:text-base text-left uppercase tracking-wide font-semibold">
                         {item.title}
                       </h6>
                     </Link>
@@ -291,7 +297,9 @@ export const Navbar = () => {
               </div>
 
               {/** LINEA */}
-              <p className="w-8 border-t-2 animate__animated animate__bounceInRight animate__slower animate__infinite"></p>
+              <div className="hidden">
+                <p className="w-8 border-t-2 animate__animated animate__bounceInRight animate__slower animate__infinite"></p>
+              </div>
             </div>
 
             {/** BOTON CERRAR */}
@@ -353,7 +361,7 @@ export const Navbar = () => {
                   <span className="text-xl"></span>
                 )}
               </button>
-              <span className="text-sm uppercase hidden lg:block">close</span>
+              <span className="text-[13px] uppercase hidden lg:block">close</span>
             </li>
           </div>
         </ul>
