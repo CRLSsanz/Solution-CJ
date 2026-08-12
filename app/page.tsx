@@ -143,7 +143,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-[1200] flex flex-row text-white">
+            <div className="w-full lg:w-[1200] flex lg:flex-row flex-col text-white">
               <div className="mr-3">
                 <Link
                   href="#camaras"
@@ -153,10 +153,10 @@ export default function Home() {
                 </Link>
               </div>
 
-              <div className="">
+              <div className="lg:mt-0 mt-10">
                 <Link
                   href="#camaras"
-                  className="px-12 py-4 bg-teal-400/50 hover:bg-gray-100 hover:text-teal-500"
+                  className="px-14 py-4 bg-teal-400/50 hover:bg-gray-100 hover:text-teal-500"
                 >
                   Escribir por Whatsapp
                 </Link>
@@ -557,10 +557,11 @@ export default function Home() {
                   <h1 className="subtitle uppercase font-bold mb-5">
                     Nuestros Servicios
                   </h1>
-                  <p className="mb-10">
-                    Instalación de cerraduras, extraccion de llaves partidas.
-                    Ajustes y nivelacion de puertas templex, instalacion de
-                    cilindros de gaveta y mucho mas.
+                  <p className="mb-10 leading-8">
+                    - Instalación de cerraduras <br /> - Extraccion de llaves
+                    partidas <br />
+                    - Ajustes y nivelacion de puertas <br />- Instalacion de
+                    cilindros de gaveta <br /> y mucho mas
                   </p>
                 </div>
               </div>
@@ -610,46 +611,50 @@ export default function Home() {
         <div
           className="min-h-screen bg-[#141414] text-gray-300"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url('/images/domotica/fondo.jpg')`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/images/domotica/fondo.jpg')`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
             backgroundPosition: "60%",
           }}
         >
-          <div className="p-5 py-10">
-            <h2 className="uppercase mb-5">Domótica</h2>
-            <p className="mb-10 space-y-3">
-              Hogar inteligente sin complicaciones. <br />
-              Instalación y recomendaciones. <br />
-              Ahorro Energetico. <br />
-            </p>
-            <div className="relative w-full col-span-2 h-48 lg:h-[600] mb-10">
-              <Image
-                src={`/images/domotica/01.jpg`} //"/images/electricidad.jpg"
-                alt="03"
-                fill
-                sizes=""
-                //width={250}
-                //height={200}
-                style={{
-                  objectFit: "cover", // cover, contain, none
-                  objectPosition: "50% 50%",
-                }}
-              />
-            </div>
+          <div className="w-full flex flex-col items-center py-20">
+            <div className="w-full lg:w-[1200] lg:p-0 p-5">
+              <div className="w-full lg:w-[500] bg-black/80 p-10">
+                <h2 className="title text-4xl uppercase mb-5">Domótica</h2>
+                <p className="mb-10 space-y-3">
+                  Hogar inteligente sin complicaciones. <br />
+                  Instalación y recomendaciones. <br />
+                  Ahorro Energetico. <br />
+                </p>
+                <div className="relative w-full col-span-2 h-48 lg:h-[300] mb-10">
+                  <Image
+                    src={`/images/domotica/02.jpg`} //"/images/electricidad.jpg"
+                    alt="03"
+                    fill
+                    sizes=""
+                    //width={250}
+                    //height={200}
+                    style={{
+                      objectFit: "cover", // cover, contain, none
+                      objectPosition: "50% 50%",
+                    }}
+                  />
+                </div>
 
-            <p className="space-y-3 mb-40">
-              Automatiza tu hogar para mayor confort. <br />
-              Seguridad y eficiencia energética. <br />
-            </p>
+                <p className="space-y-3 mb-32">
+                  Automatiza tu hogar para mayor confort. <br />
+                  Seguridad y eficiencia energética. <br />
+                </p>
 
-            <div className="w-full lg:w-[1440]">
-              <Link
-                href="/"
-                className="px-10 py-3 border-b border border-gray-200 bg-gray-800/50 uppercase text-xs tracking-widest"
-              >
-                Solicitar presupuesto
-              </Link>
+                <div className="w-full lg:w-[1440]">
+                  <Link
+                    href="/"
+                    className="px-10 py-3 border-b border border-gray-200 bg-gray-800/50 uppercase text-xs tracking-widest"
+                  >
+                    Solicitar presupuesto
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -667,24 +672,24 @@ export default function Home() {
         >
           <div className=""> </div>
         </div>
-        <div className="flex justify-center bg-gray-900">
-          <div className="w-full lg:w-[1440] h-[800] -mt-24 bg-gray-200 text-gray-600 flex lg:flex-row flex-col">
+        <div className="flex justify-center bg-[#141414]">
+          <div className="w-full lg:w-[1440] min-h-[800] -mt-24 bg-gray-200 text-gray-600 flex lg:flex-row flex-col mb-20">
             <div className="w-full lg:w-1/2 flex lg:flex-row flex-col">
               <div className="w-full lg:w-1/2">
                 <div className="py-24 pl-24">
-                  <h1 className="uppercase font-extrabold mb-10 fam-title">
+                  <h1 className="title text-4xl uppercase mb-10">
                     Drywall en General
                   </h1>
-                  <h4>Remodelaciones</h4>
-                  <h4>Ampliaciones</h4>
-                  <h4>Diviciones Interiores</h4>
-                  <h4>Fachadas</h4>
-                  <h4>Cielo Raso</h4>
-                  <h4>Muros</h4>
-                  <h4>Deparmamentos</h4>
-                  <h4>Revestimiento</h4>
-                  <h4>Centro de entretenimiento</h4>
-                  <h4>Azotea Terrazas</h4>
+                  <h4>- Remodelaciones</h4>
+                  <h4>- Ampliaciones</h4>
+                  <h4>- Diviciones Interiores</h4>
+                  <h4>- Fachadas</h4>
+                  <h4>- Cielo Raso</h4>
+                  <h4>- Muros</h4>
+                  <h4>- Deparmamentos</h4>
+                  <h4>- Revestimiento</h4>
+                  <h4>- Centro de entretenimiento</h4>
+                  <h4>- Azotea Terrazas</h4>
                 </div>
               </div>
               <div
@@ -753,18 +758,23 @@ export default function Home() {
               </div>
               <div className="w-full lg:w-1/2 bg-gray-200 text-lg">
                 <div className="px-10 py-20">
-                  <p className="mb-10 text-xl">
+                  <p className="mb-20 text-lg text-justify">
                     No esperes mas para transformar tus espacios. Descubre el
                     potencial del Drywall con SGJ Soluciones Generales
                   </p>
 
-                  <p className="uppercase mb-5">Contactenos</p>
+                  <p className="font-semibold text-xl uppercase mb-5">
+                    Contactenos
+                  </p>
                   <p className="fam-number font-extrabold mb-20">
                     +51 904 150 352
                   </p>
 
-                  <p className="uppercase mb-5">Otros Servicios</p>
+                  <p className="font-semibold text-xl uppercase mb-5">
+                    Otros Servicios
+                  </p>
                   <h4>Electricidad</h4>
+                  <h4>Melamina</h4>
                   <h4>Pintura</h4>
                 </div>
               </div>
@@ -790,7 +800,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="electricidad" className={` antialiased w-full`}>
+      <section id="electricidad" className="w-full">
         <div
           className="min-h-screen bg-[#141414] text-gray-300"
           style={
@@ -802,40 +812,57 @@ export default function Home() {
             }
           }
         >
-          <div className="w-full flex lg:flex-row flex-col">
-            <div className="w-full lg:w-1/2 flex flex-col Xitems-center px-5 py-10 lg:py-20">
-              <h2 className="mb-10 lg:mb-20 lg:ml-20 tracking-widest">
-                Electricidad
-              </h2>
-              <div className="lg:w-[400] mb-10 tracking-wider">
-                Brindamos servicios de electricidad desde instalaciones
-                domiciliarias hasta proyectos comerciales. Incorporamos la
-                tecnología en tu residencia mediante la domótica.
+          <div className="w-full flex flex-col items-center py-20">
+            <div className="w-full lg:w-[1200] p-5 lg:p-0 flex flex-col lg:flex-row">
+              <div className="w-full lg:w-1/2 flex flex-col Xitems-center">
+                <h2 className="title text-4xl mb-10 tracking-widest">
+                  Electricidad
+                </h2>
+                <div className="lg:w-[400] mb-10 tracking-wider">
+                  Brindamos servicios de electricidad desde instalaciones
+                  domiciliarias hasta proyectos comerciales. Incorporamos la
+                  tecnología en tu residencia mediante la domótica.
+                </div>
+                <div className="relative w-full px-5 h-80 mb-10">
+                  <Image
+                    src="/images/electricidad/01.jpg" //"/images/electricidad.jpg"
+                    alt="electricidad"
+                    fill
+                    sizes=""
+                    //width={450}
+                    //height={400}
+                    style={{
+                      objectFit: "cover", // cover, contain, none
+                      objectPosition: "50% 50%",
+                    }}
+                  />
+                </div>
+                <div className="mb-10 subtitle">Instalación, mantenimiento y reparación </div>
+                <div className="relative w-full px-5 h-80">
+                  <Image
+                    src="/images/electricidad/02.jpg" //"/images/electricidad.jpg"
+                    alt="electricidad"
+                    fill
+                    sizes=""
+                    //width={450}
+                    //height={400}
+                    style={{
+                      objectFit: "cover", // cover, contain, none
+                      objectPosition: "50% 50%",
+                    }}
+                  />
+                </div>
               </div>
-              <div className="relative w-full lg:w-96 px-5 h-80 lg:h-96">
-                <Image
-                  src="/images/electri4.jpg" //"/images/electricidad.jpg"
-                  alt="electricidad"
-                  fill
-                  sizes=""
-                  //width={450}
-                  //height={400}
-                  style={{
-                    objectFit: "cover", // cover, contain, none
-                    objectPosition: "50% 50%",
-                  }}
-                />
-              </div>
+              <div
+                className="w-full lg:w-1/2 h-[600] lg:min-h-screen bg-[#141414] text-gray-300 -mt-20 lg:mt-0"
+                style={{
+                  backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(/images/electricidad/fondo.jpg)`,
+                  backgroundSize: "cover",
+                  //backgroundAttachment: "fixed",
+                  backgroundPosition: "50%",
+                }}
+              ></div>
             </div>
-            <div
-              className="w-full lg:w-1/2 h-[600] lg:min-h-screen bg-[#141414] text-gray-300 -mt-20 lg:mt-0"
-              style={{
-                backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(/images/electricidad/fondo.jpg)`,
-                backgroundSize: "cover",
-                //backgroundAttachment: "fixed",
-                backgroundPosition: "50%",
-              }}
-            ></div>
           </div>
         </div>
       </section>
@@ -973,6 +1000,7 @@ export default function Home() {
           <div className="w-4/5">Pintura</div>
         </div>
       </section>
+
       <section id="mayolica" className="w-full">
         <div
           className="min-h-screen bg-[#141414] text-gray-300 lg:w-4/6"
