@@ -227,7 +227,7 @@ export const Navbar = () => {
             <div className="lg:w-20"></div>
             <div className="w-full -mr-20 lg:mr-0">
               {/** TITLE-1 */}
-              <div className="pt-10">
+              <div className="py-5 lg:py-10">
                 <span className=" text-green-100 tracking-[3px] text-sm lg:text-base font-bold uppercase">
                   Nuestros{" "}
                   <span className="text-teal-500 Xtext-yellow-300/60 ">
@@ -236,11 +236,11 @@ export const Navbar = () => {
                 </span>
               </div>
               {/** LIST-1 */}
-              <div className="Xlg:w-[1800px] lg:w-full lg:m-auto text-gray-100 p-0 lg:py-16 grid grid-cols-4 lg:grid-cols-8 lg:gap-1">
+              <div className="Xlg:w-[1800px] lg:w-full lg:m-auto text-gray-100 grid grid-cols-4 lg:grid-cols-8 lg:gap-1 gap-y-1">
                 {list.map((item, index) => (
                   <li
                     key={index}
-                    className="w-full h-50 lg:h-70 Xbg-gradient-to-r"
+                    className="w-full h-40 lg:h-70 Xbg-gradient-to-r"
                     style={{
                       backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(255,255,255,0.0)), url(/images/${item.link}/bar.jpg)`,
                       backgroundSize: "cover",
@@ -254,7 +254,7 @@ export const Navbar = () => {
                       className="flex flex-row items-center text-2xl"
                       onClick={() => setNavbar(!navbar)}
                     >
-                      <h6 className="w-full bg-black/60 hover:bg-black/90 hover:font-semibold p-3 text-[10px] lg:text-base text-left uppercase -tracking-wide font-semibold">
+                      <h6 className="w-full bg-black/60 hover:bg-black/90 hover:font-semibold p-2 text-[10px] lg:text-base text-left uppercase -tracking-wide font-semibold">
                         {item.title}
                       </h6>
                     </Link>
@@ -263,18 +263,18 @@ export const Navbar = () => {
               </div>
 
               {/** TITLE-2 */}
-              <li className="flex flex-col items-center justify-center border-t pt-10 mb-5 border-gray-700 text-center">
+              <li className="flex flex-col items-center justify-center border-t border-gray-700 text-center">
                 <img hidden src="logo" width="50px" />
-                <span className=" text-green-100 tracking-[3px] text-sm lg:text-base font-bold uppercase">
+                <span className="py-5 lg:py-10 text-green-100 tracking-[3px] text-sm lg:text-base font-bold uppercase">
                   Reformas <span className="text-teal-500 "> Mantenimiento </span>  Decoración
                 </span>
               </li>
               {/** LIST-2 */}
-              <div className="Xlg:w-[1800px] lg:w-full lg:m-auto text-gray-100 p-0 lg:py-5 grid grid-cols-4 lg:grid-cols-5 lg:gap-4">
+              <div className="Xlg:w-[1800px] lg:w-full lg:m-auto text-gray-100 grid grid-cols-4 lg:grid-cols-5 lg:gap-4">
                 {list2.map((item, index) => (
                   <li
                     key={index}
-                    className="w-full h-50 Xbg-gradient-to-r from-green-500/50 to-transparent hover:font-bold"
+                    className="w-full h-40 Xbg-gradient-to-r from-green-500/50 to-transparent hover:font-bold"
                     style={{
                       backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(255,255,255,0.2)), url(/images/${item.link}/bar.jpg)`,
                       backgroundSize: "cover",
@@ -288,7 +288,7 @@ export const Navbar = () => {
                       className="flex flex-row items-center text-2xl"
                       onClick={() => setNavbar(!navbar)}
                     >
-                      <h6 className="w-full bg-black/60 hover:bg-black/90 hover:font-semibold p-3 text-[10px] lg:text-base text-left uppercase tracking-wide font-semibold">
+                      <h6 className="w-full bg-black/60 hover:bg-black/90 hover:font-semibold p-2 text-[10px] lg:text-base text-left uppercase tracking-wide font-semibold">
                         {item.title}
                       </h6>
                     </Link>
