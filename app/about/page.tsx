@@ -22,14 +22,14 @@ const page = () => {
             backgroundPosition: "70%",
           }}
         >
-          <div className="w-[1000]">
-            <div className="text-7xl">Quienes <br /> Somos</div>
+          <div className="lg:w-[1000] lg:text-left text-center">
+            <div className="lg:text-7xl text-5xl Xfont-semibold uppercase ">Quienes <br /> Somos</div>
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-row">
+      <div className="w-full flex lg:flex-row flex-col-reverse">
         <div
-          className="w-1/2 bg-[#141414] text-gray-300 flex items-center justify-center"
+          className="lg:w-1/2 w-full bg-[#141414] text-gray-300 flex items-center justify-center"
           style={{
             backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("https://iax.com.pe/image/servicios4.jpeg")`,
             backgroundSize: "cover",
@@ -37,11 +37,12 @@ const page = () => {
             backgroundPosition: "70%",
           }}
         >
-          <div className=""> </div>
+          <div className="h-60"> </div>
         </div>
-        <div className="w-1/2 text-gray-600 p-20">
-          <h1 className="lg:text-lg md:text-3xl text-amber-300">Por que elegirnos</h1>
-          <p className=" w-[500] my-5 text-justify">
+
+        <div className="lg:w-1/2 text-gray-600 lg:p-20 px-5 py-10">
+          <h1 className="lg:text-lg md:text-3xl text-teal-500 uppercase">Por que elegirnos</h1>
+          <p className=" lg:w-[500] my-5 text-justify">
             FABRISERVICIOS EIRL. Es una empresa dedicada a brindar soluciones en
             el rubro de construcción, Electricidad, Pintura, Gasfiteria,
             Mantenimiento, enchapado de mayolica y porcelanato, Melamine y
@@ -61,10 +62,10 @@ const page = () => {
           </ul>
         </div>
       </div>
-      <div className="w-full flex flex-row">
-        <div className="w-1/2 text-gray-600 flex justify-end text-left py-20">
-          <div className="w-[500] ">
-            <h1>Nuestros Valores</h1>
+      <div className="w-full flex lg:flex-row flex-col">
+        <div className="lg:w-1/2 text-gray-600 flex justify-end text-left lg:py-20 p-10">
+          <div className="lg:w-[500] w-full ">
+            <h1 className="lg:text-lg md:text-3xl text-teal-500 uppercase">Nuestros Valores</h1>
             <ul className="list-disc list-inside flex flex-col gap-1 mt-5">
               <li>RESPONSABILIDAD</li>
               <li>DISCIPLINA</li>
@@ -77,10 +78,10 @@ const page = () => {
           </div>
         </div>
 
-        <div className="w-1/2 bg-[#141414]">
-          <div className="p-20">
-            <h1>Nuestra misión</h1>
-            <p className="w-[500] text-justify my-5">
+        <div className="lg:w-1/2 bg-[#141414]">
+          <div className="lg:p-20 p-10">
+            <h1 className="lg:text-lg md:text-3xl uppercase">Nuestra misión</h1>
+            <p className="lg:w-[500] text-justify my-5">
               Somos una empresa innovadora diseñada para brindar soluciones
               integrales a nuestros clientes. Empleamos el mejor talento humano
               y tecnologico con el fin de suministrar servicios de calidad a los
@@ -88,8 +89,8 @@ const page = () => {
               de los colaboradores es el indicador mas importante de crecimiento
               de nuestro compañía.
             </p>
-            <h1>Nuestra visión</h1>
-            <p className="w-[500] text-justify my-5">
+            <h1 className="lg:text-lg md:text-3xl uppercase">Nuestra visión</h1>
+            <p className="lg:w-[500] text-justify my-5">
               Ser la compañía que más contribuya a brindar soluciones integrales
               a empresas, caracterizada por ser oportuna, innovadora, flexible y
               brindar servicios de alta calidad, que permite el desarrollo y
@@ -99,7 +100,7 @@ const page = () => {
         </div>
       </div>
       <div
-        className="h-[500] bg-[#141414] text-gray-300 flex items-center justify-center"
+        className="min-h-[500] bg-[#141414] text-gray-300 flex items-center justify-center"
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,1)), url("https://corpbps.com/wp-content/uploads/2022/12/Servicios-Generales.jpg")`,
           backgroundSize: "cover",
@@ -107,9 +108,9 @@ const page = () => {
           backgroundPosition: "50% 50%",
         }}
       >
-        <div className="w-[1200]">
-          <div className="flex flex-row gap-12 ">
-            <div className="w-1/4 flex flex-col items-center text-center gap-5">
+        <div className="lg:w-[1200] w-full lg:p-0 px-5 py-10">
+          <div className="flex lg:flex-row flex-col gap-12 ">
+            <div className="lg:w-1/4 flex flex-col items-center text-center gap-5">
               <svg
                 width="54px"
                 height="54px"
@@ -154,7 +155,7 @@ const page = () => {
                 y procesos para una mejor flexibilidad en cada trabajo.
               </p>
             </div>
-            <div className="w-1/4 flex flex-col items-center text-center gap-5">
+            <div className="lg:w-1/4 flex flex-col items-center text-center gap-5">
               <svg
                 fill="currentColor"
                 width="54px"
@@ -179,7 +180,7 @@ const page = () => {
                 flexibles y determinados a lograr tu satisfacción.
               </p>
             </div>
-            <div className="w-1/4 flex flex-col items-center text-center gap-5">
+            <div className="lg:w-1/4 flex flex-col items-center text-center gap-5">
               <svg
                 fill="currentColor"
                 width="50px"
@@ -203,7 +204,7 @@ const page = () => {
                 días del año sin excepción, estamos en Lima Norte.
               </p>
             </div>
-            <div className="w-1/4 flex flex-col items-center text-center gap-5">
+            <div className="lg:w-1/4 flex flex-col items-center text-center gap-5">
               <svg
                 fill="currentColor"
                 height="50px"

@@ -14,7 +14,7 @@ const page = () => {
       </div>
       <div className="">
         <div
-          className="h-[600] bg-[#141414] text-gray-300 flex items-center justify-center"
+          className="min-h-[600] bg-[#141414] text-gray-300 flex items-center justify-center"
           style={{
             backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url(${fondoHome})`,
             backgroundSize: "cover",
@@ -23,35 +23,36 @@ const page = () => {
           }}
         >
           <div className="w-[700] text-center">
-            <div className="text-7xl font-bold uppercase mb-10">Contacto</div>
-            <p className="text-xl font-semibold Xbg-gray-500/50">
-              No hay nada que nos guste más que arremangarnos y poner en marcha
+            <div className="lg:text-7xl text-5xl font-bold uppercase mb-10">Contacto</div>
+            <p className="lg:text-xl text-lg lg:px-0 px-5 font-semibold Xbg-gray-500/50">
+              No hay nada que nos guste más que el compromiso y poner en marcha
               un proyecto totalmente nuevo. ¡Hagamos algo grandioso juntos!
             </p>
           </div>
         </div>
       </div>
-      <div className="flex justify-center py-28">
-        <div className="w-[1200] flex flex-row text-gray-500">
-          <div className="w-3/5 font-semibold">
+      <div className="flex justify-center py-20">
+        <div className="lg:w-[1200] w-full flex lg:flex-row flex-col lg:px-0 px-5 text-gray-500">
+          
+          <div className="lg:w-3/5 font-semibold">
             <div>Nombre *</div>
-            <input type="text" className="w-full bg-gray-200 p-3 mt-4 mb-10" />
+            <input type="text" className="w-full bg-gray-200 p-3 mt-3 lg:mb-8 mb-3" />
             <div>Email *</div>
-            <input type="email" className="w-full bg-gray-200 p-3 mt-4 mb-10" />
+            <input type="email" className="w-full bg-gray-200 p-3 mt-3 lg:mb-8 mb-3" />
             <div>Compañia/Organización *</div>
-            <input type="text" className="w-full bg-gray-200 p-3 mt-4 mb-10" />
+            <input type="text" className="w-full bg-gray-200 p-3 mt-3 lg:mb-8 mb-3" />
             <div>Mensaje *</div>
             <textarea
-              className="w-full bg-gray-200 p-3 mt-4 mb-10"
+              className="w-full bg-gray-200 p-3 mt-3 lg:mb-8 mb-3"
               rows={3}
             ></textarea>
             <input
               type="button"
               value="Enviar"
-              className="w-2/5 text-gray-50 bg-teal-400 p-3 mt-4 mb-10"
+              className="lg:w-2/5 w-full text-gray-50 bg-teal-400 p-3 mt-4 mb-10"
             />
           </div>
-          <div className="w-2/5 pl-36">
+          <div className="lg:w-2/5 lg:pl-36">
             <div className="w-full mb-10">
               {/** SVG SOCIAL */}
               <div className="flex flex-wrap md:flex-col lg:flex-row JJjustify-center">
@@ -142,6 +143,7 @@ const page = () => {
               <span className="fam-number"> 10 am. a 6 pm.</span>{" "}
             </div>
           </div>
+
         </div>
       </div>
     </section>

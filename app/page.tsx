@@ -124,12 +124,13 @@ export default function Home() {
                 className={` ${title.className} antialiased w-full lg:w-[800] text-3xl lg:text-6xl mb-5 lg:mb-20 uppercase `}
               >
                 <h1>Bienvenido a</h1>
-                <h1 className="text-4xl">
-                  Soluciones Generales
+                <h1 className="text-4xl mt-2">
                   <span className="font-bold">
                     {" "}
                     S<span className="text-teal-200">G</span>J{" "}
+                  
                   </span>
+                  Soluciones Generales
                 </h1>
               </div>
               <div className="lg:w-[550] text-base lg:text-xl pr-10">
@@ -147,7 +148,7 @@ export default function Home() {
               <div className="mr-3">
                 <Link
                   href="#camaras"
-                  className="px-12 py-4 bg-teal-400/50 hover:bg-gray-100 hover:text-teal-500 Xtracking-widest"
+                  className="px-12 py-4 bg-teal-500/90 hover:bg-gray-100 hover:text-teal-500 Xtracking-widest"
                 >
                   Llámenos: <span className="fam-number">939 065 454</span>
                 </Link>
@@ -156,7 +157,7 @@ export default function Home() {
               <div className="lg:mt-0 mt-10">
                 <Link
                   href="#camaras"
-                  className="px-14 py-4 bg-teal-400/50 hover:bg-gray-100 hover:text-teal-500"
+                  className="px-14 py-4 bg-teal-500/90 hover:bg-gray-100 hover:text-teal-500"
                 >
                   Escribir por Whatsapp
                 </Link>

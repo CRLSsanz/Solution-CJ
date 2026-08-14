@@ -97,7 +97,7 @@ export const Navbar = () => {
         <nav className="w-full z-30 h-16 p-2 text-gray-300 flex justify-center items-center bg-black/40 backdrop-blur-2xl">
           <div className="w-[1440] flex flex-row justify-between items-center">
             <div className=" flex flex-row justify-between items-center">
-              <div className="relative w-10 h-10 m-1 mr-3">
+              <div className="relative w-9 h-9 m-1 mr-3">
                 <Image
                   src={`/images/sgj.png`} //"/images/electricidad.jpg"
                   alt="02"
@@ -113,22 +113,29 @@ export const Navbar = () => {
               </div>
               <div>
                 <div
-                  className={` fam-title w-full flex justify-center font-extrabold text-2xl tracking-widest`}
+                  className={` fam-title w-full flex justify-center font-semibold text-xl tracking-widest`}
                 >
                   GRUPO SGJ
                 </div>
-                <div className="fam-title uppercase -mt-1 text-xs font-semibold tracking-wide">
-                  soluciones generales
+                <div className="fam-title -mt-1 text-xs font-semibold tracking-wider">
+                  Soluciones Generales
                 </div>
               </div>
             </div>
 
             <div className="hidden lg:flex flex-row gap-4 uppercase text-sm font-semibold tracking-widest whitespace-nowrap">
               <div>
-                <Link href="/" className="p-2 hover:border-b border-teal-500">Home</Link>
+                <Link href="/" className="p-2 hover:border-b border-teal-500">
+                  Home
+                </Link>
               </div>
               <div>
-                <Link href="/about" className="p-2 hover:border-b border-teal-500">Quienes Somos</Link>
+                <Link
+                  href="/about"
+                  className="p-2 hover:border-b border-teal-500"
+                >
+                  Quienes Somos
+                </Link>
               </div>
               <div
                 onClick={() => setNavbar(!navbar)}
@@ -136,11 +143,17 @@ export const Navbar = () => {
               >
                 <span className="p-2 hover:border-b border-teal-500">
                   Servicios Profesionales
-                  </span>
+                </span>
               </div>
               <div>
-                <Link href="/contact" className="p-2 hover:border-b border-teal-500">Contactenos</Link>
-              </div> 
+                <Link
+                  href="../contact"
+                  className="p-2 hover:border-b border-teal-500"
+                  onClick={() => setNavbar(!navbar)}
+                >
+                  Contactenos
+                </Link>
+              </div>
               <div></div>
               <div className="w-full">
                 <Link
@@ -238,37 +251,55 @@ export const Navbar = () => {
               {/** LIST-1 */}
               <div className="Xlg:w-[1800px] lg:w-full lg:m-auto text-gray-100 grid grid-cols-4 lg:grid-cols-8 lg:gap-1 gap-y-1">
                 {list.map((item, index) => (
-                  <li
-                    key={index}
-                    className="w-full h-40 lg:h-70 Xbg-gradient-to-r"
-                    style={{
-                      backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(255,255,255,0.0)), url(/images/${item.link}/bar.jpg)`,
-                      backgroundSize: "cover",
-                      //backgroundAttachment: "fixed",
-                      backgroundPosition: "50%",
-                    }}
+                  <Link
+                    href={`../#${item.link}`}
+                    onClick={() => setNavbar(!navbar)}
                   >
-                    {" "}
-                    <Link
-                      href={`../#${item.link}`} 
-                      className="flex flex-row items-center text-2xl"
-                      onClick={() => setNavbar(!navbar)}
+                    <div
+                      key={index}
+                      className="w-full h-40 lg:h-70 Xbg-gradient-to-r"
+                      style={{
+                        backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(255,255,255,0.0)), url(/images/${item.link}/bar.jpg)`,
+                        backgroundSize: "cover",
+                        //backgroundAttachment: "fixed",
+                        backgroundPosition: "50%",
+                      }}
                     >
-                      <h6 className="w-full bg-black/60 hover:bg-black/90 hover:font-semibold p-2 text-[10px] lg:text-base text-left uppercase -tracking-wide font-semibold">
-                        {item.title}
-                      </h6>
-                    </Link>
-                  </li>
+                      {" "}
+                      <h1
+
+                        className="flex flex-row items-center text-2xl"
+                      >
+                        <h6 className="w-full bg-black/60 hover:bg-black/90 hover:font-semibold p-2 text-[10px] lg:text-base text-left uppercase -tracking-wide font-semibold">
+                          {item.title}
+                        </h6>
+                      </h1>
+                    </div>
+                  </Link>
                 ))}
               </div>
 
-              {/** TITLE-2 */}
-              <li className="flex flex-col items-center justify-center border-t border-gray-700 text-center">
-                <img hidden src="logo" width="50px" />
-                <span className="py-5 lg:py-10 text-green-100 tracking-[3px] text-sm lg:text-base font-bold uppercase">
-                  Reformas <span className="text-teal-500 "> Mantenimiento </span>  Decoración
-                </span>
-              </li>
+              {/** MENU */}
+              <div className="flex flex-col items-center font-semibold justify-center text-center my-5">
+                <Link href="/" className="p-2">
+                  Home
+                </Link>
+                <Link
+                  href="/about"
+                  className="w-full p-2 border-t border-b border-gray-700"
+                  onClick={() => setNavbar(!navbar)}
+                >
+                  Quienes Somos
+                </Link>
+                <Link
+                  href="/contact"
+                  className="p-2"
+                  onClick={() => setNavbar(!navbar)}
+                >
+                  Contact
+                </Link>
+              </div>
+
               {/** LIST-2 */}
               <div className="Xlg:w-[1800px] lg:w-full lg:m-auto text-gray-100 grid grid-cols-4 lg:grid-cols-5 lg:gap-4">
                 {list2.map((item, index) => (
@@ -295,6 +326,13 @@ export const Navbar = () => {
                   </li>
                 ))}
               </div>
+              {/** TITLE-2 */}
+              <li className="flex flex-col items-center justify-center Xborder-t border-gray-700 text-center">
+                <span className="py-5 lg:py-10 text-green-100 tracking-[3px] text-sm lg:text-base font-bold uppercase">
+                  Reformas y{" "}
+                  <span className="text-teal-500 "> Mantenimiento </span>{" "}
+                </span>
+              </li>
 
               {/** LINEA */}
               <div className="hidden">
@@ -306,12 +344,12 @@ export const Navbar = () => {
             <li className="w-14 ml-5 lg:ml-0 lg:w-20 h-16 lg:h-svh flex flex-col justify-center items-center">
               <button
                 onClick={() => setNavbar(!navbar)}
-                className="w-10 h-10 lg:m-2 text-gray-200 active:bg-none lg:hover:rotate-90 lg:hover:scale-75 transition-transform duration-500 active:rotate-90 active:scale-75 lg:active:animate-ping focus:outline-none flex justify-center items-center"
+                className="w-10 h-10 lg:m-2 text-gray-200 active:bg-none cursor-pointer lg:hover:rotate-90 lg:hover:scale-105 transition-transform duration-500 active:rotate-90 active:scale-75 lg:active:animate-ping focus:outline-none flex justify-center items-center"
               >
                 {navbar ? (
                   <svg
-                    width="25px"
-                    height="25px"
+                    width="20px"
+                    height="20px"
                     viewBox="0 -0.5 21 21"
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -361,7 +399,12 @@ export const Navbar = () => {
                   <span className="text-xl"></span>
                 )}
               </button>
-              <span className="text-[13px] uppercase hidden lg:block">close</span>
+              <span
+                className="text-[13px] uppercase hidden lg:block cursor-pointer"
+                onClick={() => setNavbar(!navbar)}
+              >
+                close
+              </span>
             </li>
           </div>
         </ul>
