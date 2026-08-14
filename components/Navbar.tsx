@@ -157,7 +157,7 @@ export const Navbar = () => {
               <div></div>
               <div className="w-full">
                 <Link
-                  href="/"
+                href="https://api.whatsapp.com/send?phone=+51939065454&text=Buen dia, estoy interesado en cotizar un proyecto."
                   className="px-10 py-2 border-b border border-gray-400/50 bg-gray-800/50 uppercase hover:border-teal-500"
                 >
                   Cotizar Projecto
@@ -252,6 +252,7 @@ export const Navbar = () => {
               <div className="Xlg:w-[1800px] lg:w-full lg:m-auto text-gray-100 grid grid-cols-4 lg:grid-cols-8 lg:gap-1 gap-y-1">
                 {list.map((item, index) => (
                   <Link
+                    key={index}
                     href={`../#${item.link}`}
                     onClick={() => setNavbar(!navbar)}
                   >
@@ -266,14 +267,11 @@ export const Navbar = () => {
                       }}
                     >
                       {" "}
-                      <h1
-
-                        className="flex flex-row items-center text-2xl"
-                      >
-                        <h6 className="w-full bg-black/60 hover:bg-black/90 hover:font-semibold p-2 text-[10px] lg:text-base text-left uppercase -tracking-wide font-semibold">
+                      <div className="flex flex-row items-center text-2xl">
+                        <h1 className="w-full bg-black/60 hover:bg-black/90 hover:font-semibold p-2 text-[10px] lg:text-base text-left uppercase -tracking-wide font-semibold">
                           {item.title}
-                        </h6>
-                      </h1>
+                        </h1>
+                      </div>
                     </div>
                   </Link>
                 ))}

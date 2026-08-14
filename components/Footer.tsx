@@ -47,10 +47,10 @@ function Footer() {
       <div className="text-gray-400 flex flex-col md:flex-row justify-between">
         <div className="md:w-1/3 mb-5">
           <h4 className="text-gray-100 fam-logo font-bold tracking-wider text-2xl mb-5">
-            Soluciones Generales J<span className="text-cyan-500">O</span>TA
+            Grupo S<span className="text-cyan-500">G</span>J
           </h4>
           <p className="md:leading-loose">
-            Detras de
+            Detras de Soluciones Generales
             <span className="font-semibold"> SGJ </span> hay un equipo de
             <span className="font-semibold"> profesionales </span>
             con años de experiencia con trabajo

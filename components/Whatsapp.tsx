@@ -7,7 +7,7 @@ export const Whatsapp = () => {
         {/** BUTTON WHATSAPP */}
         <div className="flex flex-row justify-between">
           <a
-            href={`https://api.whatsapp.com/send?phone=${939065454}&text=${"Hola estoy interesado en encargar:%0A%0A"}`}
+            href={`https://api.whatsapp.com/send?phone=${939065454}&text=${"Hola, estoy interesado en sus servicios."}`}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full flex justify-center items-center cursor-pointer"

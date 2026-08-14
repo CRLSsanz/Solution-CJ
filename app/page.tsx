@@ -121,19 +121,18 @@ export default function Home() {
             <div></div>
             <div className="w-full lg:w-[1200]">
               <div
-                className={` ${title.className} antialiased w-full lg:w-[800] text-3xl lg:text-6xl mb-5 lg:mb-20 uppercase `}
+                className={` ${title.className} antialiased w-full lg:w-[800] mb-5 lg:mb-20 uppercase `}
               >
-                <h1>Bienvenido a</h1>
-                <h1 className="text-4xl mt-2">
+                <h1 className="text-2xl lg:text-6xl">Bienvenido a</h1>
+                <h1 className="text-3xl lg:text-4xl mt-2">
                   <span className="font-bold">
                     {" "}
                     S<span className="text-teal-200">G</span>J{" "}
-                  
                   </span>
                   Soluciones Generales
                 </h1>
               </div>
-              <div className="lg:w-[550] text-base lg:text-xl pr-10">
+              <div className="lg:w-[550] text-justify text-base lg:text-xl pr-10">
                 <span className="">Nos dedicamos a ofrecer </span>
                 soluciones internas para su negocio o vivienda,
                 <span className="font-bold text-teal-200">
@@ -144,24 +143,20 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-full lg:w-[1200] flex lg:flex-row flex-col text-white">
-              <div className="mr-3">
-                <Link
-                  href="#camaras"
-                  className="px-12 py-4 bg-teal-500/90 hover:bg-gray-100 hover:text-teal-500 Xtracking-widest"
-                >
-                  Llámenos: <span className="fam-number">939 065 454</span>
-                </Link>
-              </div>
+            <div className="w-full lg:w-[1200]  flex lg:flex-row flex-col gap-3 text-white text-center">
+              <Link
+                href="tel:+51939065454"
+                className="px-10 py-4 bg-teal-500/90 hover:bg-gray-100 hover:text-teal-500 Xtracking-widest"
+              >
+                Llámenos: <span className="fam-number"> 939 065 454</span>
+              </Link>
 
-              <div className="lg:mt-0 mt-10">
-                <Link
-                  href="#camaras"
-                  className="px-14 py-4 bg-teal-500/90 hover:bg-gray-100 hover:text-teal-500"
-                >
-                  Escribir por Whatsapp
-                </Link>
-              </div>
+              <Link
+                href="https://api.whatsapp.com/send?phone=+51939065454&text=Hola, estoy interesado en sus servicios."
+                className="px-10 py-4 bg-teal-500/90 hover:bg-gray-100 hover:text-teal-500"
+              >
+                Escribir por Whatsapp
+              </Link>
             </div>
 
             <div className="hidden w-full lg:w-[1200] text-gray-400/80">
@@ -292,7 +287,7 @@ export default function Home() {
         >
           <div className="w-full flex flex-col items-center py-20">
             <div className="w-full lg:w-[1200] lg:p-0 p-5">
-              <h2 className="title text-4xl uppercase mb-5">
+              <h2 className="title lg:text-4xl text-2xl uppercase mb-5">
                 Instalacion de camaras de vigilancia
               </h2>
               <ul className="mb-10">
@@ -503,7 +498,7 @@ export default function Home() {
                   </h1>
                 </div>
 
-                <div className="relative w-full h-48 lg:h-[400]">
+                <div className="relative w-full h-48 lg:h-[400] lg:col-span-1 col-span-2">
                   <Image
                     src={`/images/camaras/02.jpg`} //"/images/electricidad.jpg"
                     alt="03"
@@ -538,7 +533,9 @@ export default function Home() {
         >
           <div className="w-full flex flex-col items-center py-20">
             <div className="w-full lg:w-[1200] lg:p-0 p-5">
-              <h3 className="title text-4xl uppercase mb-5">Cerrajeria</h3>
+              <h3 className="title lg:text-4xl text-2xl uppercase mb-5">
+                Cerrajeria
+              </h3>
               <div className="flex lg:flex-row flex-col">
                 <div className="lg:w-2/3 relative w-full h-48 lg:h-[400] mb-10">
                   <Image
@@ -554,7 +551,7 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <div className="lg:w-1/3 p-10">
+                <div className="lg:w-1/3 lg:p-10 p-5">
                   <h1 className="subtitle uppercase font-bold mb-5">
                     Nuestros Servicios
                   </h1>
@@ -567,7 +564,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex lg:flex-row-reverse flex-col">
+              <div className="flex lg:flex-row-reverse flex-col gap-5">
                 <div className="lg:w-2/3 relative w-full h-60 lg:h-[500]">
                   <Image
                     src={`/images/cerrajeria/03.jpg`} //"/images/electricidad.jpg"
@@ -586,8 +583,8 @@ export default function Home() {
                   </h1>
                 </div>
 
-                <div className="lg:w-1/3 w-full flex items-center py-5">
-                  <div className="relative w-[400] h-60 lg:h-[400] lg:mt-0 -mt-12">
+                <div className="lg:w-1/3 w-full flex items-center">
+                  <div className="relative w-[400] h-60 lg:h-[400] ">
                     <Image
                       src={`/images/cerrajeria/02.jpg`} //"/images/electricidad.jpg"
                       alt="01"
@@ -612,7 +609,7 @@ export default function Home() {
         <div
           className="min-h-screen bg-[#141414] text-gray-300"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('/images/domotica/fondo.jpg')`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.1)), url('/images/domotica/fondo.jpg')`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
             backgroundPosition: "60%",
@@ -620,8 +617,10 @@ export default function Home() {
         >
           <div className="w-full flex flex-col items-center py-20">
             <div className="w-full lg:w-[1200] lg:p-0 p-5">
-              <div className="w-full lg:w-[500] bg-black/80 p-10">
-                <h2 className="title text-4xl uppercase mb-5">Domótica</h2>
+              <div className="w-full lg:w-[500] bg-black/70 p-10">
+                <h2 className="title lg:text-4xl text-2xl uppercase mb-5">
+                  Domótica
+                </h2>
                 <p className="mb-10 space-y-3">
                   Hogar inteligente sin complicaciones. <br />
                   Instalación y recomendaciones. <br />
@@ -663,7 +662,7 @@ export default function Home() {
 
       <section id="drywall" className="w-full">
         <div
-          className="hidden lg:block min-h-[800] bg-[#141414] text-gray-300"
+          className="Xhidden lg:min-h-[800] h-[400] bg-[#141414] text-gray-300"
           style={{
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/drywall/fondo.jpg')`,
             backgroundSize: "cover",
@@ -677,7 +676,7 @@ export default function Home() {
           <div className="w-full lg:w-[1440] min-h-[800] -mt-24 bg-gray-200 text-gray-600 flex lg:flex-row flex-col mb-20">
             <div className="w-full lg:w-1/2 flex lg:flex-row flex-col">
               <div className="w-full lg:w-1/2">
-                <div className="py-24 pl-24">
+                <div className="lg:py-20 py-10 pl-20 lg:mt-0 -mt-34">
                   <h1 className="title text-4xl uppercase mb-10">
                     Drywall en General
                   </h1>
@@ -757,9 +756,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
               <div className="w-full lg:w-1/2 bg-gray-200 text-lg">
                 <div className="px-10 py-20">
-                  <p className="mb-20 text-lg text-justify">
+                  <p className="lg:mb-20 mb-10 text-lg text-justify">
                     No esperes mas para transformar tus espacios. Descubre el
                     potencial del Drywall con SGJ Soluciones Generales
                   </p>
@@ -767,7 +767,7 @@ export default function Home() {
                   <p className="font-semibold text-xl uppercase mb-5">
                     Contactenos
                   </p>
-                  <p className="fam-number font-extrabold mb-20">
+                  <p className="fam-number font-extrabold lg:mb-20 mb-10">
                     +51 904 150 352
                   </p>
 
@@ -816,7 +816,7 @@ export default function Home() {
           <div className="w-full flex flex-col items-center py-20">
             <div className="w-full lg:w-[1200] p-5 lg:p-0 flex flex-col lg:flex-row">
               <div className="w-full lg:w-1/2 flex flex-col Xitems-center">
-                <h2 className="title text-4xl mb-10 tracking-widest">
+                <h2 className="title lg:text-4xl text-2xl mb-10">
                   Electricidad
                 </h2>
                 <div className="lg:w-[400] mb-10 tracking-wider">
@@ -838,7 +838,9 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <div className="mb-10 subtitle">Instalación, mantenimiento y reparación </div>
+                <div className="mb-10 subtitle">
+                  Instalación, mantenimiento y reparación{" "}
+                </div>
                 <div className="relative w-full px-5 h-80">
                   <Image
                     src="/images/electricidad/02.jpg" //"/images/electricidad.jpg"
@@ -893,7 +895,7 @@ export default function Home() {
           }}
         >
           <div className="w-full lg:h-svh py-20 lg:py-0 flex flex-col items-center justify-center">
-            <div className="w-full lg:w-[1440] text-3xl text-center mb-5">
+            <div className="w-full lg:w-[1440] lg:text-4xl text-2xl text-center mb-5">
               MELAMINA
             </div>
             <div className="w-full lg:w-[700] text-center mb-5">

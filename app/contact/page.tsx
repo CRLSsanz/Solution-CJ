@@ -52,6 +52,7 @@ const page = () => {
               className="lg:w-2/5 w-full text-gray-50 bg-teal-400 p-3 mt-4 mb-10"
             />
           </div>
+          
           <div className="lg:w-2/5 lg:pl-36">
             <div className="w-full mb-10">
               {/** SVG SOCIAL */}
