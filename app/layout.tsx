@@ -45,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={` ${geistRaleway.className} antialiased`}>
+      <body className={` ${geistRaleway.className} antialiased ` }>
         <div
           id="sectionHome"
           className="w-full flex justify-center bg-cover bg-fixed bg-[50%] Xbg-[url('https://img.freepik.com/vector-gratis/fondo-abstracto-borroso_1107-166.jpg')] min-h-screen"

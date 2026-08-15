@@ -98,7 +98,7 @@ export default function Home() {
     "https://www.cerrajerosdoshermanas.es/hero-locksmith.jpg";
 
   return (
-    <section className="w-full flex flex-col justify-center items-center ">
+    <section className="w-full flex flex-col justify-center items-center bg-[#141414]">
       <div className="w-full fixed z-50 top-0">
         <Navbar />
       </div>
@@ -872,15 +872,76 @@ export default function Home() {
 
       <section id="gasfiteria" className="w-full">
         <div
-          className="min-h-screen bg-[#141414] text-gray-300 w-full"
+          className="Xmin-h-screen bg-gray-100 text-gray-600 Xbg-[#141414] w-full rounded-4xl"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/gasfiteria/fondo.jpg')`,
+            //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/gasfiteria/fondo.jpg')`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
             backgroundPosition: "50%",
           }}
         >
-          <div className="XXw-80">Gasfiteria</div>
+          <div className="w-full flex flex-col items-center py-20">
+            <div className="w-full lg:w-[1200] p-5 lg:p-0 flex flex-col lg:flex-row">
+              <div className="lg:w-1/4 mb-10">
+                <h1 className="title lg:text-4xl text-2xl mb-5">Gasfiteria</h1>
+                <p>
+                  Reparación de fugas <br />
+                  Limpieza y destape de tuberías, lavaderos, inodoros y cajas de
+                  registro. <br />
+                  Instalaciones sanitarias: Montaje de griferías, duchas,
+                  sanitarios, termas y tanques elevados. <br />
+                  Instalación o mantenimiento de bomba rotoplas y trampas.
+                </p>
+              </div>
+              <div className="lg:w-3/4 grid lg:grid-cols-3 grid-cols-2 gap-5">
+                <div className="relative w-full px-5 lg:h-80 h-50">
+                  <Image
+                    className="rounded-2xl"
+                    src="/images/gasfiteria/01.jpg" //"/images/electricidad.jpg"
+                    alt="electricidad"
+                    fill
+                    sizes=""
+                    //width={450}
+                    //height={400}
+                    style={{
+                      objectFit: "cover", // cover, contain, none
+                      objectPosition: "50% 50%",
+                    }}
+                  />
+                </div>
+                <div className="relative w-full px-5 lg:h-80 h-50">
+                  <Image
+                    className="rounded-2xl"
+                    src="/images/gasfiteria/02.jpg" //"/images/electricidad.jpg"
+                    alt="electricidad"
+                    fill
+                    sizes=""
+                    //width={450}
+                    //height={400}
+                    style={{
+                      objectFit: "cover", // cover, contain, none
+                      objectPosition: "50% 50%",
+                    }}
+                  />
+                </div>
+                <div className="relative w-full px-5 lg:h-80 h-50">
+                  <Image
+                    className="rounded-2xl"
+                    src="/images/gasfiteria/03.jpg" //"/images/electricidad.jpg"
+                    alt="electricidad"
+                    fill
+                    sizes=""
+                    //width={450}
+                    //height={400}
+                    style={{
+                      objectFit: "cover", // cover, contain, none
+                      objectPosition: "50% 50%",
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -956,7 +1017,7 @@ export default function Home() {
                     style={{
                       objectFit: "cover", // cover, contain, none
                       objectPosition: "50% 50%",
-                      opacity: "50%",
+                      //opacity: "50%",
                     }}
                   />
                   <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
@@ -992,21 +1053,107 @@ export default function Home() {
 
       <section id="pintura" className="w-full">
         <div
-          className="min-h-screen bg-[#141414] text-gray-300 lg:w-6/6"
+          className="min-h-[800] bg-gray-100 Xbg-[#141414] text-gray-600 lg:w-6/6"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/pintura/fondo.jpg)`,
+            //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/pintura/fondo.jpg)`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
             backgroundPosition: "50%",
           }}
         >
-          <div className="w-4/5">Pintura</div>
+          <div className="flex lg:flex-row flex-col">
+            <div className="lg:w-1/2 flex justify-end py-10">
+              <div className="lg:w-[600] lg:px-0 px-5">
+                <h1 className="title lg:text-4xl text-2xl mb-5">Pintura general</h1>
+                <p>
+                  El servicio de pintura en Lima y zonas aledañas. <br />
+                  Renovación de paredes, empastado, acabados en látex o
+                  satinado.
+                  <br />
+                  Presupuestos por metro cuadrado y/o visita técnica.
+                </p>
+              </div>
+            </div>
+            <div className="lg:w-1/2 flex flex-row">
+              <div className="relative w-full h-48 lg:h-[400]">
+                <Image
+                  src={`/images/pintura/01.jpg`} //"/images/electricidad.jpg"
+                  alt="03"
+                  fill
+                  sizes=""
+                  style={{
+                    objectFit: "cover", // cover, contain, none
+                    objectPosition: "0% 50%",
+                  }}
+                />
+                <h1 className="">hello</h1>
+              </div>
+              <div className="relative w-full h-48 lg:h-[400]">
+                <Image
+                  src={`/images/pintura/02.jpg`} //"/images/electricidad.jpg"
+                  alt="03"
+                  fill
+                  sizes=""
+                  style={{
+                    objectFit: "cover", // cover, contain, none
+                    objectPosition: "50% 50%",
+                  }}
+                />
+                <h1 className="p-2 bg-black/80 text-gray-300">Lijado</h1>
+              </div>
+            </div>
+          </div>
+          <div className="flex lg:flex-row flex-col">
+            <div className="lg:w-1/2">
+              <div className="relative w-full h-48 lg:h-[400]">
+                <Image
+                  src={`/images/pintura/03.jpg`} //"/images/electricidad.jpg"
+                  alt="03"
+                  fill
+                  sizes=""
+                  style={{
+                    objectFit: "cover", // cover, contain, none
+                    objectPosition: "50% 50%",
+                  }}
+                />
+                <h1 className="">hello</h1>
+              </div>
+            </div>
+            <div className="lg:w-1/2 flex flex-row">
+              <div className="relative w-full h-48 lg:h-[400]">
+                <Image
+                  src={`/images/pintura/04.jpg`} //"/images/electricidad.jpg"
+                  alt="03"
+                  fill
+                  sizes=""
+                  style={{
+                    objectFit: "cover", // cover, contain, none
+                    objectPosition: "50% 50%",
+                  }}
+                />
+                <h1 className="">hello</h1>
+              </div>
+              <div className="relative w-full h-48 lg:h-[400]">
+                <Image
+                  src={`/images/pintura/05.jpg`} //"/images/electricidad.jpg"
+                  alt="03"
+                  fill
+                  sizes=""
+                  style={{
+                    objectFit: "cover", // cover, contain, none
+                    objectPosition: "50% 50%",
+                  }}
+                />
+                <h1>hola</h1>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="mayolica" className="w-full">
         <div
-          className="min-h-screen bg-[#141414] text-gray-300 lg:w-4/6"
+          className="min-h-[600] bg-[#141414] text-gray-300 lg:w-4/6"
           style={{
             backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/mayolica/fondo.jpg)`,
             backgroundSize: "cover",
