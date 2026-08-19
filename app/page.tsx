@@ -1172,7 +1172,7 @@ export default function Home() {
         >
           <div className="w-full flex flex-col items-center py-20">
             <div className="w-full lg:w-[1200] p-5 lg:p-0 flex flex-col lg:flex-row">
-              <div className="lg:w-1/4 py-10">
+              <div className="lg:w-3/10 py-10 lg:pr-10">
                 <div className="title lg:text-4xl text-2xl mb-10">
                   Instalacion de accesorios
                 </div>
@@ -1300,12 +1300,11 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="lg:w-3/4 grid lg:grid-cols-3 gap-5 py-10">
-                <div>1</div>
+              <div className="lg:w-7/10 font-semibold grid grid-cols-2 lg:grid-cols-3 gap-5 py-10">
                 <div>
-                  <div className="relative w-full h-[300] mb-4 ">
+                  <div className="relative w-full h-[200] lg:h-[300] mb-3 ">
                     <Image
-                      className="rounded-4xl"
+                      className="rounded-2xl"
                       src={`/images/rack/tv.jpg`} //"/images/electricidad.jpg"
                       alt="01"
                       fill
@@ -1319,14 +1318,13 @@ export default function Home() {
                       }}
                     />
                   </div>
-                  <h1>hello</h1>
+                  <h1>Rack para TV y Monitores</h1>
                 </div>
-
                 <div>
-                  <div className="relative w-full h-[300] mb-4 ">
+                  <div className="relative w-full h-[200] lg:h-[300] mb-3 ">
                     <Image
-                      className="rounded-4xl"
-                      src={`/images/rack/monitor.jpg`} //"/images/electricidad.jpg"
+                      className="rounded-2xl"
+                      src={`/images/rack/bicicleta.jpg`} //"/images/electricidad.jpg"
                       alt="01"
                       fill
                       sizes=""
@@ -1339,14 +1337,13 @@ export default function Home() {
                       }}
                     />
                   </div>
-                  <h1>hello</h1>
+                  <h1>Rack para bicicleta</h1>
                 </div>
-
                 <div>
-                  <div className="relative w-full h-[300] mb-4 ">
+                  <div className="relative w-full h-[200] lg:h-[300] mb-3 ">
                     <Image
-                      className="rounded-4xl"
-                      src={`/images/rack/monitor.jpg`} //"/images/electricidad.jpg"
+                      className="rounded-2xl"
+                      src={`/images/rack/cuadro.jpg`} //"/images/electricidad.jpg"
                       alt="01"
                       fill
                       sizes=""
@@ -1359,7 +1356,64 @@ export default function Home() {
                       }}
                     />
                   </div>
-                  <h1>hello</h1>
+                  <h1>Instalación de cuadros</h1>
+                </div>
+                <div>
+                  <div className="relative w-full h-[200] lg:h-[300] mb-3 ">
+                    <Image
+                      className="rounded-2xl"
+                      src={`/images/rack/campana.jpg`} //"/images/electricidad.jpg"
+                      alt="01"
+                      fill
+                      sizes=""
+                      //width={250}
+                      //height={200}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                        //opacity: "50%",
+                      }}
+                    />
+                  </div>
+                  <h1>Campana extractora</h1>
+                </div>
+                <div>
+                  <div className="relative w-full h-[200] lg:h-[300] mb-3 ">
+                    <Image
+                      className="rounded-2xl"
+                      src={`/images/rack/espejo.jpg`} //"/images/electricidad.jpg"
+                      alt="01"
+                      fill
+                      sizes=""
+                      //width={250}
+                      //height={200}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                        //opacity: "50%",
+                      }}
+                    />
+                  </div>
+                  <h1>Espejo para baño con luces</h1>
+                </div>
+                <div>
+                  <div className="relative w-full h-[200] lg:h-[300] mb-3 ">
+                    <Image
+                      className="rounded-2xl"
+                      src={`/images/rack/cortina.jpg`} //"/images/electricidad.jpg"
+                      alt="01"
+                      fill
+                      sizes=""
+                      //width={250}
+                      //height={200}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                        //opacity: "50%",
+                      }}
+                    />
+                  </div>
+                  <h1>Cortinas y persianas</h1>
                 </div>
               </div>
             </div>
