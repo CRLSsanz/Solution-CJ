@@ -109,16 +109,16 @@ export default function Home() {
 
       <section id="home" className="w-full">
         <div
-          className="h-[800] bg-[#141414] text-gray-300"
+          className="lg:h-[800] bg-[#141414] text-gray-300"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.6)), url(${fondoHome})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(${fondoHome})`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
             backgroundPosition: "70%",
           }}
         >
-          <div className=" w-full h-[800] flex flex-col items-center justify-evenly font-bold p-5 lg:p-0 lg:py-5">
-            <div></div>
+          <div className=" w-full lg:h-[800] h-[700] flex flex-col items-center justify-evenly font-bold p-5 lg:p-0 lg:py-5">
+            <div className="lg:block hidden"> </div>
             <div className="w-full lg:w-[1200]">
               <div
                 className={` ${title.className} antialiased w-full lg:w-[800] mb-5 lg:mb-20 uppercase `}
@@ -132,7 +132,7 @@ export default function Home() {
                   Soluciones Generales
                 </h1>
               </div>
-              <div className="lg:w-[550] text-justify text-base lg:text-xl pr-10">
+              <div className="lg:w-[550] text-justify text-base lg:text-xl lg:pr-8 pr-0">
                 <span className="">Nos dedicamos a ofrecer </span>
                 soluciones internas para su negocio o vivienda,
                 <span className="font-bold text-teal-200">
@@ -146,14 +146,14 @@ export default function Home() {
             <div className="w-full lg:w-[1200]  flex lg:flex-row flex-col gap-3 text-white text-center">
               <Link
                 href="tel:+51939065454"
-                className="px-10 py-4 bg-teal-500/90 hover:bg-gray-100 hover:text-teal-500 Xtracking-widest"
+                className="px-10 lg:py-4 py-2.5 bg-teal-500/90 hover:bg-gray-100 hover:text-teal-500 Xtracking-widest"
               >
                 Llámenos: <span className="fam-number"> 939 065 454</span>
               </Link>
 
               <Link
                 href="https://api.whatsapp.com/send?phone=+51939065454&text=Hola, estoy interesado en sus servicios."
-                className="px-10 py-4 bg-teal-500/90 hover:bg-gray-100 hover:text-teal-500"
+                className="px-10 lg:py-4 py-2.5 bg-teal-500/90 hover:bg-gray-100 hover:text-teal-500"
               >
                 Escribir por Whatsapp
               </Link>
@@ -288,7 +288,7 @@ export default function Home() {
           <div className="w-full flex flex-col items-center py-20">
             <div className="w-full lg:w-[1200] lg:p-0 p-5">
               <h2 className="title lg:text-4xl text-2xl uppercase mb-5">
-                Instalacion de camaras de vigilancia
+                camaras de vigilancia
               </h2>
               <ul className="mb-10">
                 <li className="flex flex-row gap-x-2 mb-3">
@@ -316,9 +316,12 @@ export default function Home() {
                       ></path>{" "}
                     </g>
                   </svg>
-                  <span>DVR (Equipo de gravacion, incluye disco duro)</span>
+                  <span className="w-full">
+                    Instalación y/o mantenimiento de camaras, DVR de gravación,
+                    disco duro, etc
+                  </span>
                 </li>
-                <li className="flex flex-row justify-items-start gap-x-2 mb-3">
+                <li className="flex flex-row gap-x-2 mb-3">
                   <svg
                     className="w-8 mt-1"
                     width="16px"
@@ -347,33 +350,6 @@ export default function Home() {
                     <span className="fam-number">2 - 8 </span> Cámaras de
                     interior y exterior con visión nocturna, resistente al agua.
                   </span>
-                </li>
-                <li className="flex flex-row gap-x-2 mb-3">
-                  <svg
-                    className="w-8 mt-1"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      {" "}
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
-                        fill="currentColor"
-                      ></path>{" "}
-                    </g>
-                  </svg>
-                  <span className="w-full">Instalación y/o mantenimiento</span>
                 </li>
                 <li className="flex flex-row gap-x-2 mb-3">
                   <svg
@@ -431,40 +407,31 @@ export default function Home() {
                     </g>
                   </svg>
 
-                  <span className="w-full">Soporte Post-Venta</span>
-                </li>
-                <li className="flex flex-row gap-x-2 mb-3">
-                  <svg
-                    className="w-8 mt-1"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      {" "}
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
-                        fill="currentColor"
-                      ></path>{" "}
-                    </g>
-                  </svg>
-                  <span className="w-full">Garantía y confiabilidad.</span>
+                  <span className="w-full">Asesoria y soporte Post-Venta</span>
                 </li>
               </ul>
-              <div className="grid lg:grid-cols-3 grid-cols-2 gap-4">
-                <div className="relative w-full h-48 lg:h-[400]">
+              <div className="grid lg:grid-cols-4 grid-cols-2 gap-4">
+                <div className="relative w-full h-[400] lg:col-span-1 col-span-2">
                   <Image
                     src={`/images/camaras/01.jpg`} //"/images/electricidad.jpg"
+                    alt="03"
+                    fill
+                    sizes=""
+                    //width={250}
+                    //height={200}
+                    style={{
+                      objectFit: "cover", // cover, contain, none
+                      objectPosition: "50% 50%",
+                    }}
+                  />
+                  <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
+                    Camara
+                  </h1>
+                </div>
+
+                <div className="relative w-full h-48 lg:h-[400]">
+                  <Image
+                    src={`/images/camaras/02.jpg`} //"/images/electricidad.jpg"
                     alt="01"
                     fill
                     sizes=""
@@ -500,7 +467,7 @@ export default function Home() {
 
                 <div className="relative w-full h-48 lg:h-[400] lg:col-span-1 col-span-2">
                   <Image
-                    src={`/images/camaras/02.jpg`} //"/images/electricidad.jpg"
+                    src={`/images/camaras/04.jpg`} //"/images/electricidad.jpg"
                     alt="03"
                     fill
                     sizes=""
@@ -564,10 +531,10 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex lg:flex-row-reverse flex-col gap-5">
-                <div className="lg:w-2/3 relative w-full h-60 lg:h-[500]">
+              <div className="grid lg:grid-cols-3 grid-cols-2 gap-5">
+                <div className="relative w-full h-72 lg:h-[400] lg:col-span-1 col-span-2">
                   <Image
-                    src={`/images/cerrajeria/03.jpg`} //"/images/electricidad.jpg"
+                    src={`/images/cerrajeria/02.jpg`} //"/images/electricidad.jpg"
                     alt="01"
                     fill
                     sizes=""
@@ -583,21 +550,37 @@ export default function Home() {
                   </h1>
                 </div>
 
-                <div className="lg:w-1/3 w-full flex items-center">
-                  <div className="relative w-[400] h-60 lg:h-[400] ">
-                    <Image
-                      src={`/images/cerrajeria/02.jpg`} //"/images/electricidad.jpg"
-                      alt="01"
-                      fill
-                      sizes=""
-                      //width={250}
-                      //height={200}
-                      style={{
-                        objectFit: "cover", // cover, contain, none
-                        objectPosition: "50% 50%",
-                      }}
-                    />
-                  </div>
+                <div className="relative w-full h-48 lg:h-[400] ">
+                  <Image
+                    src={`/images/cerrajeria/03.jpg`} //"/images/electricidad.jpg"
+                    alt="01"
+                    fill
+                    sizes=""
+                    //width={250}
+                    //height={200}
+                    style={{
+                      objectFit: "cover", // cover, contain, none
+                      objectPosition: "50% 50%",
+                    }}
+                  />
+                </div>
+
+                <div className="relative w-full h-48 lg:h-[400]">
+                  <Image
+                    src={`/images/cerrajeria/04.jpg`} //"/images/electricidad.jpg"
+                    alt="02"
+                    fill
+                    sizes=""
+                    //width={250}
+                    //height={200}
+                    style={{
+                      objectFit: "cover", // cover, contain, none
+                      objectPosition: "50% 50%",
+                    }}
+                  />
+                  <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
+                    Camara
+                  </h1>
                 </div>
               </div>
             </div>
