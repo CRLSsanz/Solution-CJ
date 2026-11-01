@@ -1414,7 +1414,51 @@ export default function Home() {
             backgroundPosition: "50%",
           }}
         >
-          <div className="w-4/5">Mayolica</div>
+          <div className="w-full flex flex-col items-center py-20">
+            <div className="w-full lg:w-[1200] p-5 lg:p-0 flex flex-col lg:flex-row">
+              <div className="lg:w-3/10 py-10 lg:pr-10">
+                <div className="title lg:text-4xl text-2xl mb-10">
+                  Enchapado de Mayolica y Porcelanato
+                </div>
+                <p className="mb-5">
+                  Se realiza todo tipo de enchapado: <br />
+                </p>
+                <ul className="list-disc list-inside">
+                  <li>Cocina</li>
+                  <li>Baños</li>
+                  <li>Salas</li>
+                  <li>Pasadisos</li>
+                  <li>Azoteas</li>
+                  <li>Piscinas</li>
+                  <li>Fachadas</li>
+                  <li>Mesadas de cocinas</li>
+                  <li>Escaleras</li>
+                  <li>Remodelacion</li>
+                </ul>
+              </div>
+              <div>
+                <div>
+                  <div className="relative w-full h-[200] lg:h-[300] mb-3 ">
+                    <Image
+                      className="rounded-2xl"
+                      src={`/images/mayolica/01.jpg`} //"/images/electricidad.jpg"
+                      alt="01"
+                      fill
+                      sizes=""
+                      //width={250}
+                      //height={200}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                        //opacity: "50%",
+                      }}
+                    />
+                  </div>
+                  <h1>Rack para TV y Monitores</h1>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
