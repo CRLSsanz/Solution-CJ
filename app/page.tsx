@@ -1406,9 +1406,9 @@ export default function Home() {
 
       <section id="mayolica" className="w-full">
         <div
-          className="min-h-[600] bg-[#141414] text-gray-300 lg:w-4/6"
+          className="min-h-[600] bg-[#141414] text-gray-300 lg:w-6/6"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/mayolica/fondo.jpg)`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,1.0), rgba(0,0,0,0.5)), url(/images/mayolica/fondo.jpg)`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
             backgroundPosition: "50%",
@@ -1436,26 +1436,30 @@ export default function Home() {
                   <li>Remodelacion</li>
                 </ul>
               </div>
-              <div>
-                <div>
-                  <div className="relative w-full h-[200] lg:h-[300] mb-3 ">
-                    <Image
-                      className="rounded-2xl"
-                      src={`/images/mayolica/01.jpg`} //"/images/electricidad.jpg"
-                      alt="01"
-                      fill
-                      sizes=""
-                      //width={250}
-                      //height={200}
-                      style={{
-                        objectFit: "cover", // cover, contain, none
-                        objectPosition: "50% 50%",
-                        //opacity: "50%",
-                      }}
-                    />
-                  </div>
-                  <h1>Rack para TV y Monitores</h1>
-                </div>
+              <div className="lg:w-7/10 font-semibold grid grid-cols-1 lg:grid-cols-3 lg:gap-5">
+                {Array(6)
+                  .fill(null)
+                  .map((_, index) => (
+                    <div key={index}>
+                      <div className="relative w-full h-[200] lg:h-[300] Xmb-3 ">
+                        <Image
+                          className="rounded-2xl"
+                          src={`/images/mayolica/0${index + 1}.jpg`} //"/images/electricidad.jpg"
+                          alt="01"
+                          fill
+                          sizes=""
+                          //width={250}
+                          //height={200}
+                          style={{
+                            objectFit: "cover", // cover, contain, none
+                            objectPosition: "50% 50%",
+                            //opacity: "50%",
+                          }}
+                        />
+                      </div>
+                      <h1 className="hidden">Rack para TV y Monitores</h1>
+                    </div>
+                  ))}
               </div>
             </div>
           </div>
@@ -1464,15 +1468,34 @@ export default function Home() {
 
       <section id="metalica" className="w-full">
         <div
-          className="min-h-screen bg-[#272727] text-gray-300 lg:w-6/6"
+          className="min-h-screen XXbg-[#272727] bg-gray-50 text-gray-300 lg:w-6/6"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/metales/fondo.jpg)`,
+            //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/metales/XXXfondo.jpg)`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
             backgroundPosition: "50%",
           }}
         >
           <div className="w-4/5">Metalica</div>
+          <div className="w-full flex items-center justify-center ">
+            <div className="relative w-[500] h-[800] Xmb-3 ">
+              <Image
+                className="rounded-2xl"
+                src={`/images/metales/fondo.jpg`} //"/images/electricidad.jpg"
+                alt="01"
+                fill
+                sizes=""
+                //width={250}
+                //height={200}
+                style={{
+                  objectFit: "cover", // cover, contain, none
+                  objectPosition: "50% 50%",
+                  //opacity: "50%",
+                }}
+              />
+            </div>
+            <h1 className="hidden">Rack para TV y Monitores</h1>
+          </div>
         </div>
       </section>
     </section>
