@@ -10,6 +10,7 @@ import {
   Wallpoet,
   Allerta_Stencil,
   Sirin_Stencil,
+  Manrope,
 } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,7 +24,7 @@ const oswald = Oswald({
 });
 
 //const title = Audiowide({
-const title = Raleway({
+const manrope = Manrope({
   weight: ["400"],
   style: "normal",
   variable: "--font-Oswald",
@@ -117,35 +118,35 @@ export default function Home() {
         <div
           className="lg:h-[700] bg-[#141414] text-gray-300"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url(${fondoHome})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(${fondoHome})`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
             backgroundPosition: "45%",
           }}
         >
-          <div className=" w-full lg:h-[700] h-[700] flex flex-col items-center justify-evenly font-bold px-5 lg:px-0 py-20">
+          <div className=" w-full lg:h-[700] h-[700] flex flex-col items-center justify-evenly font-bold px-5 lg:px-0 py-10">
             <div className="w-full lg:w-[1200] text-gray-100">
-              <div className={`w-full lg:w-[700]  mb-5 font-semibold `}>
+              <div className={`w-full lg:w-[600] mb-5 font-semibold `}>
                 <h1 className="">
                   Ofrecemos soluciones internas para su negocio o vivienda
                 </h1>
-                <h1 className="text-5xl lg:text-7xl mt-2">
+                <h1 className="text-5xl lg:text-7xl mt-5">
                   Mantenimiento y Reformas de
                   <span className="text-teal-400 font-bold"> Calidad </span> <br />
                 </h1>
               </div>
 
-              <div className="lg:w-[600] text-justify text-base lg:text-xl lg:pr-8 pr-0">
+              <div className="w-[350] text-justify text-base lg:text-xl">
                 <span className="">
                   Un solo equipo, presupuesto claro y precios económicos
                 </span>
               </div>
             </div>
 
-            <div className="w-full lg:w-[1200]  flex lg:flex-row flex-col gap-3 text-white text-center">
+            <div className="w-full lg:w-[1200] flex lg:flex-row flex-col gap-3 text-white text-center text-sm">
               <Link
                 href="https://api.whatsapp.com/send?phone=+51939065454&text=Hola, estoy interesado en sus servicios."
-                className="px-10 lg:py-3 py-2.5 bg-teal-600/90 hover:bg-teal-500 flex flex-row items-center gap-x-2 animate-bounce2"
+                className="px-10 lg:py-3 py-2.5 bg-teal-600/90 hover:bg-teal-500 flex flex-row items-center justify-center gap-x-2 animate-bounce2"
               >
                 <span className="">
                   <svg
@@ -166,12 +167,12 @@ export default function Home() {
                     </g>
                   </svg>
                 </span>
-
-                <span>Pide tu presupuesto gratis</span>
+                <span className="fam-manrope">Pide tu presupuesto gratis</span>
               </Link>
+
               <Link
                 href="tel:+51939065454"
-                className="px-10 lg:py-3 py-2.5 border border-gray-200 hover:bg-gray-100/20 Xtracking-widest flex flex-row items-center justify-center gap-x-2"
+                className="px-10 lg:py-3 py-2.5 border border-gray-200 hover:bg-gray-100/20 flex flex-row items-center justify-center gap-x-2"
               >
                 <span>
                   <svg
@@ -199,7 +200,7 @@ export default function Home() {
                     </g>
                   </svg>
                 </span>
-                <span>Llamar ahora</span>
+                <span className="fam-manrope">Llamar ahora</span>
               </Link>
             </div>
           </div>

@@ -23,7 +23,7 @@ const page = () => {
           }}
         >
           <div className="w-[700] text-center">
-            <div className="lg:text-7xl text-5xl font-bold uppercase mb-10">Contacto</div>
+            <div className="text-5xl lg:text-7xl font-semibold uppercase mb-10">Contacto</div>
             <p className="lg:text-xl text-lg lg:px-0 px-5 font-semibold Xbg-gray-500/50">
               No hay nada que nos guste más que el compromiso y poner en marcha
               un proyecto totalmente nuevo. ¡Hagamos algo grandioso juntos!

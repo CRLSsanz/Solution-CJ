@@ -23,7 +23,7 @@ const page = () => {
           }}
         >
           <div className="lg:w-[1000] lg:text-left text-center">
-            <div className="lg:text-7xl text-5xl Xfont-semibold uppercase ">Quienes <br /> Somos</div>
+            <div className="text-5xl lg:text-7xl font-semibold uppercase">Quienes <br /> Somos</div>
           </div>
         </div>
       </div>
