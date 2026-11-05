@@ -95,7 +95,7 @@ export const Navbar = () => {
     <section className={` `}>
       <div className="w-full">
         <nav className="w-full z-30 h-16 p-2 text-gray-300 flex justify-center items-center bg-black/40 backdrop-blur-2xl">
-          <div className="w-[1440] flex flex-row justify-between items-center">
+          <div className="w-[1320] flex flex-row justify-between items-center">
             <div className=" flex flex-row justify-between items-center">
               <div className="relative w-9 h-9 m-1 mr-3">
                 <Image
@@ -113,20 +113,20 @@ export const Navbar = () => {
               </div>
               <div>
                 <div
-                  className={` fam-title w-full flex justify-center font-semibold text-xl tracking-widest`}
+                  className={`fam-title w-full flex justify-center font-semibold text-xl tracking-widest`}
                 >
                   GRUPO SGJ
                 </div>
-                <div className="fam-title -mt-1 text-xs font-semibold tracking-wider">
+                <div className="fam-bebas -mt-1 text-xs font-semibold tracking-wider">
                   Soluciones Generales
                 </div>
               </div>
             </div>
 
-            <div className="hidden lg:flex flex-row gap-4 uppercase text-sm font-semibold tracking-widest whitespace-nowrap">
+            <div className="hidden lg:flex flex-row gap-4 uppercase text-xs font-semibold tracking-widest whitespace-nowrap">
               <div>
                 <Link href="/" className="p-2 hover:border-b border-teal-500">
-                  Home
+                  Inicio
                 </Link>
               </div>
               <div>

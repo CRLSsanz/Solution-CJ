@@ -27,6 +27,20 @@ html {
   }
 }
 
+@keyframes bounce2 {
+  0%, 100% {
+    transform: translateY(-8%);
+    animationTimingFunction: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animationTimingFunction: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bounce2	{animation: bounce2 2s infinite;}
+
+
 body {
   background: #fff;
   color: var(--foreground);   
@@ -53,8 +67,8 @@ body {
   font-family: "Bebas Neue", sans-serif;
 }
 
-.fam-orbitron {
-  font-family: "Orbitron", sans-serif;
+.fam-title {
+  font-family: "Nova Flat", sans-serif;
 }
 
 .fam-aw {

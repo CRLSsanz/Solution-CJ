@@ -4,11 +4,12 @@ import { Navbar } from "@/components/Navbar";
 import { Whatsapp } from "@/components/Whatsapp";
 import {
   Audiowide,
-  Megrim,
   Orbitron,
   Oswald,
   Raleway,
   Wallpoet,
+  Allerta_Stencil,
+  Sirin_Stencil,
 } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,7 +22,8 @@ const oswald = Oswald({
   subsets: ["latin"],
 });
 
-const title = Audiowide({
+//const title = Audiowide({
+const title = Raleway({
   weight: ["400"],
   style: "normal",
   variable: "--font-Oswald",
@@ -87,7 +89,10 @@ export default function Home() {
   ];
 
   const fondoHome =
-    "https://corpbps.com/wp-content/uploads/2022/12/Servicios-Generales.jpg";
+    "https://www.fomora.com/wp-content/uploads/2025/09/fomora-reformas-integrales-precios-2025.jpg";
+  //"https://espaintegral.com/wp-content/uploads/2015/01/slider-Pareja.jpg"
+  //"https://serviciosgeneralesacr.com/images/servicios-generales-y-mantenimiento.jpg"
+  // "https://corpbps.com/wp-content/uploads/2022/12/Servicios-Generales.jpg";
   //"https://decorexpro.com/images/article/orig/2017/12/odnokomnatnaya-kvartira-v-stile-loft-primery-oformleniya-1.jpg";
   //home2 "https://joseph.cl/assets/img/heroes/hero-remodelaciones-desktop-1920.jpg";
   const fondoPanal =
@@ -108,54 +113,106 @@ export default function Home() {
       </div>
 
       <section id="home" className="w-full">
+        <div className="bg-black h-16"></div>
         <div
-          className="lg:h-[800] bg-[#141414] text-gray-300"
+          className="lg:h-[700] bg-[#141414] text-gray-300"
           style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(${fondoHome})`,
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(${fondoHome})`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
-            backgroundPosition: "70%",
+            backgroundPosition: "45%",
           }}
         >
-          <div className=" w-full lg:h-[800] h-[700] flex flex-col items-center justify-evenly font-bold p-5 lg:p-0 lg:py-5">
+          <div className=" w-full lg:h-[600] h-[700] flex flex-col items-center justify-evenly font-bold p-5 lg:p-0 lg:py-5">
             <div className="lg:block hidden"> </div>
-            <div className="w-full lg:w-[1200]">
-              <div
-                className={` ${title.className} antialiased w-full lg:w-[800] mb-5 lg:mb-20 uppercase `}
-              >
-                <h1 className="text-2xl lg:text-6xl">Bienvenido a</h1>
-                <h1 className="text-3xl lg:text-4xl mt-2">
-                  <span className="font-bold">
-                    {" "}
-                    S<span className="text-teal-200">G</span>J{" "}
+            <div className="w-full lg:w-[1200] text-gray-100">
+              <div className={`w-full mb-5 lg:mb-20  font-semibold `}>
+                <h1 className="text-4xl lg:text-7xl">Mantenimiento y </h1>
+                <h1 className="text-4xl lg:text-7xl mt-2">
+                  Reformas de
+                  <span className="text-teal-400"> calidad </span> <br />
+                  <span className="hidden lg:block text-xl lg:text-4xl mt-3">
+                    y sin lista de espera
                   </span>
-                  Soluciones Generales
                 </h1>
               </div>
-              <div className="lg:w-[550] text-justify text-base lg:text-xl lg:pr-8 pr-0">
-                <span className="">Nos dedicamos a ofrecer </span>
-                soluciones internas para su negocio o vivienda,
-                <span className="font-bold text-teal-200">
-                  {" "}
-                  nuestro equipo de profesionales
+              <div className="lg:w-[600] text-justify text-base lg:text-xl lg:pr-8 pr-0">
+                <span className="">
+                  Ofrecemos soluciones internas para su negocio o vivienda
                 </span>{" "}
+                <br />
+                <span className=" fam-title font-semibold text-teal-300">
+                  Nuestro equipo de profesionales {" "}
+                </span>
                 está capacitado para brindar servicios de alta calidad.
               </div>
             </div>
 
             <div className="w-full lg:w-[1200]  flex lg:flex-row flex-col gap-3 text-white text-center">
               <Link
+                href="https://api.whatsapp.com/send?phone=+51939065454&text=Hola, estoy interesado en sus servicios."
+                className="px-10 lg:py-3 py-2.5 bg-teal-600/90 hover:bg-teal-500 flex flex-row items-center gap-x-2 animate-bounce2"
+              >
+                <span className="">
+                  <svg
+                    fill="#ffffff"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="m15.271 13.21c.578.185 1.078.416 1.543.7l-.031-.018c.529.235.986.51 1.403.833l-.015-.011c.02.061.032.13.032.203 0 .011 0 .021-.001.032v-.001c-.015.429-.11.832-.271 1.199l.008-.021c-.231.463-.616.82-1.087 1.01l-.014.005c-.459.243-1.001.393-1.576.411h-.006c-1.1-.146-2.094-.484-2.988-.982l.043.022c-1.022-.468-1.895-1.083-2.636-1.829l-.001-.001c-.824-.857-1.579-1.795-2.248-2.794l-.047-.074c-.636-.829-1.041-1.866-1.1-2.995l-.001-.013v-.124c.032-.975.468-1.843 1.144-2.447l.003-.003c.207-.206.491-.335.805-.341h.001c.101.003.198.011.292.025l-.013-.002c.087.013.188.021.292.023h.003c.019-.002.04-.003.062-.003.13 0 .251.039.352.105l-.002-.001c.107.118.189.261.238.418l.002.008q.124.31.512 1.364c.135.314.267.701.373 1.099l.014.063c-.076.361-.268.668-.533.889l-.003.002q-.535.566-.535.72c.004.088.034.168.081.234l-.001-.001c.405.829.936 1.533 1.576 2.119l.005.005c.675.609 1.446 1.132 2.282 1.54l.059.026c.097.063.213.103.339.109h.002q.233 0 .838-.752t.804-.752zm-3.147 8.216h.022c1.357 0 2.647-.285 3.814-.799l-.061.024c2.356-.994 4.193-2.831 5.163-5.124l.024-.063c.49-1.113.775-2.411.775-3.775s-.285-2.662-.799-3.837l.024.062c-.994-2.356-2.831-4.193-5.124-5.163l-.063-.024c-1.113-.49-2.411-.775-3.775-.775s-2.662.285-3.837.799l.062-.024c-2.356.994-4.193 2.831-5.163 5.124l-.024.063c-.49 1.117-.775 2.419-.775 3.787 0 2.141.698 4.12 1.879 5.72l-.019-.026-1.225 3.613 3.752-1.194c1.49 1.01 3.327 1.612 5.305 1.612h.047zm0-21.426h.033c1.628 0 3.176.342 4.575.959l-.073-.029c2.825 1.197 5.028 3.4 6.196 6.149l.029.076c.588 1.337.93 2.896.93 4.535s-.342 3.198-.959 4.609l.029-.074c-1.197 2.825-3.4 5.028-6.149 6.196l-.076.029c-1.327.588-2.875.93-4.503.93-.011 0-.023 0-.034 0h.002c-.016 0-.034 0-.053 0-2.059 0-3.992-.541-5.664-1.488l.057.03-6.465 2.078 2.109-6.279c-1.051-1.714-1.674-3.789-1.674-6.01 0-1.646.342-3.212.959-4.631l-.029.075c1.197-2.825 3.4-5.028 6.149-6.196l.076-.029c1.327-.588 2.875-.93 4.503-.93h.033-.002z"></path>
+                    </g>
+                  </svg>
+                </span>
+
+                <span>Pide tu presupuesto gratis</span>
+              </Link>
+              <Link
+                href="tel:+51939065454"
+                className="px-10 lg:py-3 py-2.5 border border-gray-200 hover:bg-gray-100/20 Xtracking-widest flex flex-row items-center justify-center gap-x-2"
+              >
+                <span>
+                  <svg
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      {" "}
+                      <path
+                        d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
+                        stroke="#ffffff"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></path>{" "}
+                    </g>
+                  </svg>
+                </span>
+                <span>Llamar ahora</span>
+              </Link>
+              <Link
+                hidden
                 href="tel:+51939065454"
                 className="px-10 lg:py-4 py-2.5 bg-teal-500/90 hover:bg-gray-100 hover:text-teal-500 Xtracking-widest"
               >
                 Llámenos: <span className="fam-number"> 939 065 454</span>
-              </Link>
-
-              <Link
-                href="https://api.whatsapp.com/send?phone=+51939065454&text=Hola, estoy interesado en sus servicios."
-                className="px-10 lg:py-4 py-2.5 bg-teal-500/90 hover:bg-gray-100 hover:text-teal-500"
-              >
-                Escribir por Whatsapp
               </Link>
             </div>
 
@@ -855,7 +912,7 @@ export default function Home() {
 
       <section id="gasfiteria" className="w-full">
         <div
-          className="Xmin-h-screen bg-gray-100 text-gray-600 Xbg-[#141414] w-full rounded-4xl"
+          className="Xmin-h-screen bg-gray-100 text-gray-600 Xbg-[#141414] w-full rounded-xl"
           style={{
             //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/gasfiteria/fondo.jpg')`,
             backgroundSize: "cover",
@@ -864,17 +921,24 @@ export default function Home() {
           }}
         >
           <div className="w-full flex flex-col items-center py-20">
-            <div className="w-full lg:w-[1200] p-5 lg:p-0 flex flex-col lg:flex-row">
+            <div className="w-full lg:w-[1320] p-5 lg:p-0 flex flex-col lg:flex-row">
               <div className="lg:w-1/4 mb-10">
                 <h1 className="title lg:text-4xl text-2xl mb-5">Gasfiteria</h1>
-                <p>
-                  Reparación de fugas <br />
-                  Limpieza y destape de tuberías, lavaderos, inodoros y cajas de
-                  registro. <br />
-                  Instalaciones sanitarias: Montaje de griferías, duchas,
-                  sanitarios, termas y tanques elevados. <br />
-                  Instalación o mantenimiento de bomba rotoplas y trampas.
-                </p>
+                <ul className="list-disc Xlist-inside">
+                  <li>Reparación de fugas</li>
+                  <li>
+                    Limpieza y destape de tuberías, lavaderos, inodoros y cajas
+                    de registro.
+                  </li>
+                  <li>Instalaciones sanitarias</li>
+                  <li>
+                    Montaje de griferías, duchas, sanitarios, termas y tanques
+                    elevados.
+                  </li>
+                  <li>
+                    Instalación o mantenimiento de bomba rotoplas y trampas.
+                  </li>
+                </ul>
               </div>
               <div className="lg:w-3/4 grid lg:grid-cols-3 grid-cols-2 gap-5">
                 <div className="relative w-full px-5 lg:h-80 h-50">
