@@ -1,5 +1,5 @@
 "use client";
-import { Montserrat_Alternates, Oswald, Wallpoet } from "next/font/google";
+import { Audiowide, Montserrat_Alternates, Orbitron, Oswald, Wallpoet } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -14,8 +14,8 @@ const f1 =
 //"https://r4.wallpaperflare.com/wallpaper/853/586/450/universe-abstract-cube-gradient-wallpaper-6920483dc13a7d2b3657880f4071d63d.jpg";
 //"https://c0.wallpaperflare.com/path/91/628/867/adolescent-beautiful-brunette-buy-2475da7e0a113381084dbb5becb8962a.jpg";
 
-const oswald = Oswald({
-  weight: ["400"],
+const oswald = Orbitron({
+  weight: ["700"],
   style: "normal",
   variable: "--font-Montserrat",
   subsets: ["latin"],
@@ -113,11 +113,11 @@ export const Navbar = () => {
               </div>
               <div>
                 <div
-                  className={`fam-title w-full flex justify-center font-semibold text-xl tracking-widest`}
+                  className={` ${oswald.className} w-full text-lg tracking-widest`}
                 >
                   GRUPO SGJ
                 </div>
-                <div className="fam-bebas -mt-1 text-xs font-semibold tracking-wider">
+                <div className="fam-title -mt-1 text-[10px] font-semibold tracking-wider">
                   Soluciones Generales
                 </div>
               </div>
