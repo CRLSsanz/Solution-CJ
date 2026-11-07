@@ -2,6 +2,7 @@
 
 import Domotica from "@/components/Domotica";
 import { Navbar } from "@/components/Navbar";
+import { Navigation } from "@/components/Navigation";
 import { Whatsapp } from "@/components/Whatsapp";
 import {
   Audiowide,
@@ -113,6 +114,11 @@ export default function Home() {
       <div className="z-50">
         <Whatsapp />
       </div>
+
+      <div className="z-50">
+        <Navigation />
+      </div>
+
 
       <section id="home" className="w-full">
         <div className="bg-black h-16"></div>
