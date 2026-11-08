@@ -106,7 +106,7 @@ export default function Home() {
     "https://www.cerrajerosdoshermanas.es/hero-locksmith.jpg";
 
   return (
-    <section className="w-full flex flex-col justify-center items-center Xbg-[#141414]">
+    <section className="w-full flex flex-col justify-center items-center Xbg-[#141414] text-gray">
       <div className="w-full fixed z-50 top-0">
         <Navbar />
       </div>
@@ -119,11 +119,10 @@ export default function Home() {
         <Navigation />
       </div>
 
-
       <section id="home" className="w-full">
         <div className="bg-black h-16"></div>
         <div
-          className="lg:h-[700] bg-[#141414] text-gray-300"
+          className="lg:h-[700] bg-[#141414] text-gray-100"
           style={{
             backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url(${fondoHome})`,
             backgroundSize: "cover",
@@ -132,17 +131,14 @@ export default function Home() {
           }}
         >
           <div className=" w-full lg:h-[700] h-[700] flex flex-col items-center justify-evenly px-5 lg:px-0 py-10">
-            <div className="w-full lg:w-[1200] text-gray-100">
+            <div className="w-full lg:w-[1200]">
               <div className={`w-full lg:w-[600] mb-5 font-semibold `}>
                 <h1 className="">
                   Ofrecemos soluciones internas para su negocio o vivienda
                 </h1>
                 <h1 className="text-5xl lg:text-7xl mt-5">
                   Mantenimiento y Reformas de
-                  <span className="text-teal-400 font-bold">
-                    {" "}
-                    Calidad{" "}
-                  </span>{" "}
+                  <span className="text-teal-400 font-bold"> Calidad</span>
                   <br />
                 </h1>
               </div>
@@ -154,7 +150,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-full lg:w-[1200] flex lg:flex-row flex-col gap-3 text-white text-center text-sm">
+            <div className="w-full lg:w-[1200] flex lg:flex-row flex-col gap-3 text-center text-sm">
               <Link
                 href="https://api.whatsapp.com/send?phone=+51939065454&text=Hola, estoy interesado en sus servicios."
                 className="px-10 lg:py-3 py-2.5 bg-teal-600/90 hover:bg-teal-500 flex flex-row items-center justify-center gap-x-2 animate-bounce2"
@@ -220,7 +216,7 @@ export default function Home() {
 
       <section id="camaras" className="w-full">
         <div
-          className="Xmin-h-screen Xbg-[#141414] text-gray-100 w-full"
+          className="Xmin-h-screen Xbg-[#141414] text-gray-100 w-full flex justify-center"
           style={{
             //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/fondo.jpg')`,
             backgroundSize: "cover",
@@ -228,133 +224,35 @@ export default function Home() {
             backgroundPosition: "50%",
           }}
         >
-          <div className="w-full flex flex-col items-center py-20">
-            <div className="w-full lg:w-[1200] lg:p-0 p-5">
-              <h2 className="title lg:text-4xl text-2xl uppercase mb-5">
-                camaras de vigilancia
+          <div className="w-full lg:w-[1024] flex flex-col items-center justify-center py-20">
+            <div className="w-full grid grid-cols-2 gap-y-5 lg:p-0 p-5">
+              <h2 className="lg:text-4xl text-2xl mb-5">
+                Camaras de Vigilancia y Seguridad
               </h2>
-              <ul className="mb-10">
-                <li className="flex flex-row gap-x-2 mb-3">
-                  <svg
-                    className="w-8 mt-1"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      {" "}
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
-                        fill="currentColor"
-                      ></path>{" "}
-                    </g>
-                  </svg>
-                  <span className="w-full">
-                    Instalación y/o mantenimiento de camaras, DVR de gravación,
-                    disco duro, etc
-                  </span>
-                </li>
-                <li className="flex flex-row gap-x-2 mb-3">
-                  <svg
-                    className="w-8 mt-1"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      {" "}
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
-                        fill="currentColor"
-                      ></path>{" "}
-                    </g>
-                  </svg>
-                  <span className="w-full">
-                    <span className="fam-number">2 - 8 </span> Cámaras de
-                    interior y exterior con visión nocturna, resistente al agua.
-                  </span>
-                </li>
-                <li className="flex flex-row gap-x-2 mb-3">
-                  <svg
-                    className="w-8 mt-1"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      {" "}
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
-                        fill="currentColor"
-                      ></path>{" "}
-                    </g>
-                  </svg>
-                  <span className="w-full">
-                    Configuración de App móvil para ver su casa o negocio en
-                    tiempo real.
-                  </span>
-                </li>
-                <li className="flex flex-row gap-x-2 mb-3">
-                  <svg
-                    className="w-8 mt-1"
-                    width="16px"
-                    height="16px"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      {" "}
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M4.22222 2H19.7778C21 2 22 3 22 4.22222V19.7778C22 21 21 22 19.7778 22H4.22222C3 22 2 21 2 19.7778V4.22222C2 3 3 2 4.22222 2ZM4 20H20V4H4V20Z"
-                        fill="currentColor"
-                      ></path>{" "}
-                    </g>
-                  </svg>
 
-                  <span className="w-full">Asesoria y soporte Post-Venta</span>
+              <ul className="list-disc Xlist-inside ml-3">
+                <li>Instalacion de camaras CCTV </li>
+                <li>Mantenimiento y servicio tecnico </li>
+                <li>Ronavación de cámaras PTZ</li>
+                <li>Instalación de radioenlaces</li>
+                <li className="mb-3">
+                  Configuración de App móvil para ver su casa o negocio en
+                  tiempo real.
+                </li>
+                <li></li>
+                <li className="mb-3">
+                  Instalación y/o mantenimiento de camaras, DVR de gravación,
+                  disco duro, etc
+                </li>
+                <li className="mb-3">
+                  Contamos con kits de 4 y 8 cámaras, HD 720P y Full HD 1080P,
+                </li>
+                <li className="mb-3">
+                  Asoseramos tu planificación del proyecto de video vigilancia
                 </li>
               </ul>
-              <div className="grid lg:grid-cols-4 grid-cols-2 gap-4">
-                <div className="relative w-full h-[400] lg:col-span-1 col-span-2">
+              <div className="col-span-2">
+                <div className="relative w-full h-40 lg:h-96 lg:col-span-1 col-span-2">
                   <Image
                     src={`/images/camaras/01.jpg`} //"/images/electricidad.jpg"
                     alt="03"
@@ -367,64 +265,63 @@ export default function Home() {
                       objectPosition: "50% 50%",
                     }}
                   />
-                  <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
-                    Camara
-                  </h1>
                 </div>
+                <h1 className="w-full p-5 bg-gray-100 text-gray-600 ">
+                  Camaras de seguridad para casas, departamentos y edificios
+                </h1>
+              </div>
 
-                <div className="relative w-full h-48 lg:h-[400]">
-                  <Image
-                    src={`/images/camaras/02.jpg`} //"/images/electricidad.jpg"
-                    alt="01"
-                    fill
-                    sizes=""
-                    //width={250}
-                    //height={200}
-                    style={{
-                      objectFit: "cover", // cover, contain, none
-                      objectPosition: "50% 50%",
-                    }}
-                  />
-                  <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
-                    Camara
-                  </h1>
+              <div className="col-span-2">
+                <div className="w-full flex flex-row  ">
+                  <div className="relative w-full h-48 lg:h-[400]">
+                    <Image
+                      src={`/images/camaras/02.jpg`} //"/images/electricidad.jpg"
+                      alt="01"
+                      fill
+                      sizes=""
+                      //width={250}
+                      //height={200}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                      }}
+                    />
+                  </div>
+                  <div className="relative w-full h-48 lg:h-[400]">
+                    <Image
+                      src={`/images/camaras/03.jpg`} //"/images/electricidad.jpg"
+                      alt="02"
+                      fill
+                      sizes=""
+                      //width={250}
+                      //height={200}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                      }}
+                    />
+                  </div>
                 </div>
-
-                <div className="relative w-full h-48 lg:h-[400]">
-                  <Image
-                    src={`/images/camaras/03.jpg`} //"/images/electricidad.jpg"
-                    alt="02"
-                    fill
-                    sizes=""
-                    //width={250}
-                    //height={200}
-                    style={{
-                      objectFit: "cover", // cover, contain, none
-                      objectPosition: "50% 50%",
-                    }}
-                  />
-                  <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
-                    Camara
-                  </h1>
-                </div>
-
-                <div className="relative w-full h-48 lg:h-[400] lg:col-span-1 col-span-2">
-                  <Image
-                    src={`/images/camaras/04.jpg`} //"/images/electricidad.jpg"
-                    alt="03"
-                    fill
-                    sizes=""
-                    //width={250}
-                    //height={200}
-                    style={{
-                      objectFit: "cover", // cover, contain, none
-                      objectPosition: "50% 50%",
-                    }}
-                  />
-                  <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
-                    Camara
-                  </h1>
-                </div>
+                <h1 className="w-full p-5 bg-gray-100 text-gray-600 ">
+                  Contamos con kits de 4 y 8 cámaras, HD 720P y Full HD 1080P,
+                </h1>
+              </div>
+              <div className="relative w-full h-48 lg:h-[400] lg:col-span-2">
+                <Image
+                  src={`/images/camaras/04.jpg`} //"/images/electricidad.jpg"
+                  alt="03"
+                  fill
+                  sizes=""
+                  //width={250}
+                  //height={200}
+                  style={{
+                    objectFit: "cover", // cover, contain, none
+                    objectPosition: "50% 50%",
+                  }}
+                />
+                <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
+                  Camara
+                </h1>
               </div>
             </div>
           </div>
