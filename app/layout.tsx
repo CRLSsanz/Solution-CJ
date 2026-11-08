@@ -32,9 +32,9 @@ export const metadata: Metadata = {
 };
 
 //https://img.freepik.com/vector-gratis/diseno-abstracto-fondo_1107-155.jpg
-//https://www.microtech.es/hubfs/erp_mantenimiento.jpg
-//https://marq.mx/wp-content/uploads/2020/08/17-de-AGO-El-mantenimiento-aumenta-el-valor-de-las-viviendas.jpg
-//https://ceicid.es/wp-content/uploads/2023/07/banner-curso-mantenimiento-23.jpg
+//https://img.freepik.com/vector-gratis/fondo-abstracto-borroso_1107-166.jpg
+//https://img.magnific.com/fotos-premium/fondo-abstracto-borroso-degradado-oscuro_917088-1659.jpg
+
 
 const bag3 = "https://github.com/CRLSsanz/trade/blob/main/fondo01.jpg?raw=true";
 
@@ -48,7 +48,7 @@ export default function RootLayout({
       <body className={` ${geistRaleway.className} antialiased ` }>
         <div
           id="sectionHome"
-          className="w-full flex justify-center bg-cover bg-fixed bg-[50%] Xbg-[url('https://img.freepik.com/vector-gratis/fondo-abstracto-borroso_1107-166.jpg')] min-h-screen"
+          className="w-full flex justify-center bg-cover bg-fixed bg-[70%] bg-[url('https://img.magnific.com/premium-photo/abstract-luxury-blur-dark-grey-black-gradient-background_1008660-2919.jpg')] min-h-screen"
         >
           {children}
         </div>

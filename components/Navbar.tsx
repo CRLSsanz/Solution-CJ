@@ -238,7 +238,7 @@ export const Navbar = () => {
           }`}
         >
           {/** BOTON CERRAR */}
-          <div className="xrelative">
+          <div className="xrelative text-gray-200">
             <button
               onClick={() => setNavbar(!navbar)}
               className="absolute top-5 right-5 flex items-start active:bg-none focus:outline-none transition-transform duration-200 active:rotate-90 active:animate-ping"
@@ -298,6 +298,7 @@ export const Navbar = () => {
             </button>
           </div>
         </div>
+        
         {/** MENU  */}
         <ul
           className={` fixed top-0 z-50 text-gray-700 bg-gray-100 Xbg-[#222222fe] h-full w-80 Xtransform Xtransition-all Xduration-200 flex flex-col rounded-b-md text-center
@@ -316,7 +317,7 @@ export const Navbar = () => {
 
             <div className="lg:w-20"></div>
 
-            <div className="h-16 flex flex-row items-center gap-x-6 text-sm font-semibold tracking-widest whitespace-nowrap border-b border-gray-300">
+            <div className="h-16 flex flex-row items-center gap-x-6 text-sm text-gray-400 font-semibold tracking-widest whitespace-nowrap border-b border-gray-300">
               <div>
                 <Link
                   onClick={() => setNavbar(!navbar)}
@@ -353,12 +354,13 @@ export const Navbar = () => {
                 </Link>
               </div>
             </div>
+
             {/** LIST-1 */}
-            <div className="w-full p-5 flex flex-col lg:gap-1 gap-y-1">
+            <div className="w-full p-5 flex flex-col gap-y-1">
               {list.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-row justify-between text-sm hover:font-bold gap-x-3 py-2"
+                  className="flex flex-row justify-between text-sm hover:font-bold py-1.5"
                 >
                   <Link
                     key={index}
@@ -368,8 +370,8 @@ export const Navbar = () => {
                     {item.title}
                   </Link>
                   <svg
-                    width="24px"
-                    height="24px"
+                    width="20px"
+                    height="20px"
                     viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"

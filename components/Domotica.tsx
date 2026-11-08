@@ -31,7 +31,7 @@ const Domotica = () => {
   return (
     <section id="domotica" className="w-full">
       <div
-        className="w-full lg:h-[500] flex justify-center bg-[#141414] text-gray-300"
+        className="w-full lg:h-[500] flex justify-center Xbg-[#141414]"
         style={{
           backgroundImage: `linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.4)), url('/images/domotica/fondo.jpg')`,
           backgroundSize: "cover",
@@ -85,7 +85,7 @@ const Domotica = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-center bg-gray-100 text-gray-600 py-20">
+      <div className="w-full flex flex-col items-center py-20">
         <h1 className="w-full lg:w-[1320] px-5 lg:px-0  text-xl font-semibold mb-10">
           Soluciones que podemos integrar
         </h1>
@@ -93,7 +93,7 @@ const Domotica = () => {
           {card1.map((item, index) => (
             <div
               key={index}
-              className="w-full rounded-md border border-gray-300"
+              className="w-full border bg-gray-100 border-gray-600"
             >
               <div className="relative w-full h-[200] lg:col-span-1 col-span-2">
                 <Image
@@ -116,7 +116,7 @@ const Domotica = () => {
                 <h1 className="font-medium text-teal-500 text-lg mb-4">
                   {item.title}
                 </h1>
-                <p className="mb-4">{item.text} </p>
+                <p className="text-gray-500 mb-4">{item.text} </p>
                 <Link
                   href="https://api.whatsapp.com/send?phone=+51939065454&text=Hola, he llegado desde la página de Proyectos de domótica y me gustaría recibir más información para mi proyecto de hogar inteligente."
                   target="_blank"

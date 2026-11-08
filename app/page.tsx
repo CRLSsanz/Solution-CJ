@@ -106,7 +106,7 @@ export default function Home() {
     "https://www.cerrajerosdoshermanas.es/hero-locksmith.jpg";
 
   return (
-    <section className="w-full flex flex-col justify-center items-center bg-[#141414]">
+    <section className="w-full flex flex-col justify-center items-center Xbg-[#141414]">
       <div className="w-full fixed z-50 top-0">
         <Navbar />
       </div>
@@ -220,9 +220,9 @@ export default function Home() {
 
       <section id="camaras" className="w-full">
         <div
-          className="Xmin-h-screen bg-[#141414] text-gray-100 w-full"
+          className="Xmin-h-screen Xbg-[#141414] text-gray-100 w-full"
           style={{
-            //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/camaras/fondo.jpg')`,
+            //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/fondo.jpg')`,
             backgroundSize: "cover",
             //backgroundAttachment: "fixed",
             backgroundPosition: "50%",
@@ -433,7 +433,7 @@ export default function Home() {
 
       <section id="cerrajeria" className="w-full">
         <div
-          className="min-h-screen bg-[#141414] text-gray-300 w-full"
+          className="min-h-screen Xbg-[#141414] text-gray-300 w-full"
           style={{
             //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/cerrajeria/fondo.jpg')`,
             backgroundSize: "cover",
