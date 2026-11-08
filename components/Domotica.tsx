@@ -120,7 +120,7 @@ const Domotica = () => {
                 <Link
                   href="https://api.whatsapp.com/send?phone=+51939065454&text=Hola, he llegado desde la página de Proyectos de domótica y me gustaría recibir más información para mi proyecto de hogar inteligente."
                   target="_blank"
-                  className="lg:py-3 py-5 bg-teal-600/90 hover:bg-teal-500 flex flex-row items-center justify-center gap-x-2 animate-bounce2 text-sm"
+                  className="lg:py-3 py-2.5 bg-teal-600/90 hover:bg-teal-500 flex flex-row items-center justify-center gap-x-2 animate-bounce2 text-sm"
                 >
                   <span className="">
                     <svg

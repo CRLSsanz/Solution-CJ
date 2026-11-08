@@ -68,15 +68,15 @@ export const Navigation = () => {
   ];
 
   return (
-    <div className="fixed z-0 bottom-1/2 -right-4 lg:right-0 Xbg-gray-500 hover:bg-emerald-500">
+    <div className="fixed z-50 bottom-1/2 -right-3 lg:right-0 Xbg-gray-500">
       {/** BUTTON MENU */}
       <div
         onClick={() => setNavbar(!navbar)}
-        className="flex items-center cursor-pointer"
+        className="flex items-center cursor-pointer hover:scale-125 active:animate-ping"
       >
         <svg
-          width="55px"
-          height="55px"
+          width="50px"
+          height="50px"
           viewBox="0 0 21 21"
           xmlns="http://www.w3.org/2000/svg"
           fill="#ffffff"
@@ -104,8 +104,8 @@ export const Navigation = () => {
         className={`fixed top-0 w-80 h-full lg:pr-5 z-50 text-white bg-[#222222fe] flex flex-col justify-between Xtransform Xtransition-all Xduration-200 rounded-b-md text-center
         ${
           navbar
-            ? " opacity-100 pointer-events-auto right-0 duration-700"
-            : "opacity-100 pointer-events-none -right-6/6 duration-initial"
+            ? " opacity-100 pointer-events-auto right-0 duration-500"
+            : "opacity-100 pointer-events-none -right-6/6 duration-500"
         }`}
       >
         <div> </div>
@@ -131,7 +131,7 @@ export const Navigation = () => {
         <li className="w-full flex flex-col items-end p-5">
           <button
             onClick={() => setNavbar(!navbar)}
-            className="w-10 h-10 lg:m-2 text-gray-200 active:bg-none cursor-pointer lg:hover:rotate-90 lg:hover:scale-105 transition-transform duration-500 active:rotate-90 active:scale-75 lg:active:animate-ping focus:outline-none flex justify-center items-center"
+            className="w-10 h-10 lg:m-2 text-gray-200 active:bg-none cursor-pointer transition-transform duration-200 active:rotate-90 active:animate-ping focus:outline-none flex justify-center items-center"
           >
             {navbar ? (
               <svg

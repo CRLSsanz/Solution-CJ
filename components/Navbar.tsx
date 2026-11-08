@@ -131,16 +131,16 @@ export const Navbar = () => {
                 </div>
               </div>
 
-              <div className="hidden lg:flex pl-16 flex-row items-center gap-4 text-sm font-semibold tracking-widest whitespace-nowrap">
+              <div className="hidden lg:flex pl-16 flex-row items-center gap-4 text-sm font-medium tracking-widest whitespace-nowrap">
                 <div>
-                  <Link href="/" className="p-2 hover:border-b border-teal-500">
+                  <Link href="/" className="p-2 hover:font-semibold hover:mb-1 hover:border-b border-teal-500">
                     Inicio
                   </Link>
                 </div>
                 <div>
                   <Link
                     href="/about"
-                    className="p-2 hover:border-b border-teal-500"
+                    className="p-2 hover:font-semibold hover:mb-1 hover:border-b border-teal-500"
                   >
                     Quienes Somos
                   </Link>
@@ -149,14 +149,14 @@ export const Navbar = () => {
                   onClick={() => setNavbar(!navbar)}
                   className="cursor-pointer"
                 >
-                  <span className="p-2 hover:border-b border-teal-500">
+                  <span className="p-2 hover:font-semibold hover:mb-1 hover:border-b border-teal-500">
                     Servicios Profesionales
                   </span>
                 </div>
                 <div>
                   <Link
                     href="../contact"
-                    className="p-2 hover:border-b border-teal-500"
+                    className="p-2 hover:font-semibold hover:mb-1 hover:border-b border-teal-500"
                     onClick={() => setNavbar(!navbar)}
                   >
                     Contactenos
@@ -197,7 +197,7 @@ export const Navbar = () => {
               onClick={() => setNavbar(!navbar)}
               className="lg:hidden Xlg:block z-50X w-12 lg:w-14 h-14 mr-2 rounded-full active:bg-none active:bg-transparent active:animate-ping focus:outline-none flex justify-center items-center"
             >
-              <div className="flex flex-col items-center transition-transform duration-500 active:rotate-90 active:animate-ping">
+              <div className="flex flex-col items-center transition-transform duration-200 active:rotate-90 active:animate-ping">
                 <svg
                   fill="#ffffff"
                   width="25px"
@@ -231,17 +231,17 @@ export const Navbar = () => {
         {/** FONDO NEGRO */}
         <div
           onClick={() => setNavbar(!navbar)}
-          className={`fixed z-40 top-0 w-full h-screen bg-black/70 lg:active:animate-ping ${
+          className={`fixed z-40 top-0 w-full h-screen bg-black/70 ${
             navbar
               ? " opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
           }`}
         >
           {/** BOTON CERRAR */}
-          <div className="xrelative ">
+          <div className="xrelative">
             <button
               onClick={() => setNavbar(!navbar)}
-              className="absolute top-5 right-2 w-8 h-8 flex items-start active:bg-none focus:outline-none transition-transform duration-500 active:rotate-90 active:animate-ping"
+              className="absolute top-5 right-5 flex items-start active:bg-none focus:outline-none transition-transform duration-200 active:rotate-90 active:animate-ping"
             >
               {navbar ? (
                 <svg
@@ -321,7 +321,7 @@ export const Navbar = () => {
                 <Link
                   onClick={() => setNavbar(!navbar)}
                   href="/"
-                  className="pl-5 hover:border-b border-teal-500"
+                  className="ml-5 hover:border-b border-teal-500"
                 >
                   Inicio
                 </Link>
