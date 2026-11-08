@@ -57,21 +57,26 @@ export const Navigation = () => {
     },
     {
       id: "10",
-      title: "Instalacion de Rack, Alarmas, Muebles, Cuadros",
-      link: "general",
+      title: "Instalacion de Rack",
+      link: "rack",
+    },
+    {
+      id: "11",
+      title: "Alarmas, Muebles, Cuadros",
+      link: "rack",
     },
   ];
 
   return (
-    <div className="fixed bottom-1/2 -right-5 Xbg-gray-500 hover:bg-emerald-500">
+    <div className="fixed z-0 bottom-1/2 -right-4 lg:right-0 Xbg-gray-500 hover:bg-emerald-500">
       {/** BUTTON MENU */}
       <div
         onClick={() => setNavbar(!navbar)}
         className="flex items-center cursor-pointer"
       >
         <svg
-          width="64px"
-          height="64px"
+          width="55px"
+          height="55px"
           viewBox="0 0 21 21"
           xmlns="http://www.w3.org/2000/svg"
           fill="#ffffff"
@@ -96,29 +101,30 @@ export const Navigation = () => {
 
       {/** VENTANA LISTA */}
       <div
-        className={`fixed top-0 z-50 text-white bg-[#222222fe] flex flex-col justify-between h-full w-80 Xtransform Xtransition-all Xduration-200 rounded-b-md text-center
+        className={`fixed top-0 w-80 h-full lg:pr-5 z-50 text-white bg-[#222222fe] flex flex-col justify-between Xtransform Xtransition-all Xduration-200 rounded-b-md text-center
         ${
           navbar
-            ? " opacity-100 pointer-events-auto right-0 duration-500"
+            ? " opacity-100 pointer-events-auto right-0 duration-700"
             : "opacity-100 pointer-events-none -right-6/6 duration-initial"
         }`}
       >
         <div> </div>
         <div className="w-full p-5">
           {list.map((item, index) => (
-            <Link
+            <div
               key={index}
-              href={`../#${item.link}`}
-              onClick={() => setNavbar(!navbar)}
+              className="flex flex-row justify-end text-sm hover:font-bold gap-x-3 py-2"
             >
-              <div
+              <Link
                 key={index}
-                className="flex flex-row justify-end gap-x-3 py-2"
+                href={`../#${item.link}`}
+                onClick={() => setNavbar(!navbar)}
               >
-                <h1 className="text-sm"> {item.title} </h1>
-                <div className="bg-gray-50 rounded-full h-1.5 w-1.5 my-auto"></div>
-              </div>
-            </Link>
+                {item.title}
+              </Link>
+
+              <div className="bg-gray-50 rounded-full h-1.5 w-1.5 my-auto"></div>
+            </div>
           ))}
         </div>
         {/** BOTON CERRAR */}

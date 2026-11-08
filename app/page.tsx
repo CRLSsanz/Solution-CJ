@@ -111,7 +111,7 @@ export default function Home() {
         <Navbar />
       </div>
 
-      <div className="z-50">
+      <div className="z-40">
         <Whatsapp />
       </div>
 
