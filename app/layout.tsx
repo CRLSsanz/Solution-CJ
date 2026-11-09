@@ -48,7 +48,7 @@ export default function RootLayout({
       <body className={` ${geistRaleway.className} antialiased ` }>
         <div
           id="sectionHome"
-          className="w-full flex justify-center bg-cover bg-fixed bg-[70%] bg-[url('https://img.magnific.com/premium-photo/abstract-luxury-blur-dark-grey-black-gradient-background_1008660-2919.jpg')] min-h-screen"
+          className="w-full flex justify-center bg-cover bg-fixed bg-[95%] bg-[url('https://img.magnific.com/premium-photo/abstract-luxury-blur-dark-grey-black-gradient-background_1008660-2919.jpg')] min-h-screen"
         >
           {children}
         </div>

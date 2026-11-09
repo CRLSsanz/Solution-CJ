@@ -224,33 +224,21 @@ export default function Home() {
             backgroundPosition: "50%",
           }}
         >
-          <div className="w-full lg:w-[1024] flex flex-col items-center justify-center py-20">
-            <div className="w-full grid grid-cols-2 gap-y-5 lg:p-0 p-5">
+          <div className="w-full lg:w-[800] flex flex-col items-center justify-center py-20">
+            <div className="w-full grid grid-cols-2 gap-y-5 px-5 lg:p-0 ">
               <h2 className="lg:text-4xl text-2xl mb-5">
                 Camaras de Vigilancia y Seguridad
               </h2>
 
-              <ul className="list-disc Xlist-inside ml-3">
+              <ul className="col-span-2 lg:col-span-1 px-5 lg:px-0 list-disc Xlist-inside mb-5 lg:ml-16 lg:leading-loose">
                 <li>Instalacion de camaras CCTV </li>
                 <li>Mantenimiento y servicio tecnico </li>
                 <li>Ronavación de cámaras PTZ</li>
                 <li>Instalación de radioenlaces</li>
-                <li className="mb-3">
-                  Configuración de App móvil para ver su casa o negocio en
-                  tiempo real.
-                </li>
-                <li></li>
-                <li className="mb-3">
-                  Instalación y/o mantenimiento de camaras, DVR de gravación,
-                  disco duro, etc
-                </li>
-                <li className="mb-3">
-                  Contamos con kits de 4 y 8 cámaras, HD 720P y Full HD 1080P,
-                </li>
-                <li className="mb-3">
-                  Asoseramos tu planificación del proyecto de video vigilancia
-                </li>
+                <li>Configuración de DVR para gravación</li>
+                <li>Discos duros</li>
               </ul>
+
               <div className="col-span-2">
                 <div className="relative w-full h-40 lg:h-96 lg:col-span-1 col-span-2">
                   <Image
@@ -266,8 +254,10 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <h1 className="w-full p-5 bg-gray-100 text-gray-600 ">
-                  Camaras de seguridad para casas, departamentos y edificios
+                <h1 className="w-full p-5 bg-gray-100 text-gray-700 ">
+                  Camaras de seguridad para casas, departamentos y edificios.{" "}
+                  <br />
+                  Asesoramos tu planificación del proyecto de video vigilancia
                 </h1>
               </div>
 
@@ -297,30 +287,32 @@ export default function Home() {
                       //height={200}
                       style={{
                         objectFit: "cover", // cover, contain, none
-                        objectPosition: "50% 50%",
+                        objectPosition: "20%",
                       }}
                     />
                   </div>
+                  <div className="relative w-full h-48 lg:h-[400]">
+                    <Image
+                      src={`/images/camaras/04.jpg`} //"/images/electricidad.jpg"
+                      alt="03"
+                      fill
+                      sizes=""
+                      //width={250}
+                      //height={200}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                      }}
+                    />
+                    <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
+                      Camara
+                    </h1>
+                  </div>
                 </div>
-                <h1 className="w-full p-5 bg-gray-100 text-gray-600 ">
-                  Contamos con kits de 4 y 8 cámaras, HD 720P y Full HD 1080P,
-                </h1>
-              </div>
-              <div className="relative w-full h-48 lg:h-[400] lg:col-span-2">
-                <Image
-                  src={`/images/camaras/04.jpg`} //"/images/electricidad.jpg"
-                  alt="03"
-                  fill
-                  sizes=""
-                  //width={250}
-                  //height={200}
-                  style={{
-                    objectFit: "cover", // cover, contain, none
-                    objectPosition: "50% 50%",
-                  }}
-                />
-                <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
-                  Camara
+                <h1 className="w-full p-5 bg-gray-100 text-gray-700 ">
+                  Configuración de App móvil para ver su casa o negocio en
+                  tiempo real. <br /> Contamos con kits de 4 y 8 cámaras, HD
+                  720P y Full HD 1080P,
                 </h1>
               </div>
             </div>
