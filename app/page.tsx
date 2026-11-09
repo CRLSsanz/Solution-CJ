@@ -233,9 +233,9 @@ export default function Home() {
               <ul className="col-span-2 lg:col-span-1 px-5 lg:px-0 list-disc Xlist-inside mb-5 lg:ml-16 lg:leading-loose">
                 <li>Instalacion de camaras CCTV </li>
                 <li>Mantenimiento y servicio tecnico </li>
-                <li>Ronavación de cámaras PTZ</li>
+                <li>Renovación de cámaras PTZ</li>
                 <li>Instalación de radioenlaces</li>
-                <li>Configuración de DVR para gravación</li>
+                <li>Configuración de DVR para grabación</li>
                 <li>Discos duros</li>
               </ul>
 
@@ -255,9 +255,9 @@ export default function Home() {
                   />
                 </div>
                 <h1 className="w-full p-5 bg-gray-100 text-gray-700 ">
-                  Camaras de seguridad para casas, departamentos y edificios.{" "}
-                  <br />
                   Asesoramos tu planificación del proyecto de video vigilancia
+                  <br />
+                  Camaras de seguridad para casas, departamentos y edificios.
                 </h1>
               </div>
 
@@ -309,11 +309,16 @@ export default function Home() {
                     </h1>
                   </div>
                 </div>
-                <h1 className="w-full p-5 bg-gray-100 text-gray-700 ">
-                  Configuración de App móvil para ver su casa o negocio en
-                  tiempo real. <br /> Contamos con kits de 4 y 8 cámaras, HD
-                  720P y Full HD 1080P,
-                </h1>
+                <div className="w-full p-5 bg-gray-100 text-gray-700 ">
+                  <h1 className="text-xl mb-5">Materiales</h1>
+                  <p className="text-base">
+                    Contamos con kits de <span className="fam-number"> 4 </span>{" "}
+                    y <span className="fam-number"> 8 </span> cámaras, HD{" "}
+                    <span className="fam-number"> 720</span>P y Full HD{" "}
+                    <span className="fam-number"> 1080</span>P, configuración de
+                    App móvil para ver su casa o negocio en tiempo real.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -331,12 +336,20 @@ export default function Home() {
           }}
         >
           <div className="w-full flex flex-col items-center py-20">
-            <div className="w-full lg:w-[1200] lg:p-0 p-5">
-              <h3 className="title lg:text-4xl text-2xl uppercase mb-5">
-                Cerrajeria
-              </h3>
-              <div className="flex lg:flex-row flex-col">
-                <div className="lg:w-2/3 relative w-full h-48 lg:h-[400] mb-10">
+            <div className="w-full lg:w-[800] lg:px-0 px-5 grid grid-cols-2 gap-5">
+              <h1 className="lg:text-4xl text-2xl mb-5">
+                Servicio de Cerrajeria a domicilio
+              </h1>
+              <p className="lg:pl-10 mb-10">
+                Tenemos la solución a tu problema de cerrajería, ofrecemos un
+                servicio a domicilio rápido y eficiente, disponible las 24 horas
+                del día. Ya sea que necesites abrir una puerta, cambiar
+                cerraduras o instalar sistemas de seguridad, puedes contar con
+                nosotros.
+              </p>
+
+              <div className="col-span-2">
+                <div className="relative h-60 lg:h-96">
                   <Image
                     src={`/images/cerrajeria/01.jpg`} //"/images/electricidad.jpg"
                     alt="01"
@@ -350,21 +363,13 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <div className="lg:w-1/3 lg:p-10 p-5">
-                  <h1 className="subtitle uppercase font-bold mb-5">
-                    Nuestros Servicios
-                  </h1>
-                  <p className="mb-10 leading-8">
-                    - Instalación de cerraduras <br /> - Extraccion de llaves
-                    partidas <br />
-                    - Ajustes y nivelacion de puertas <br />- Instalacion de
-                    cilindros de gaveta <br /> y mucho mas
-                  </p>
-                </div>
+                <h1 className="p-5 text-xl text-center mb-10">
+                  Instalación de cerraduras, cilindros de gaveta y mucho mas
+                </h1>
               </div>
 
-              <div className="grid lg:grid-cols-3 grid-cols-2 gap-5">
-                <div className="relative w-full h-72 lg:h-[400] lg:col-span-1 col-span-2">
+              <div className="col-span-2 lg:col-span-1">
+                <div className="relative w-full h-80 lg:h-60">
                   <Image
                     src={`/images/cerrajeria/02.jpg`} //"/images/electricidad.jpg"
                     alt="01"
@@ -377,12 +382,14 @@ export default function Home() {
                       objectPosition: "50% 50%",
                     }}
                   />
-                  <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
-                    Camara
-                  </h1>
                 </div>
+                <h1 className="p-5 bg-gray-50 text-gray-700">
+                  Instalación de cerraduras inteligentes
+                </h1>
+              </div>
 
-                <div className="relative w-full h-48 lg:h-[400] ">
+              <div className="col-span-2 lg:col-span-1">
+                <div className="relative w-full h-44 lg:h-60">
                   <Image
                     src={`/images/cerrajeria/03.jpg`} //"/images/electricidad.jpg"
                     alt="01"
@@ -396,7 +403,12 @@ export default function Home() {
                     }}
                   />
                 </div>
+                <h1 className="p-5 bg-gray-50 text-gray-700">
+                  Configuración de chapas y cerraduras
+                </h1>
+              </div>
 
+              <div className="col-span-2">
                 <div className="relative w-full h-48 lg:h-[400]">
                   <Image
                     src={`/images/cerrajeria/04.jpg`} //"/images/electricidad.jpg"
@@ -410,10 +422,10 @@ export default function Home() {
                       objectPosition: "50% 50%",
                     }}
                   />
-                  <h1 className="hidden absolute w-full bottom-0 bg-gray-900/80 p-5 font-bold">
-                    Camara
-                  </h1>
                 </div>
+                <h1 className="p-5 text-xl text-center mb-10">
+                  Instalación, ajustes y nivelacion de puertas
+                </h1>
               </div>
             </div>
           </div>

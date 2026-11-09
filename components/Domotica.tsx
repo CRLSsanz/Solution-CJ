@@ -40,7 +40,7 @@ const Domotica = () => {
         }}
       >
         <div className="w-full lg:w-[1320] pt-32 pb-16">
-          <div className="w-full lg:w-[600] px-5 lg:px-0">
+          <div className="w-full lg:w-[600] text-gray-100 px-5 lg:px-0">
             <h1 className=" font-medium text-xs uppercase mb-5">
               Tecnología para una vida mejor
             </h1>
