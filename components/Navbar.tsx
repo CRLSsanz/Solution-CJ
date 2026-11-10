@@ -104,7 +104,7 @@ export const Navbar = () => {
     <section className={` `}>
       <div className="w-full">
         <nav className="w-full z-30 h-16 text-gray-300 flex justify-center items-center bg-black/40 backdrop-blur-2xl border-b border-gray-800">
-          <div className="w-[1320] flex flex-row justify-between items-center">
+          <div className="w-full lg:w-[1200] flex flex-row justify-between items-center">
             <div className="pl-5 flex flex-row justify-between items-center">
               <div className="hidden relative w-9 h-9 m-1 mr-3">
                 <Image

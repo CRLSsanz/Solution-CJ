@@ -446,24 +446,26 @@ export default function Home() {
         >
           <div className=""> </div>
         </div>
-        <div className="flex justify-center bg-[#141414]">
-          <div className="w-full lg:w-[1440] min-h-[800] -mt-24 bg-gray-200 text-gray-600 flex lg:flex-row flex-col mb-20">
+        <div className="flex justify-center Xbg-[#141414]">
+          <div className="w-full lg:w-[1440] min-h-[750] -mt-24 bg-gray-200 text-gray-600 flex lg:flex-row flex-col">
             <div className="w-full lg:w-1/2 flex lg:flex-row flex-col">
               <div className="w-full lg:w-1/2">
                 <div className="lg:py-20 py-10 pl-20 lg:mt-0 -mt-34">
-                  <h1 className="title text-4xl uppercase mb-10">
+                  <h1 className="text-4xl text-gray-100 lg:text-gray-700 mb-10">
                     Drywall en General
                   </h1>
-                  <h4>- Remodelaciones</h4>
-                  <h4>- Ampliaciones</h4>
-                  <h4>- Diviciones Interiores</h4>
-                  <h4>- Fachadas</h4>
-                  <h4>- Cielo Raso</h4>
-                  <h4>- Muros</h4>
-                  <h4>- Deparmamentos</h4>
-                  <h4>- Revestimiento</h4>
-                  <h4>- Centro de entretenimiento</h4>
-                  <h4>- Azotea Terrazas</h4>
+                  <ul className="list-disc list-inside">
+                    <li>Remodelaciones</li>
+                    <li>Ampliaciones</li>
+                    <li>Diviciones Interiores</li>
+                    <li>Fachadas</li>
+                    <li>Cielo Raso</li>
+                    <li>Muros</li>
+                    <li>Deparmamentos</li>
+                    <li>Revestimiento</li>
+                    <li>Centro de entretenimiento</li>
+                    <li>Azotea Terrazas</li>
+                  </ul>
                 </div>
               </div>
               <div
@@ -481,8 +483,8 @@ export default function Home() {
 
             <div className="w-full lg:w-1/2 bg-gray-200 flex lg:flex-row flex-col">
               <div className="w-full lg:w-1/2">
-                <div className="h-1/3 mt-1">
-                  <div className="relative w-full h-[260] mb-10">
+                <div className="h-1/3 px-5 lg:px-0">
+                  <div className="relative w-full h-[250]">
                     <Image
                       src={`/images/drywall/01.jpg`} //"/images/electricidad.jpg"
                       alt="01"
@@ -497,8 +499,8 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <div className="h-1/3">
-                  <div className="relative w-full h-[260] mb-10">
+                <div className="h-1/3 px-5 lg:px-0">
+                  <div className="relative w-full h-[250]">
                     <Image
                       src={`/images/drywall/02.jpg`} //"/images/electricidad.jpg"
                       alt="01"
@@ -513,8 +515,8 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <div className="h-1/3">
-                  <div className="relative w-full h-[260] mb-10">
+                <div className="h-1/3 px-5 lg:px-0">
+                  <div className="relative w-full h-[250]">
                     <Image
                       src={`/images/drywall/03.jpg`} //"/images/electricidad.jpg"
                       alt="01"
@@ -531,26 +533,93 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="w-full lg:w-1/2 bg-gray-200 text-lg">
-                <div className="px-10 py-20">
-                  <p className="lg:mb-20 mb-10 text-lg text-justify">
+              <div className="w-full lg:w-1/2 bg-gray-200">
+                <div className="px-5 lg:px-10 py-20">
+                  <p className="lg:mb-20 mb-10">
                     No esperes mas para transformar tus espacios. Descubre el
                     potencial del Drywall con SGJ Soluciones Generales
                   </p>
 
-                  <p className="font-semibold text-xl uppercase mb-5">
-                    Contactenos
-                  </p>
-                  <p className="fam-number font-extrabold lg:mb-20 mb-10">
-                    +51 904 150 352
-                  </p>
-
-                  <p className="font-semibold text-xl uppercase mb-5">
-                    Otros Servicios
-                  </p>
-                  <h4>Electricidad</h4>
-                  <h4>Melamina</h4>
-                  <h4>Pintura</h4>
+                  <p className="text-xl mb-5">Contáctenos</p>
+                  <div className="mb-5 text-gray-700">
+                    <Link
+                      href="tel:+51939065454"
+                      className="px-10 lg:py-3 py-2.5 border border-gray-700 hover:bg-gray-100/20 flex flex-row items-center justify-center gap-x-2"
+                    >
+                      <span>
+                        <svg
+                          width="20px"
+                          height="20px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            {" "}
+                            <path
+                              d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.0834 20.9262 20.3009 20.9103 20.499 20.7963C20.663 20.7019 20.8185 20.5345 20.9007 20.364C21 20.1582 21 19.9181 21 19.438V16.6207C21 16.2169 21 16.015 20.9335 15.842C20.8749 15.6891 20.7795 15.553 20.6559 15.4456C20.516 15.324 20.3262 15.255 19.9468 15.117L16.74 13.9509C16.2985 13.7904 16.0777 13.7101 15.8683 13.7237C15.6836 13.7357 15.5059 13.7988 15.3549 13.9058C15.1837 14.0271 15.0629 14.2285 14.8212 14.6314L14 16C11.3501 14.7999 9.2019 12.6489 8 10L9.36863 9.17882C9.77145 8.93713 9.97286 8.81628 10.0942 8.64506C10.2012 8.49408 10.2643 8.31637 10.2763 8.1317C10.2899 7.92227 10.2096 7.70153 10.0491 7.26005L8.88299 4.05321C8.745 3.67376 8.67601 3.48403 8.55442 3.3441C8.44701 3.22049 8.31089 3.12515 8.15802 3.06645C7.98496 3 7.78308 3 7.37932 3H4.56201C4.08188 3 3.84181 3 3.63598 3.09925C3.4655 3.18146 3.29814 3.33701 3.2037 3.50103C3.08968 3.69907 3.07375 3.91662 3.04189 4.35173C3.01413 4.73086 3 5.11378 3 5.5Z"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            ></path>{" "}
+                          </g>
+                        </svg>
+                      </span>
+                      <span className="fam-manrope">Llamar ahora</span>
+                    </Link>
+                  </div>
+                  <div className="text-gray-100 mb-10">
+                    <Link
+                      href="https://api.whatsapp.com/send?phone=+51939065454&text=Hola, estoy interesado en sus servicios."
+                      className="px-10 lg:py-3 py-2.5 bg-teal-600/90 hover:bg-teal-500 flex flex-row items-center justify-center gap-x-2 animate-bounce2"
+                    >
+                      <span className="">
+                        <svg
+                          fill="#ffffff"
+                          width="20px"
+                          height="20px"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <path d="m15.271 13.21c.578.185 1.078.416 1.543.7l-.031-.018c.529.235.986.51 1.403.833l-.015-.011c.02.061.032.13.032.203 0 .011 0 .021-.001.032v-.001c-.015.429-.11.832-.271 1.199l.008-.021c-.231.463-.616.82-1.087 1.01l-.014.005c-.459.243-1.001.393-1.576.411h-.006c-1.1-.146-2.094-.484-2.988-.982l.043.022c-1.022-.468-1.895-1.083-2.636-1.829l-.001-.001c-.824-.857-1.579-1.795-2.248-2.794l-.047-.074c-.636-.829-1.041-1.866-1.1-2.995l-.001-.013v-.124c.032-.975.468-1.843 1.144-2.447l.003-.003c.207-.206.491-.335.805-.341h.001c.101.003.198.011.292.025l-.013-.002c.087.013.188.021.292.023h.003c.019-.002.04-.003.062-.003.13 0 .251.039.352.105l-.002-.001c.107.118.189.261.238.418l.002.008q.124.31.512 1.364c.135.314.267.701.373 1.099l.014.063c-.076.361-.268.668-.533.889l-.003.002q-.535.566-.535.72c.004.088.034.168.081.234l-.001-.001c.405.829.936 1.533 1.576 2.119l.005.005c.675.609 1.446 1.132 2.282 1.54l.059.026c.097.063.213.103.339.109h.002q.233 0 .838-.752t.804-.752zm-3.147 8.216h.022c1.357 0 2.647-.285 3.814-.799l-.061.024c2.356-.994 4.193-2.831 5.163-5.124l.024-.063c.49-1.113.775-2.411.775-3.775s-.285-2.662-.799-3.837l.024.062c-.994-2.356-2.831-4.193-5.124-5.163l-.063-.024c-1.113-.49-2.411-.775-3.775-.775s-2.662.285-3.837.799l.062-.024c-2.356.994-4.193 2.831-5.163 5.124l-.024.063c-.49 1.117-.775 2.419-.775 3.787 0 2.141.698 4.12 1.879 5.72l-.019-.026-1.225 3.613 3.752-1.194c1.49 1.01 3.327 1.612 5.305 1.612h.047zm0-21.426h.033c1.628 0 3.176.342 4.575.959l-.073-.029c2.825 1.197 5.028 3.4 6.196 6.149l.029.076c.588 1.337.93 2.896.93 4.535s-.342 3.198-.959 4.609l.029-.074c-1.197 2.825-3.4 5.028-6.149 6.196l-.076.029c-1.327.588-2.875.93-4.503.93-.011 0-.023 0-.034 0h.002c-.016 0-.034 0-.053 0-2.059 0-3.992-.541-5.664-1.488l.057.03-6.465 2.078 2.109-6.279c-1.051-1.714-1.674-3.789-1.674-6.01 0-1.646.342-3.212.959-4.631l-.029.075c1.197-2.825 3.4-5.028 6.149-6.196l.076-.029c1.327-.588 2.875-.93 4.503-.93h.033-.002z"></path>
+                          </g>
+                        </svg>
+                      </span>
+                      <span className="xfam-manrope">Whatsapp</span>
+                    </Link>
+                  </div>
+                  <p className="text-xl mb-5">Otros Servicios</p>
+                  <ul className="list-disc list-inside leading-loose">
+                    <li>
+                      <Link href={`../#electricidad`} className="underline">
+                        Electricidad
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href={`../#melamina`} className="underline">
+                        Melamina
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href={`../#pintura`} className="underline">
+                        Pintura
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -577,7 +646,7 @@ export default function Home() {
 
       <section id="electricidad" className="w-full">
         <div
-          className="min-h-screen bg-[#141414] text-gray-300"
+          className="min-h-screen Xbg-[#141414] text-gray-300"
           style={
             {
               //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/electricidad1.jpg)`,
@@ -588,50 +657,86 @@ export default function Home() {
           }
         >
           <div className="w-full flex flex-col items-center py-20">
-            <div className="w-full lg:w-[1200] p-5 lg:p-0 flex flex-col lg:flex-row">
-              <div className="w-full lg:w-1/2 flex flex-col Xitems-center">
-                <h2 className="title lg:text-4xl text-2xl mb-10">
-                  Electricidad
+            <div className="w-full lg:w-[800] p-5 lg:p-0 flex flex-col lg:flex-row">
+              <div className="w-full lg:w-1/2 flex flex-col Xitems-center pr-0 lg:pr-5 ">
+                <h2 className="lg:text-4xl text-2xl mb-10">
+                  Electricistas profesionales las 24 horas
                 </h2>
                 <div className="lg:w-[400] mb-10 tracking-wider">
                   Brindamos servicios de electricidad desde instalaciones
                   domiciliarias hasta proyectos comerciales. Incorporamos la
                   tecnología en tu residencia mediante la domótica.
                 </div>
-                <div className="relative w-full px-5 h-80 mb-10">
-                  <Image
-                    src="/images/electricidad/01.jpg" //"/images/electricidad.jpg"
-                    alt="electricidad"
-                    fill
-                    sizes=""
-                    //width={450}
-                    //height={400}
-                    style={{
-                      objectFit: "cover", // cover, contain, none
-                      objectPosition: "50% 50%",
-                    }}
-                  />
+
+                <div className="w-full border bg-gray-100 border-gray-600 mb-5">
+                  <div className="relative w-full h-[200] lg:col-span-1 col-span-2">
+                    <Image
+                      src={`/images/electricidad/01.jpg`} //"/images/electricidad.jpg"
+                      alt="03"
+                      fill
+                      sizes=""
+                      //width={250}
+                      //height={200}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                      }}
+                    />
+                  </div>
+                  <div className="p-5">
+                    <p className="text-gray-500">
+                      Instalacion de cableado, toma de corriente, interruptores,
+                      focos y lamparas, tableros, llaves termicas.
+                    </p>
+                  </div>
                 </div>
-                <div className="mb-10 subtitle">
-                  Instalación, mantenimiento y reparación{" "}
+
+                <div className="w-full border bg-gray-100 border-gray-600 mb-5">
+                  <div className="relative w-full h-[200] lg:col-span-1 col-span-2">
+                    <Image
+                      src={`/images/electricidad/02.jpg`} //"/images/electricidad.jpg"
+                      alt="03"
+                      fill
+                      sizes=""
+                      //width={250}
+                      //height={200}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                      }}
+                    />
+                  </div>
+                  <div className="p-5">
+                    <p className="text-gray-500">
+                      Corto circuito y fugas de corriente
+                    </p>
+                  </div>
                 </div>
-                <div className="relative w-full px-5 h-80">
-                  <Image
-                    src="/images/electricidad/02.jpg" //"/images/electricidad.jpg"
-                    alt="electricidad"
-                    fill
-                    sizes=""
-                    //width={450}
-                    //height={400}
-                    style={{
-                      objectFit: "cover", // cover, contain, none
-                      objectPosition: "50% 50%",
-                    }}
-                  />
+
+                <div className="w-full border bg-gray-100 border-gray-600 mb-5">
+                  <div className="relative w-full h-[200] lg:col-span-1 col-span-2">
+                    <Image
+                      src={`/images/electricidad/03.jpg`} //"/images/electricidad.jpg"
+                      alt="03"
+                      fill
+                      sizes=""
+                      //width={250}
+                      //height={200}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                      }}
+                    />
+                  </div>
+                  <div className="p-5">
+                    <p className="text-gray-500">
+                      Instalación de luces, termas y duchas eléctricas 
+                    </p>
+                  </div>
                 </div>
               </div>
               <div
-                className="w-full lg:w-1/2 h-[600] lg:min-h-screen bg-[#141414] text-gray-300 -mt-20 lg:mt-0"
+                className="w-full lg:w-1/2 h-[600] lg:h-dvh bg-[#141414] text-gray-300 "
                 style={{
                   backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.5)), url(/images/electricidad/fondo.jpg)`,
                   backgroundSize: "cover",
@@ -672,6 +777,12 @@ export default function Home() {
                   <li>
                     Instalación o mantenimiento de bomba rotoplas y trampas.
                   </li>
+                  <li></li>
+                  <li>Cortos circuitos y fugas de corriente</li>
+                  <li>Instalacion de luces, termas y duchas electricas</li>
+                  <li>atencion y asistencia de urgencias las 24 horas</li>
+                  <li>Arreglo de filtraciones y fugas de agua</li>
+                  <li>Cambio e instalaciones de griferias e inodoros</li>
                 </ul>
               </div>
               <div className="lg:w-3/4 grid lg:grid-cols-3 grid-cols-2 gap-5">
