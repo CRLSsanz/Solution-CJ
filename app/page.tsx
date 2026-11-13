@@ -785,34 +785,27 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="">
-                <ul className="list-disc Xlist-inside">
-                  <li>Reparación de fugas</li>
+              <div className="ml-5">
+                <ul className="list-disc Xlist-inside pr-10 lg:pr-0">
+                  <li>Reparación de fugas.</li>
+                  <li>Instalaciones sanitarias.</li>
                   <li>
                     Limpieza y destape de tuberías, lavaderos, inodoros y cajas
                     de registro.
                   </li>
-                  <li>Instalaciones sanitarias</li>
-                  <li>
-                    Montaje de griferías, duchas, sanitarios, termas y tanques
-                    elevados.
-                  </li>
                   <li>
                     Instalación o mantenimiento de bomba rotoplas y trampas.
                   </li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li>atencion y asistencia de urgencias las 24 horas</li>
+                  <li>Atencion y asistencia de urgencias las 24 horas.</li>
 
-                  <li></li>
+                  
                 </ul>
               </div>
 
               <div>
                 <div className="relative w-full px-5 lg:h-80 h-50">
                   <Image
-                    src="/images/gasfiteria/02.jpg" //"/images/electricidad.jpg"
+                    src="/images/gasfiteria/01.jpg" //"/images/electricidad.jpg"
                     alt="electricidad"
                     fill
                     sizes=""
@@ -875,7 +868,7 @@ export default function Home() {
                   </div>
                 </div>
                 <h1 className="bg-gray-100 text-gray-600 p-5">
-                  Instalacion de termas y duchas electricas. Cambio e
+                  Instalacion de termas y duchas electricas. Montaje de sanitarios y tanques elevados. Cambio e
                   instalaciones de griferias e inodoros.
                 </h1>
               </div>
@@ -896,7 +889,7 @@ export default function Home() {
                   />
                 </div>
                 <h1 className="bg-gray-100 text-gray-600 p-5">
-                  Arreglo de filtraciones y fugas de agua
+                  Instalación de griferias y accesorios.
                 </h1>
               </div>
 
@@ -911,12 +904,12 @@ export default function Home() {
                     //height={400}
                     style={{
                       objectFit: "cover", // cover, contain, none
-                      objectPosition: "50% 50%",
+                      objectPosition: "50% 20%",
                     }}
                   />
                 </div>
                 <h1 className="bg-gray-100 text-gray-600 p-5">
-                  Arreglo de filtraciones y fugas de agua
+                  Arreglo de filtraciones y cambio de accesorios en general.
                 </h1>
               </div>
             </div>
@@ -934,16 +927,16 @@ export default function Home() {
             backgroundPosition: "50%",
           }}
         >
-          <div className="w-full lg:h-svh py-20 lg:py-0 flex flex-col items-center justify-center">
-            <div className="w-full lg:w-[1440] lg:text-4xl text-2xl text-center mb-5">
-              MELAMINA
+          <div className="w-full lg:h-svh px-5 lg:px-0 py-20 lg:py-0 flex flex-col items-center justify-center">
+            <div className="w-full lg:w-[1280] lg:text-4xl text-2xl mb-5 lg:text-center">
+              Melamina
             </div>
-            <div className="w-full lg:w-[700] text-center mb-5">
+            <div className="w-full lg:w-[700] mb-5 lg:text-center">
               Diseño y fabricación de muebles en melamina. Mantenimiento y
               remodelacion para sus espacios u oficina, armado de closet y mas.
             </div>
 
-            <div className="w-full lg:w-[1440] flex flex-col lg:flex-row gap-x-2">
+            <div className="w-full lg:w-[1280] flex flex-col lg:flex-row gap-x-2">
               <div className="relative w-full lg:w-1/3 h-[600]">
                 <Image
                   src={`/images/melamina/fondo.jpg`} //"/images/electricidad.jpg"
@@ -959,8 +952,8 @@ export default function Home() {
                   }}
                 />
                 <div className="absolute w-full bottom-0 bg-gray-900/60 p-7">
-                  <h1 className="uppercase mb-5 text-xl font-bold">Diseños</h1>
-                  <p className="mr-20">
+                  <h1 className="mb-5 text-xl font-semibold">Diseños</h1>
+                  <p className="">
                     Nuestros diseños le ayudan a mejorar sus espacios con
                     nuestros diferentes modelos en melamina para una ducra un
                     closet o una habitacion
@@ -1432,14 +1425,13 @@ export default function Home() {
                   <li>Remodelacion</li>
                 </ul>
               </div>
-              <div className="lg:w-7/10 font-semibold grid grid-cols-1 lg:grid-cols-3 lg:gap-5">
+              <div className="lg:w-7/10 font-semibold grid grid-cols-1 lg:grid-cols-3 gap-5">
                 {Array(6)
                   .fill(null)
                   .map((_, index) => (
                     <div key={index}>
                       <div className="relative w-full h-[200] lg:h-[300] Xmb-3 ">
                         <Image
-                          className="rounded-2xl"
                           src={`/images/mayolica/0${index + 1}.jpg`} //"/images/electricidad.jpg"
                           alt="01"
                           fill
@@ -1464,7 +1456,7 @@ export default function Home() {
 
       <section id="metalica" className="w-full">
         <div
-          className="min-h-screen XXbg-[#272727] bg-gray-50 text-gray-300 lg:w-6/6"
+          className="min-h-screen XXbg-[#272727] bg-gray-50 text-gray-600 py-20"
           style={{
             //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/metales/XXXfondo.jpg)`,
             backgroundSize: "cover",
@@ -1472,11 +1464,10 @@ export default function Home() {
             backgroundPosition: "50%",
           }}
         >
-          <div className="w-4/5">Metalica</div>
-          <div className="w-full flex items-center justify-center ">
-            <div className="relative w-[500] h-[800] Xmb-3 ">
+          <div className="py-10 text-center text-2xl">Algun proyecto en mente</div>
+          <div className="w-full flex items-center justify-center">
+            <div className="relative w-[500] h-[600]">
               <Image
-                className="rounded-2xl"
                 src={`/images/metales/fondo.jpg`} //"/images/electricidad.jpg"
                 alt="01"
                 fill
