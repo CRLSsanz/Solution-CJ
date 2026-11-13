@@ -80,7 +80,7 @@ const Domotica = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-center py-20">
+      <div className="w-full flex flex-col items-center py-20  text-gray-100">
         <p className="w-full lg:w-[800] px-5 lg:px-0 text-center text-sm">
           Tecnología para una vida mejor
         </p>

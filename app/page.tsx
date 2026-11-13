@@ -730,7 +730,7 @@ export default function Home() {
                   </div>
                   <div className="p-5">
                     <p className="text-gray-500">
-                      Instalación de luces, termas y duchas eléctricas 
+                      Instalación de luces, termas y duchas eléctricas
                     </p>
                   </div>
                 </div>
@@ -751,7 +751,7 @@ export default function Home() {
 
       <section id="gasfiteria" className="w-full">
         <div
-          className="Xmin-h-screen bg-gray-100 text-gray-600 Xbg-[#141414] w-full rounded-xl"
+          className="Xmin-h-screen Xbg-gray-100 text-gray-100 Xbg-[#141414] w-full rounded-xl"
           style={{
             //backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/gasfiteria/fondo.jpg')`,
             backgroundSize: "cover",
@@ -760,9 +760,32 @@ export default function Home() {
           }}
         >
           <div className="w-full flex flex-col items-center py-20">
-            <div className="w-full lg:w-[1320] p-5 lg:p-0 flex flex-col lg:flex-row">
-              <div className="lg:w-1/4 mb-10">
-                <h1 className="title lg:text-4xl text-2xl mb-5">Gasfiteria</h1>
+            <div className="w-full lg:w-[800] p-5 lg:p-0 grid grid-cols-1 lg:grid-cols-2 gap-y-5 lg:gap-x-5">
+              <h1 className="w-full lg:text-4xl text-2xl mb-10">
+                Tu solución en gasfitería
+              </h1>
+
+              <div className="w-full lg:col-span-2 mb-10">
+                <div className="relative lg:h-80 h-40">
+                  <Image
+                    src="/images/gasfiteria/fondo.jpg" //"/images/electricidad.jpg"
+                    alt="electricidad"
+                    fill
+                    sizes=""
+                    //width={450}
+                    //height={400}
+                    style={{
+                      objectFit: "cover", // cover, contain, none
+                      objectPosition: "50% 50%",
+                    }}
+                  />
+                </div>
+                <div className="text-lg p-5 text-center">
+                  Contáctanos hoy mismo. Gasfitería rápida y garantizada.
+                </div>
+              </div>
+
+              <div className="">
                 <ul className="list-disc Xlist-inside">
                   <li>Reparación de fugas</li>
                   <li>
@@ -778,32 +801,17 @@ export default function Home() {
                     Instalación o mantenimiento de bomba rotoplas y trampas.
                   </li>
                   <li></li>
-                  <li>Cortos circuitos y fugas de corriente</li>
-                  <li>Instalacion de luces, termas y duchas electricas</li>
+                  <li></li>
+                  <li></li>
                   <li>atencion y asistencia de urgencias las 24 horas</li>
-                  <li>Arreglo de filtraciones y fugas de agua</li>
-                  <li>Cambio e instalaciones de griferias e inodoros</li>
+
+                  <li></li>
                 </ul>
               </div>
-              <div className="lg:w-3/4 grid lg:grid-cols-3 grid-cols-2 gap-5">
+
+              <div>
                 <div className="relative w-full px-5 lg:h-80 h-50">
                   <Image
-                    className="rounded-2xl"
-                    src="/images/gasfiteria/01.jpg" //"/images/electricidad.jpg"
-                    alt="electricidad"
-                    fill
-                    sizes=""
-                    //width={450}
-                    //height={400}
-                    style={{
-                      objectFit: "cover", // cover, contain, none
-                      objectPosition: "50% 50%",
-                    }}
-                  />
-                </div>
-                <div className="relative w-full px-5 lg:h-80 h-50">
-                  <Image
-                    className="rounded-2xl"
                     src="/images/gasfiteria/02.jpg" //"/images/electricidad.jpg"
                     alt="electricidad"
                     fill
@@ -816,10 +824,66 @@ export default function Home() {
                     }}
                   />
                 </div>
+                <h1 className="bg-gray-100 text-gray-600 p-5">
+                  Arreglo de filtraciones y fugas de agua
+                </h1>
+              </div>
+
+              <div className=" lg:col-span-2">
+                <div className="w-full flex flex-row">
+                  <div className="relative w-full px-5 lg:h-80 h-50">
+                    <Image
+                      src="/images/gasfiteria/11.jpg" //"/images/electricidad.jpg"
+                      alt="electricidad"
+                      fill
+                      sizes=""
+                      //width={450}
+                      //height={400}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                      }}
+                    />
+                  </div>
+                  <div className="relative w-full px-5 lg:h-80 h-50">
+                    <Image
+                      src="/images/gasfiteria/12.jpg" //"/images/electricidad.jpg"
+                      alt="electricidad"
+                      fill
+                      sizes=""
+                      //width={450}
+                      //height={400}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                      }}
+                    />
+                  </div>
+                  <div className="relative w-full px-5 lg:h-80 h-50">
+                    <Image
+                      src="/images/gasfiteria/13.jpg" //"/images/electricidad.jpg"
+                      alt="electricidad"
+                      fill
+                      sizes=""
+                      //width={450}
+                      //height={400}
+                      style={{
+                        objectFit: "cover", // cover, contain, none
+                        objectPosition: "50% 50%",
+                      }}
+                    />
+                  </div>
+                </div>
+                <h1 className="bg-gray-100 text-gray-600 p-5">
+                  Instalacion de termas y duchas electricas. Cambio e
+                  instalaciones de griferias e inodoros.
+                </h1>
+              </div>
+
+              <div className="lg:mb-10">
                 <div className="relative w-full px-5 lg:h-80 h-50">
                   <Image
-                    className="rounded-2xl"
-                    src="/images/gasfiteria/03.jpg" //"/images/electricidad.jpg"
+                    src="/images/gasfiteria/21.jpg" //"/images/electricidad.jpg"
                     alt="electricidad"
                     fill
                     sizes=""
@@ -831,6 +895,29 @@ export default function Home() {
                     }}
                   />
                 </div>
+                <h1 className="bg-gray-100 text-gray-600 p-5">
+                  Arreglo de filtraciones y fugas de agua
+                </h1>
+              </div>
+
+              <div className="lg:mb-10">
+                <div className="relative w-full px-5 lg:h-80 h-50">
+                  <Image
+                    src="/images/gasfiteria/22.jpg" //"/images/electricidad.jpg"
+                    alt="electricidad"
+                    fill
+                    sizes=""
+                    //width={450}
+                    //height={400}
+                    style={{
+                      objectFit: "cover", // cover, contain, none
+                      objectPosition: "50% 50%",
+                    }}
+                  />
+                </div>
+                <h1 className="bg-gray-100 text-gray-600 p-5">
+                  Arreglo de filtraciones y fugas de agua
+                </h1>
               </div>
             </div>
           </div>
