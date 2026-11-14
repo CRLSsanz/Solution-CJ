@@ -31,9 +31,9 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center py-20">
-        <div className="lg:w-[1200] w-full flex lg:flex-row flex-col lg:px-0 px-5 text-gray-500">
-          
+
+      <div className="bg-gray-100 flex justify-center py-20">
+        <div className="lg:w-[1200] w-full flex lg:flex-row flex-col lg:px-0 px-5 text-gray-500">    
           <div className="lg:w-3/5 font-semibold">
             <div>Nombre *</div>
             <input type="text" className="w-full bg-gray-200 p-3 mt-3 lg:mb-8 mb-3" />

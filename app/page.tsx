@@ -131,7 +131,7 @@ export default function Home() {
           }}
         >
           <div className=" w-full lg:h-[700] h-[700] flex flex-col items-center justify-evenly px-5 lg:px-0 py-10">
-            <div className="w-full lg:w-[1200]">
+            <div className="w-full sm:max-w-[800] lg:w-[1200]">
               <div className={`w-full lg:w-[600] mb-5 font-semibold `}>
                 <h1 className="">
                   Ofrecemos soluciones internas para su negocio o vivienda
@@ -150,7 +150,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-full lg:w-[1200] flex lg:flex-row flex-col gap-3 text-center text-sm">
+            <div className="w-full sm:max-w-[800] lg:w-[1200] flex lg:flex-row flex-col gap-3 text-center text-sm">
               <Link
                 href="https://api.whatsapp.com/send?phone=+51939065454&text=Hola, estoy interesado en sus servicios."
                 className="px-10 lg:py-3 py-2.5 bg-teal-600/90 hover:bg-teal-500 flex flex-row items-center justify-center gap-x-2 animate-bounce2"

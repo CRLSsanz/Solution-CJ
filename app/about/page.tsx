@@ -27,6 +27,7 @@ const page = () => {
           </div>
         </div>
       </div>
+
       <div className="w-full flex lg:flex-row flex-col-reverse">
         <div
           className="lg:w-1/2 w-full bg-[#141414] text-gray-300 flex items-center justify-center"
